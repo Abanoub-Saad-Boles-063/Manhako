@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مساهمات الطلاب - منهجكو</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://manhagko.netlify.app/contributions.html">
+    <meta property="og:title" content="مساهمات الطلاب - منهجكو">
+    <meta property="og:description" content="شارك ملخصاتك وملفاتك مع زملائك. منصة مساهمات الطلاب في منهجكو.">
+    <meta property="og:image" content="https://manhagko.netlify.app/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://manhagko.netlify.app/contributions.html">
+    <meta property="twitter:title" content="مساهمات الطلاب - منهجكو">
+    <meta property="twitter:description" content="شارك ملخصاتك وملفاتك مع زملائك. منصة مساهمات الطلاب في منهجكو.">
+    <meta property="twitter:image" content="https://manhagko.netlify.app/logo.png">
+
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        :root {
+            --primary: #4ecdc4;
+            --secondary: #a855f7;
+            --accent: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --bg-dark: #0f0f1a;
+            --bg-card: rgba(255, 255, 255, 0.06);
+            --text: #f0f0f5;
+            --glow: 0 0 20px rgba(78, 205, 196, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: var(--bg-dark);
+            background-image: radial-gradient(ellipse at top, #1a0a2e 0%, transparent 50%), radial-gradient(ellipse at bottom, #0a1a2e 0%, transparent 50%);
+            min-height: 100vh;
+            color: var(--text);
+            overflow-x: hidden;
+            line-height: 1.9;
+        }
+
+        .bg-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            background-image: radial-gradient(2px 2px at 20px 30px, var(--primary), transparent), radial-gradient(2px 2px at 40px 70px, var(--secondary), transparent);
+            background-size: 200px 200px;
+            animation: particles 20s linear infinite;
+        }
+
+        @keyframes particles {
+            to {
+                background-position: 200px 200px;
+            }
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(15, 15, 26, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(78, 205, 196, 0.2);
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .back-btn,
+        .login-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: 'Cairo';
+            transition: all 0.3s;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .back-btn:hover,
+        .login-btn:hover {
+            background: var(--primary);
+            color: var(--bg-dark);
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            font-size: 0.85rem;
+        }
+
+        main {
+            position: relative;
+            z-index: 1;
+            padding: 100px 2rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeIn 0.5s;
+        }
+
+        .page-header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-header p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+        }
+
+        .contributions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .contribution-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(78, 205, 196, 0.2);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: all 0.4s ease;
+            animation: fadeIn 0.5s backwards;
+            position: relative;
+        }
+
+        .contribution-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(78, 205, 196, 0.15);
+        }
+
+        .contribution-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .contribution-type {
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        .contribution-type.file {
+            background: rgba(78, 205, 196, 0.2);
+            color: var(--primary);
+        }
+
+        .contribution-type.link {
+            background: rgba(168, 85, 247, 0.2);
+            color: var(--secondary);
+        }
+
+        .contribution-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contribution-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contribution-actions {
+            display: flex;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .action-btn {
+            flex: 1;
+            padding: 0.7rem 1rem;
+            border-radius: 10px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            cursor: pointer;
+            border: none;
+            font-family: 'Cairo';
+        }
+
+        .open-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--bg-dark);
+        }
+
+        .open-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 20px rgba(78, 205, 196, 0.4);
+        }
+
+        .download-btn {
+            background: rgba(34, 197, 94, 0.2);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+        }
+
+        .download-btn:hover {
+            background: var(--accent);
+            color: var(--bg-dark);
+        }
+
+        .delete-btn {
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid var(--danger);
+            color: var(--danger);
+            padding: 0.7rem;
+            min-width: auto;
+            flex: 0;
+        }
+
+        .delete-btn:hover {
+            background: var(--danger);
+            color: white;
+        }
+
+        .contribution-meta {
+            display: flex;
+            gap: 1rem;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(78, 205, 196, 0.1);
+        }
+
+        .subject-tag {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            background: rgba(34, 197, 94, 0.2);
+            color: var(--accent);
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            animation: fadeIn 0.5s;
+        }
+
+        .empty-state h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .empty-state p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1.5rem;
+        }
+
+        .empty-state .icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .add-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50px;
+            color: var(--bg-dark);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .add-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(78, 205, 196, 0.4);
+        }
+
+        .loading-container {
+            text-align: center;
+            padding: 4rem;
+        }
+
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(78, 205, 196, 0.2);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(78, 205, 196, 0.1);
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 0.7rem 1rem;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            main {
+                padding: 80px 1rem 1rem;
+            }
+
+            .contributions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contribution-actions {
+                flex-wrap: wrap;
+            }
+
+            .action-btn {
+                flex: 1 1 auto;
+                min-width: calc(50% - 0.4rem);
+            }
+
+            .delete-btn {
+                min-width: auto;
+                flex: 0 0 auto;
+            }
+        }
+
+        /* Modal Styles */
+        .modal-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 15, 26, 0.9);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-backdrop.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: var(--bg-dark);
+            border: 1px solid var(--primary);
+            border-radius: 20px;
+            padding: 2rem;
+            width: 90%;
+            max-width: 500px;
+            max-height: 85vh;
+            /* Prevent overflowing screen */
+            overflow-y: auto;
+            /* Enable scrolling */
+            position: relative;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 50px rgba(78, 205, 196, 0.2);
+            border-top: 4px solid var(--primary);
+        }
+
+        /* Custom Scrollbar for Modal */
+        .modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .modal-content::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+
+        .modal-content::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        .modal-content::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary);
+        }
+
+        .modal-backdrop.active .modal-content {
+            transform: scale(1);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close-modal:hover {
+            color: var(--danger);
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+            text-align: right;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(78, 205, 196, 0.3);
+            border-radius: 10px;
+            color: #fff;
+            font-family: 'Cairo';
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 15px rgba(78, 205, 196, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .radio-option {
+            flex: 1;
+            position: relative;
+        }
+
+        .radio-option input {
+            display: none;
+        }
+
+        .radio-option label {
+            display: block;
+            text-align: center;
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(78, 205, 196, 0.3);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .radio-option input:checked+label {
+            background: var(--primary);
+            color: var(--bg-dark);
+            font-weight: bold;
+            box-shadow: 0 0 15px rgba(78, 205, 196, 0.4);
+        }
+
+        .file-upload-box {
+            border: 2px dashed rgba(78, 205, 196, 0.3);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .file-upload-box:hover {
+            border-color: var(--primary);
+            background: rgba(78, 205, 196, 0.05);
+        }
+
+        .modal-footer {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-particles"></div>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-right"></i> الرئيسية</a>
+            <span class="logo" style="margin-right: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                <img src="Manhagko Logo.png" alt="منهجكو"
+                    style="height: 40px; width: 40px; object-fit: contain; border-radius: 8px; filter: drop-shadow(0 0 8px rgba(78,205,196,0.5));">
+                ✨ المساهمات
+            </span>
+        </div>
+        <div class="header-actions">
+            <div id="userInfo" class="user-info" style="display: none;">
+                <i class="fas fa-user-check"></i>
+                <span id="userEmail"></span>
+            </div>
+            <span id="loginHint"
+                style="font-size: 0.8rem; color: rgba(255,255,255,0.6); margin-left: 10px; display: none;">سجل الدخول
+                علشان تقدر تتحكم في الملفات اللي انت رفعتها</span>
+            <button id="loginBtn" class="login-btn" onclick="handleLogin()">
+                <i class="fas fa-sign-in-alt"></i> تسجيل دخول
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>✨ مساهمات الطلاب</h1>
+            <p> لو عدنك ملخصات انت عاملها او ملخصات جاهزه او لينكات مذاكره ارفعها </p>
+        </div>
+
+        <div id="contributions-container">
+            <div class="loading-container">
+                <div class="loader"></div>
+                <p>جاري تحميل المساهمات...</p>
+            </div>
+        </div>
+
+        <!-- Float Add Button -->
+        <button onclick="openAddModal()" class="add-btn"
+            style="position: fixed; bottom: 2rem; left: 2rem; z-index: 90; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <i class="fas fa-plus"></i> إضافة مساهمة
+        </button>
+    </main>
+
+    <!-- Add Contribution Modal -->
+    <div id="addModal" class="modal-backdrop">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeAddModal()"><i class="fas fa-times"></i></button>
+            <div class="page-header" style="margin-bottom: 2rem;">
+                <h2 style="font-size: 1.5rem; margin-bottom: 0;">إضافة مساهمة جديدة 📤</h2>
+            </div>
+
+            <form id="addForm" onsubmit="handleContributionSubmit(event)">
+                <div class="form-group">
+                    <label>عنوان المساهمة</label>
+                    <input type="text" class="form-control" id="contName" required
+                        placeholder="مثال: ملخص فيزياء الباب الأول">
+                </div>
+
+                <div class="form-group">
+                    <label>المادة</label>
+                    <select class="form-control" id="contSubject" required>
+                        <option value="math">Math Pure (رياضيات)</option>
+                        <option value="mechanics">Mechanics (ميكانيكا)</option>
+                        <option value="physics">Physics (فيزياء)</option>
+                        <option value="arabic">اللغة العربية</option>
+                        <option value="social">الدراسات الاجتماعية</option>
+                        <option value="english">English</option>
+                        <option value="other">أخرى</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>نوع المساهمة</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" name="contType" id="typeFile" value="file" checked
+                                onchange="toggleInputType()">
+                            <label for="typeFile"><i class="fas fa-file-upload"></i> ملف (PDF/Image)</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="contType" id="typeLink" value="link" onchange="toggleInputType()">
+                            <label for="typeLink"><i class="fas fa-link"></i> رابط خارجي</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fileInputGroup" class="form-group">
+                    <label>اختر الملف</label>
+                    <input type="file" class="form-control" id="contFile" accept=".pdf,.png,.jpg,.jpeg">
+                    <small style="color: rgba(255,255,255,0.5); display: block; margin-top: 0.5rem;">أقصى حجم 10
+                        ميجابايت</small>
+                </div>
+
+                <div id="linkInputGroup" class="form-group" style="display: none;">
+                    <label>رابط المساهمة</label>
+                    <input type="url" class="form-control" id="contUrl" placeholder="https://example.com/file">
+                </div>
+
+                <div class="form-group">
+                    <label>وصف إضافي (اختياري)</label>
+                    <textarea class="form-control" id="contDesc" rows="3"
+                        placeholder="اكتب وصف قصير لمحتوى المساهمة..."></textarea>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="action-btn open-btn" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> نشر المساهمة
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created with by BEBO | منهجكو</p>
+    </footer>
+
+    <!-- Google API Scripts -->
+    <script src="scripts/drive-init.js"></script>
+
+    <script>
+        const subjectNames = {
+            math: 'Math Pure',
+            mechanics: 'Mechanics',
+            physics: 'Physics',
+            arabic: 'اللغة العربية',
+            social: 'الدراسات',
+            english: 'English'
+        };
+
+        const subjectIcons = {
+            math: '📐',
+            mechanics: '⚙️',
+            physics: '⚡',
+            arabic: '📝',
+            social: '🗺️',
+            english: '📚'
+        };
+
+        let currentUserEmail = null;
+
+        // Handle login button
+        async function handleLogin() {
+            try {
+                await ManhagkoGoogle.requestAccessToken();
+                updateUserUI();
+                loadContributions(); // Reload to check ownership
+            } catch (error) {
+                console.error('Login error:', error);
+            }
+        }
+
+        // Update UI based on login state
+        function updateUserUI() {
+            const user = ManhagkoGoogle.getCurrentUser();
+            const loginBtn = document.getElementById('loginBtn');
+            const userInfo = document.getElementById('userInfo');
+            const userEmail = document.getElementById('userEmail');
+            const loginHint = document.getElementById('loginHint');
+
+            if (user && user.email) {
+                currentUserEmail = user.email;
+                loginBtn.style.display = 'none';
+                if (loginHint) loginHint.style.display = 'none';
+                userInfo.style.display = 'flex';
+                userEmail.textContent = user.name || user.email.split('@')[0];
+            } else {
+                currentUserEmail = null;
+                loginBtn.style.display = 'inline-flex';
+                if (loginHint) loginHint.style.display = 'inline';
+                userInfo.style.display = 'none';
+            }
+        }
+
+        // Check for session on load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Wait briefly for drive-init to potentially restore session (it happens fast but is async-ish)
+            setTimeout(updateUserUI, 1000);
+            // Also interval check for 5 seconds just in case
+            let checkCount = 0;
+            const initCheck = setInterval(() => {
+                const user = ManhagkoGoogle.getCurrentUser();
+                if (user) {
+                    updateUserUI();
+                    clearInterval(initCheck);
+                    loadContributions();
+                }
+                checkCount++;
+                if (checkCount > 10) clearInterval(initCheck);
+            }, 500);
+        });
+
+        // Delete contribution
+        async function deleteContribution(id, ownerEmail) {
+            if (currentUserEmail !== ownerEmail) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'غير مسموح',
+                    text: 'لا يمكنك حذف مساهمات الآخرين!',
+                    background: '#0f0f1a',
+                    color: '#fff',
+                    confirmButtonColor: '#4ecdc4'
+                });
+                return;
+            }
+
+            const result = await Swal.fire({
+                title: 'هل أنت متأكد؟',
+                text: 'سيتم حذف هذه المساهمة نهائياً',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#ef4444',
+                cancelButtonColor: '#6b7280',
+                confirmButtonText: 'نعم، احذف',
+                cancelButtonText: 'إلغاء',
+                background: '#0f0f1a',
+                color: '#fff'
+            });
+
+            if (result.isConfirmed) {
+                try {
+                    await ManhagkoGoogle.deleteContributionFromSheet(id, ownerEmail);
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'تم الحذف!',
+                        text: 'تم حذف المساهمة بنجاح.',
+                        background: '#0f0f1a',
+                        color: '#fff',
+                        confirmButtonColor: '#4ecdc4'
+                    });
+                    loadContributions();
+                } catch (error) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'خطأ',
+                        text: error.message || 'حدث خطأ أثناء الحذف',
+                        background: '#0f0f1a',
+                        color: '#fff',
+                        confirmButtonColor: '#4ecdc4'
+                    });
+                }
+            }
+        }
+
+        // ============ MODAL FUNCTIONS ============
+        function openAddModal() {
+            if (!ManhagkoGoogle.isSignedIn()) {
+                Swal.fire({
+                    icon: 'info',
+                    title: 'تنبيه',
+                    text: 'يجب عليك تسجيل الدخول أولاً لإضافة مساهمة',
+                    confirmButtonText: 'تسجيل الدخول',
+                    background: '#0f0f1a',
+                    color: '#fff'
+                }).then((result) => {
+                    if (result.isConfirmed) handleLogin();
+                });
+                return;
+            }
+            document.getElementById('addModal').classList.add('active');
+        }
+
+        function closeAddModal() {
+            document.getElementById('addModal').classList.remove('active');
+        }
+
+        function toggleInputType() {
+            const isFile = document.getElementById('typeFile').checked;
+            document.getElementById('fileInputGroup').style.display = isFile ? 'block' : 'none';
+            document.getElementById('linkInputGroup').style.display = isFile ? 'none' : 'block';
+
+            // Toggle required attributes to prevent validation error on hidden fields
+            document.getElementById('contFile').required = isFile;
+            document.getElementById('contUrl').required = !isFile;
+        }
+
+        // ============ SUBMIT HANDLER ============
+        async function handleContributionSubmit(e) {
+            e.preventDefault();
+
+            const user = ManhagkoGoogle.getCurrentUser();
+            if (!user) {
+                handleLogin();
+                return;
+            }
+
+            const name = document.getElementById('contName').value;
+            const subject = document.getElementById('contSubject').value;
+            const type = document.querySelector('input[name="contType"]:checked').value;
+            const desc = document.getElementById('contDesc').value;
+            let finalUrl = '';
+            let fileName = '';
+
+            // Close modal immediately
+            closeAddModal();
+
+            // Show loading with specific user text
+            Swal.fire({
+                title: 'جاري الرفع...',
+                text: 'من فضلك انتظر وسجل دخول بحساب جوجل',
+                allowOutsideClick: false,
+                didOpen: () => {
+                    Swal.showLoading();
+                },
+                background: '#0f0f1a',
+                color: '#fff'
+            });
+
+            try {
+                if (type === 'file') {
+                    const fileInput = document.getElementById('contFile');
+                    if (fileInput.files.length === 0) throw new Error('يرجى اختيار ملف');
+
+                    const file = fileInput.files[0];
+                    if (file.size > 10 * 1024 * 1024) throw new Error('حجم الملف كبير جداً (الحد الأقصى 10 ميجا)');
+
+
+                    fileName = file.name;
+
+                    // Update Loading Message: Step 1
+                    Swal.update({
+                        title: 'جاري رفع الملف... 📤',
+                        text: 'بيتم رفع الملف لجوجل درايف، ثواني...'
+                    });
+
+                    // Upload to Drive
+                    const driveData = await ManhagkoGoogle.uploadFileToDrive(file);
+                    finalUrl = driveData.webViewLink;
+                } else {
+                    finalUrl = document.getElementById('contUrl').value;
+                    fileName = 'رابط خارجي';
+                }
+
+                // Update Loading Message: Step 2
+                Swal.update({
+                    title: 'جاري حفظ البيانات... 💾',
+                    text: 'بيتم تسجيل المساهمة في قاعدة البيانات...'
+                });
+
+                // Add to Sheet
+                const contributionData = {
+                    id: Date.now().toString(), // Simple ID generation
+                    ownerEmail: user.email,
+                    name: user.name,
+                    subject: subject,
+                    type: type,
+                    url: finalUrl,
+                    fileName: fileName,
+                    description: desc,
+                    date: new Date().toLocaleDateString('ar-EG')
+                };
+
+                await ManhagkoGoogle.addContributionToSheet(contributionData);
+
+                // Success
+                document.getElementById('addForm').reset();
+
+                await Swal.fire({
+                    icon: 'success',
+                    title: 'تم النشر بنجاح! 🎉',
+                    text: 'شكراً لمساهمتك، هيتم إضافتها فوراً للقائمة.',
+                    background: '#0f0f1a',
+                    color: '#fff',
+                    showConfirmButton: false,
+                    timer: 2000
+                });
+
+                // Refresh Grid
+                loadContributions();
+
+            } catch (error) {
+                console.error('Submit Error:', error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'فشل النشر',
+                    text: error.message || 'حدث خطأ أثناء الرفع. تأكد من الإنترنت وحاول تاني.',
+                    background: '#0f0f1a',
+                    color: '#fff'
+                });
+            }
+        }
+
+        // Load contributions from Google Sheets
+        async function loadContributions() {
+            const container = document.getElementById('contributions-container');
+
+            try {
+                const contributions = await ManhagkoGoogle.getContributionsFromSheet();
+
+                // Filter out empty rows
+                const validContributions = contributions.filter(c => c.id && c.url);
+
+                if (validContributions.length === 0) {
+                    container.innerHTML = `
+                        <div class="empty-state">
+                            <div class="icon">📭</div>
+                            <h2>مافيش مساهمات لسه</h2>
+                            <p>كن أول من يساهم بملخص أو رابط مفيد!</p>
+                            <a href="index.html" class="add-btn">📤 أضف مساهمتك</a>
+                        </div>
+                    `;
+                    return;
+                }
+
+                let html = '<div class="contributions-grid">';
+                validContributions.forEach((c, index) => {
+                    const icon = subjectIcons[c.subject] || '📁';
+                    const subjectName = subjectNames[c.subject] || c.subject || 'عام';
+                    const isOwner = currentUserEmail && currentUserEmail === c.ownerEmail;
+
+                    // Build action buttons
+                    let actionsHtml = `
+                        <a href="${c.url}" target="_blank" class="action-btn open-btn">
+                            <i class="fas fa-external-link-alt"></i> فتح
+                        </a>
+                    `;
+
+                    // Add download button for files
+                    if (c.type === 'file' && c.fileName) {
+                        const downloadUrl = c.url.replace('/view', '/uc?export=download');
+                        actionsHtml += `
+                            <a href="${downloadUrl}" target="_blank" class="action-btn download-btn">
+                                <i class="fas fa-download"></i> تحميل
+                            </a>
+                        `;
+                    }
+
+                    // Add delete button only for owner
+                    if (isOwner) {
+                        actionsHtml += `
+                            <button onclick="deleteContribution('${c.id}', '${c.ownerEmail}')" class="action-btn delete-btn" title="حذف">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        `;
+                    }
+
+                    html += `
+                        <div class="contribution-card" style="animation-delay: ${index * 0.1}s;">
+                            <div class="contribution-header">
+                                <span class="subject-tag">${icon} ${subjectName}</span>
+                                <span class="contribution-type ${c.type}">${c.type === 'file' ? '📁 ملف' : '🔗 لينك'}</span>
+                            </div>
+                            <h3>${c.description || c.fileName || 'مساهمة مفيدة'}</h3>
+                            <p>👤 بواسطة: <strong>${c.name}</strong></p>
+                            <div class="contribution-actions">
+                                ${actionsHtml}
+                            </div>
+                            <div class="contribution-meta">
+                                <span>📅 ${c.date || 'بدون تاريخ'}</span>
+                            </div>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+                container.innerHTML = html;
+
+            } catch (error) {
+                console.error('Error loading contributions:', error);
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="icon">⚠️</div>
+                        <h2>حدث خطأ</h2>
+                        <p>لم نتمكن من تحميل المساهمات. تأكد من اتصالك بالإنترنت.</p>
+                        <button onclick="loadContributions()" class="add-btn">🔄 إعادة المحاولة</button>
+                    </div>
+                `;
+            }
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Wait for Google API to load
+            setTimeout(() => {
+                updateUserUI();
+                loadContributions();
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>

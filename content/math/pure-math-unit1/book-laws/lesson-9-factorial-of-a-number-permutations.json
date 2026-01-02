@@ -1,0 +1,33 @@
+{
+    "lessonTitle": "Factorial of a number, Permutations",
+    "items": [
+        {
+            "itemId": "M-U1-L9-Def-01",
+            "anchor": "factorial-definition",
+            "type": "Definition",
+            "title": "Factorial Definition",
+            "content": "Factorial of a positive integer n (written as $n!$ or $\\lfloor n$):\n$$ n! = n(n-1)(n-2) \\times ... \\times 3 \\times 2 \\times 1 $$"
+        },
+        {
+            "itemId": "M-U1-L9-Note-01",
+            "anchor": "factorial-properties",
+            "type": "Note",
+            "title": "Factorial Properties",
+            "content": "<ul>\n<li>$0! = 1$</li>\n<li>$1! = 1$</li>\n<li>$n! = n(n-1)!$</li>\n</ul>"
+        },
+        {
+            "itemId": "M-U1-L9-Def-02",
+            "anchor": "permutations-npr",
+            "type": "Definition",
+            "title": "Permutations (nPr)",
+            "content": "Number of permutations of n distinct objects taken r at a time:\n$$ ^nP_r = n(n-1)(n-2)...(n-r+1) $$\nwhere $r \\leq n, r \\in N, n \\in Z^+$. "
+        },
+        {
+            "itemId": "M-U1-L9-Law-01",
+            "anchor": "permutation-laws",
+            "type": "Laws",
+            "title": "Permutation Laws",
+            "content": "<ul>\n<li>$^nP_0 = 1$</li>\n<li>$^nP_r = \\frac{n!}{(n-r)!}$</li>\n</ul>"
+        }
+    ]
+}

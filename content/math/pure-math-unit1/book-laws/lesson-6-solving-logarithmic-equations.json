@@ -1,0 +1,19 @@
+{
+    "lessonTitle": "Solving logarithmic equations",
+    "items": [
+        {
+            "itemId": "M-U1-L6-Method-01",
+            "anchor": "method-equating-bases",
+            "type": "Method",
+            "title": "Method 1: Equating Bases",
+            "content": "If $\\log_a x = \\log_a y$, then $x = y$."
+        },
+        {
+            "itemId": "M-U1-L6-Method-02",
+            "anchor": "method-exponential-form",
+            "type": "Method",
+            "title": "Method 2: Exponential Form",
+            "content": "Convert logarithmic equation to exponential form ($y = \\log_a x \\rightarrow x = a^y$) to solve."
+        }
+    ]
+}

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فيزياء STEM 3</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #00f0ff;
+            --secondary: #ff00ea;
+            --bg-dark: #0a0a1a;
+            --bg-card: rgba(255, 255, 255, 0.05);
+            --text: #ffffff;
+            --glow: 0 0 20px var(--primary);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: var(--bg-dark);
+            background-image: radial-gradient(ellipse at top, #1a0a2e 0%, transparent 50%), radial-gradient(ellipse at bottom, #0a1a2e 0%, transparent 50%);
+            min-height: 100vh;
+            color: var(--text);
+            overflow-x: hidden;
+            line-height: 1.9;
+        }
+
+        .bg-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            background-image: radial-gradient(2px 2px at 20px 30px, var(--primary), transparent), radial-gradient(2px 2px at 40px 70px, var(--secondary), transparent);
+            background-size: 200px 200px;
+            animation: particles 20s linear infinite;
+        }
+
+        @keyframes particles {
+            to {
+                background-position: 200px 200px;
+            }
+        }
+
+        /* Back Button */
+        .back-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(0, 240, 255, 0.1);
+            border: 1px solid rgba(0, 240, 255, 0.3);
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: 'Cairo';
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .back-btn:hover {
+            background: var(--primary);
+            color: var(--bg-dark);
+            box-shadow: var(--glow);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(10, 10, 26, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .menu-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Cairo';
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .menu-btn:hover {
+            background: var(--primary);
+            color: var(--bg-dark);
+            box-shadow: var(--glow);
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: -360px;
+            width: 360px;
+            height: 100vh;
+            background: rgba(10, 10, 26, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 200;
+            transition: right 0.4s ease;
+            padding: 2rem 1rem;
+            border-left: 1px solid var(--primary);
+            overflow-y: auto;
+        }
+
+        .sidebar.active {
+            right: 0;
+        }
+
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(0, 240, 255, 0.3);
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: var(--primary);
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .chapter-title {
+            color: var(--secondary);
+            font-size: 1rem;
+            margin: 1.5rem 0 0.5rem;
+            padding: 0.5rem;
+            background: rgba(255, 0, 234, 0.1);
+            border-radius: 8px;
+        }
+
+        .lesson-item {
+            display: block;
+            padding: 0.8rem 1rem;
+            margin: 0.3rem 0;
+            background: var(--bg-card);
+            border: 1px solid transparent;
+            border-radius: 8px;
+            color: var(--text);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .lesson-item:hover,
+        .lesson-item.active {
+            border-color: var(--primary);
+            background: rgba(0, 240, 255, 0.1);
+            transform: translateX(-5px);
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 150;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        main {
+            position: relative;
+            z-index: 1;
+            padding: 100px 2rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .lesson-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            animation: fadeIn 0.5s;
+        }
+
+        .lesson-header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.6rem;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .lesson-header h2 {
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: normal;
+            font-size: 1rem;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 0.5s;
+        }
+
+        .card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 0 30px rgba(0, 240, 255, 0.1);
+        }
+
+        .card-title {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-title::before {
+            content: '◈';
+            color: var(--secondary);
+        }
+
+        .definition {
+            background: rgba(0, 240, 255, 0.05);
+            border-right: 3px solid var(--primary);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            direction: ltr;
+            text-align: left;
+            line-height: 1.8;
+        }
+
+        .explanation {
+            background: rgba(255, 0, 234, 0.05);
+            border-right: 3px solid var(--secondary);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .formula-box {
+            background: linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(255, 0, 234, 0.1));
+            border: 1px solid var(--primary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .note {
+            background: rgba(255, 200, 0, 0.1);
+            border-right: 3px solid #ffc800;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .note::before {
+            content: '⚡ ملاحظة: ';
+            color: #ffc800;
+            font-weight: bold;
+        }
+
+        .example {
+            border-color: #00ff88 !important;
+        }
+
+        .example .card-title::before {
+            content: '📝';
+        }
+
+        .problem {
+            background: rgba(0, 255, 136, 0.1);
+            border-right: 3px solid #00ff88;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .solution {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        .revision {
+            background: linear-gradient(135deg, rgba(0, 240, 255, 0.15), rgba(255, 0, 234, 0.15));
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .revision h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .revision ul {
+            list-style: none;
+        }
+
+        .revision li {
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            border-right: 3px solid var(--secondary);
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 4rem 2rem;
+            animation: fadeIn 0.5s;
+        }
+
+        .welcome h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--primary));
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 3s linear infinite;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes gradient {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .welcome p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .start-btn {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border: none;
+            color: var(--bg-dark);
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-family: 'Cairo';
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 1rem;
+        }
+
+        .start-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px var(--primary);
+        }
+
+        .keywords-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .keywords-table th {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: var(--bg-dark);
+            padding: 0.8rem;
+        }
+
+        .keywords-table td {
+            padding: 0.6rem;
+            border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+        }
+
+        .keywords-table tr:hover {
+            background: rgba(0, 240, 255, 0.05);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .feature {
+            background: var(--bg-card);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Lesson Images */
+        .lesson-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 2px solid var(--primary);
+            margin: 1.5rem auto;
+            display: block;
+            box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .lesson-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 40px rgba(0, 240, 255, 0.5);
+        }
+
+        .image-caption {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-top: -1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 0.7rem 1rem;
+            }
+
+            .logo {
+                font-size: 1rem;
+            }
+
+            .menu-btn {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.9rem;
+            }
+
+            main {
+                padding: 75px 0.8rem 1rem;
+                max-width: 100%;
+            }
+
+            .sidebar {
+                width: 100%;
+                right: -100%;
+            }
+
+            .sidebar.active {
+                right: 0;
+            }
+
+            .card {
+                padding: 1rem;
+                margin: 1rem 0;
+                border-radius: 12px;
+            }
+
+            .card-title {
+                font-size: 1rem;
+            }
+
+            .welcome {
+                padding: 2rem 1rem;
+            }
+
+            .welcome h1 {
+                font-size: 1.4rem;
+            }
+
+            .welcome p {
+                font-size: 0.95rem;
+            }
+
+            .start-btn {
+                padding: 0.8rem 2rem;
+                font-size: 1rem;
+            }
+
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.8rem;
+            }
+
+            .feature {
+                padding: 1rem;
+            }
+
+            .formula-box {
+                font-size: 0.85rem;
+                padding: 1rem;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .definition,
+            .explanation,
+            .note,
+            .problem,
+            .solution {
+                padding: 0.8rem;
+                font-size: 0.95rem;
+            }
+
+            .lesson-header h1 {
+                font-size: 1.2rem;
+            }
+
+            .lesson-header h2 {
+                font-size: 0.9rem;
+            }
+
+            .revision {
+                padding: 1.2rem;
+            }
+
+            .revision h3 {
+                font-size: 1.2rem;
+            }
+
+            .keywords-table {
+                font-size: 0.75rem;
+            }
+
+            .keywords-table th,
+            .keywords-table td {
+                padding: 0.4rem;
+            }
+
+            .lesson-image {
+                border-radius: 8px;
+                margin: 1rem auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .welcome h1 {
+                font-size: 1.2rem;
+            }
+
+            .formula-box {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-particles"></div>
+    <header>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <a href="../../index.html" class="back-btn">
+                <i class="fas fa-arrow-right"></i> الرئيسية
+            </a>
+            <span class="logo">⚡ PHYSICS STEM 3</span>
+        </div>
+        <button class="menu-btn" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i> الدروس
+        </button>
+    </header>
+    <div class="overlay" onclick="toggleSidebar()"></div>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>📚 فهرس الدروس</h3>
+            <button class="close-btn" onclick="toggleSidebar()">×</button>
+        </div>
+        <div class="chapter-title">🧲 الفصل الأول: التأثير المغناطيسي للتيار</div>
+        <div class="lesson-item" onclick="showLesson(1)">الدرس 1: معنى المجال المغناطيسي</div>
+        <div class="lesson-item" onclick="showLesson(2)">الدرس 2: المجال حول سلك مستقيم</div>
+        <div class="lesson-item" onclick="showLesson(3)">الدرس 3: المجال حول ملف دائري</div>
+        <div class="lesson-item" onclick="showLesson(4)">الدرس 4: المجال حول الملف اللولبي</div>
+        <div class="lesson-item" onclick="showLesson(5)">الدرس 5: القوة المغناطيسية على سلك</div>
+        <div class="lesson-item" onclick="showLesson(6)">الدرس 6: عزم الازدواج على ملف</div>
+        <div class="chapter-title">⚡ الفصل الثاني: الحث الكهرومغناطيسي</div>
+        <div class="lesson-item" onclick="showLesson(7)">الدرس 7: قانون فاراداي</div>
+        <div class="lesson-item" onclick="showLesson(8)">الدرس 8: قانون لنز</div>
+        <div class="lesson-item" onclick="showLesson(9)">الدرس 9: الحث المتبادل والذاتي</div>
+        <div class="lesson-item" onclick="showLesson(10)">الدرس 10: المولد الكهربي (الدينامو)</div>
+        <div class="lesson-item" onclick="showLesson(11)">الدرس 11: المحول الكهربي</div>
+        <div class="chapter-title">📖 ملحقات</div>
+        <div class="lesson-item" onclick="showLesson(12)">جدول الكلمات الشامل</div>
+        <div class="lesson-item" onclick="showLesson(13)">📝 ملخصات الدروس</div>
+        <div class="lesson-item" onclick="showLesson(14)">📖 التعريفات</div>
+        <div class="lesson-item" onclick="showLesson(15)">🔄 التحويلات</div>
+        <div class="lesson-item" onclick="showLesson(16)">📂 مصادر PDF</div>
+    </nav>
+    <main id="main-content"></main>
+
+    <!-- Load all lesson files -->
+    <script src="lessons/lesson1_full.js"></script>
+    <script src="lessons/lesson2_full.js"></script>
+    <script src="lessons/lessons3to6_full.js"></script>
+    <script src="lessons/lessons7to11_full.js"></script>
+    <script src="lessons/keywords_full.js"></script>
+    <script src="lessons/resources.js"></script>
+
+    <script>
+        function getWelcomeHTML() {
+            return `
+            <div class="welcome">
+                <h1>🚀 الفيزيكس ياباشا STEM 3</h1>
+                <p>الترم الأول - Created By BEBO</p>
+                <p>التأثير المغناطيسي للتيار + الحث الكهرومغناطيسي</p>
+                <div class="features">
+                    <div class="feature"><div class="feature-icon">📚</div>11 درس كامل</div>
+                    <div class="feature"><div class="feature-icon">📝</div>أمثلة محلولة</div>
+                    <div class="feature"><div class="feature-icon">🎯</div>شرح بالمصري</div>
+                    <div class="feature"><div class="feature-icon">📖</div>من الكتاب مباشرة</div>
+                </div>
+                <p style="color: var(--primary); margin-top: 1rem;">✅ كل درس مشروح بالتفصيل مع الشرح بالمصري</p>
+                <p style="color: var(--secondary);">✅ جدول كلمات شامل لترجمة أي سؤال</p>
+                <button class="start-btn" onclick="toggleSidebar()">خش ذاكر ←</button>
+            </div>`;
+        }
+
+        function showLesson(num) {
+            const main = document.getElementById('main-content');
+            let content = '';
+
+            switch (num) {
+                case 1: content = window.lesson1Full || '<p>Loading...</p>'; break;
+                case 2: content = window.lesson2Full || '<p>Loading...</p>'; break;
+                case 3: content = window.lesson3Full || '<p>Loading...</p>'; break;
+                case 4: content = window.lesson4Full || '<p>Loading...</p>'; break;
+                case 5: content = window.lesson5Full || '<p>Loading...</p>'; break;
+                case 6: content = window.lesson6Full || '<p>Loading...</p>'; break;
+                case 7: content = window.lesson7Full || '<p>Loading...</p>'; break;
+                case 8: content = window.lesson8Full || '<p>Loading...</p>'; break;
+                case 9: content = window.lesson9Full || '<p>Loading...</p>'; break;
+                case 10: content = window.lesson10Full || '<p>Loading...</p>'; break;
+                case 11: content = window.lesson11Full || '<p>Loading...</p>'; break;
+                case 12: content = window.keywordsTable || '<p>Loading...</p>'; break;
+                case 13: content = window.physicsSummaries || '<p>Loading...</p>'; break;
+                case 14: content = window.physicsDefinitions || '<p>Loading...</p>'; break;
+                case 15: content = window.physicsConversions || '<p>Loading...</p>'; break;
+                case 16: content = window.physicsPDFs || '<p>Loading...</p>'; break;
+                default: content = getWelcomeHTML();
+            }
+
+            main.innerHTML = content;
+
+            document.querySelectorAll('.lesson-item').forEach((el, i) => {
+                el.classList.remove('active');
+                if (i === num - 1) el.classList.add('active');
+            });
+
+            toggleSidebar();
+            if (window.MathJax) MathJax.typesetPromise();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+            document.querySelector('.overlay').classList.toggle('active');
+        }
+
+        // Initialize
+        document.getElementById('main-content').innerHTML = getWelcomeHTML();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+    "lessonTitle": "Solving exponential equations",
+    "items": [
+        {
+            "itemId": "M-U1-L2-Rule-01",
+            "anchor": "rules-exponential-equations",
+            "type": "Rules",
+            "title": "Rules of Solving Exponential Equations",
+            "content": "<ul>\n<li>If $x^n = x^m$, then $n = m$.</li>\n<li>If $x^n = y^n$, then:\n  <ul>\n  <li>$x = y$ (if n is odd)</li>\n  <li>$x = \\pm y$ (if n is even)</li>\n  <li>$n = 0$ (if $x \\neq y$)</li>\n  </ul>\n</li>\n</ul>"
+        }
+    ]
+}

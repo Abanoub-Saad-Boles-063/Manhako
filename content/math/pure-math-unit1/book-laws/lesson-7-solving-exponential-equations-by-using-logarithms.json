@@ -1,0 +1,12 @@
+{
+    "lessonTitle": "Solving exponential equations by using logarithms",
+    "items": [
+        {
+            "itemId": "M-U1-L7-Method-01",
+            "anchor": "using-logarithms-strategy",
+            "type": "Method",
+            "title": "Using Logarithms Strategy",
+            "content": "To solve equations where bases cannot be unified (e.g., $3^{5x-2} = 7^{x+1}$):\n1. Take logarithm for both sides.\n2. Apply power law ($ \\log a^n = n \\log a $).\n3. Solve the resulting algebraic equation."
+        }
+    ]
+}

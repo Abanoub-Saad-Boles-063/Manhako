@@ -1,0 +1,21 @@
+[
+    {
+        "issueId": 1,
+        "type": "Missing Asset",
+        "description": "Diagrams and Figures referenced in the text (e.g., 'In the opposite figure') are not extracted.",
+        "affectedLaws": [
+            "All"
+        ],
+        "actionRequired": "Extract images from PDF using image extraction tool and embed in content."
+    },
+    {
+        "issueId": 2,
+        "type": "Formatting",
+        "description": "Complex mathematical notations (vectors, matrices) are using MathJax/LaTeX. Verify fidelity against PDF visually.",
+        "affectedLaws": [
+            "U1-L1-Law-01",
+            "U1-L3-Law-01"
+        ],
+        "actionRequired": "Visual inspection."
+    }
+]

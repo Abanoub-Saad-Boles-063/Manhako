@@ -1,0 +1,142 @@
+Define	عرّف
+Explain	اشرح
+Calculate	احسب
+Determine	حدّد
+Identify	حدّد / ميّز
+Electric current	تيار كهربائي
+Current intensity (I)	شدة التيار (I)
+Conductor	موصل
+Wire	سلك
+Current-carrying wire	سلك يمر به تيار
+Electric charges	شحنات كهربائية
+Electrons	إلكترونات
+Motion of electrons	حركة الإلكترونات
+Magnetism	المغناطيسية
+Electromagnetism	الكهرومغناطيسية
+Magnet	مغناطيس
+Magnetic effect of electric current	التأثير المغناطيسي للتيار الكهربائي
+Magnetic field	مجال مغناطيسي
+Magnetic field lines	خطوط المجال المغناطيسي
+Imaginary lines	خطوط تخيلية
+Shape of magnetic field	شكل المجال المغناطيسي
+Direction of magnetic field	اتجاه المجال المغناطيسي
+Magnetic field density (B)	كثافة الفيض/المجال المغناطيسي (B)
+Magnetic flux density (B)	كثافة الفيض المغناطيسي (B)
+Field intensity	شدة المجال
+North pole (N)	القطب الشمالي (N)
+South pole (S)	القطب الجنوبي (S)
+Compass	بوصلة
+Compass needle	إبرة البوصلة
+Deflection	انحراف
+Closed loops	حلقات مغلقة
+Continuous curves	منحنيات متصلة
+Magnetic flux (Φm)	الفيض المغناطيسي (Φm)
+Surface area (A)	مساحة السطح (A)
+Normal (perpendicular)	عمودي / العمود المقام
+Angle (θ)	زاوية (θ)
+Weber (Wb)	ويبر (Wb)
+Tesla (T)	تسلا (T)
+Wb/m²	ويبر لكل متر مربع
+Magnetic permeability (μ)	النفاذية المغناطيسية (μ)
+Permeability of medium	نفاذية الوسط
+Ability of medium to penetrate magnetic flux lines	قدرة الوسط على السماح بمرور خطوط الفيض
+Air permeability (μair)	نفاذية الهواء (μair)
+Soft iron	حديد لين
+Iron core	قلب حديدي
+High permeability	نفاذية عالية
+Straight conductor	موصل مستقيم
+Straight current-carrying wire	سلك مستقيم يمر به تيار
+Concentric circles	دوائر متحدة المركز
+Distance (d)	المسافة (d)
+Ampere's circular law	قانون أمبير الدائري
+Ampere right hand rule	قاعدة أمبير لليد اليمنى
+Conventional current	التيار الاصطلاحي
+Direction of the magnetic field	اتجاه المجال المغناطيسي
+Circular coil (loop)	ملف دائري (حلقة)
+Radius (r)	نصف القطر (r)
+Number of turns (N)	عدد اللفات (N)
+Center of the coil	مركز الملف
+Uniform magnetic field	مجال مغناطيسي منتظم
+Cork screw rule (Maxwell’s screw rule)	قاعدة المسمار (قاعدة ماكسويل)
+Clockwise rule (polarity coil)	قاعدة عقارب الساعة (قطبية الملف)
+Anticlockwise	عكس اتجاه عقارب الساعة
+Circumference	محيط
+Solenoid	ملف لولبي / سولينويد
+Long coil	ملف طويل
+Axis	محور
+Turns per unit length (n)	عدد اللفات لكل وحدة طول (n)
+Interior axis	المحور الداخلي
+Bar magnet	مغناطيس قضيب
+Neutral point	نقطة التعادل
+Total magnetic flux density (Bt)	كثافة الفيض الكلية (Bt)
+Vanishes	تنعدم
+Opposite directions	اتجاهان متضادان
+Magnetic force (F)	قوة مغناطيسية (F)
+Perpendicular	عمودي
+Length of wire (l or L)	طول السلك (l أو L)
+Fleming left hand rule	قاعدة فلمنج لليد اليسرى
+Direction of motion	اتجاه الحركة
+Maximum value	أقصى قيمة
+Parallel	موازي
+Sin θ	جا θ (sin θ)
+Magnetic torque (τ)	عزم مغناطيسي (τ)
+Rectangular coil	ملف مستطيل
+Area of the coil (A)	مساحة الملف (A)
+Normal to the coil’s plane	العمودي على مستوى الملف
+Magnetic dipole moment (md)	العزم ثنائي القطب المغناطيسي (md)
+Magnetic moment of the loop	العزم المغناطيسي للحلقة
+Galvanometer	جلفانومتر
+Electric motor	محرك كهربائي
+Electromagnetic induction	الحث الكهرومغناطيسي
+Induced electromotive force (emf)	قوة دافعة كهربائية مستحثة (emf)
+Induced current	تيار مستحث
+Changing magnetic field	مجال مغناطيسي متغير
+Faraday’s experiment	تجربة فاراداي
+Faraday’s laws	قوانين فاراداي
+Rate of change	معدل التغير
+Time interval (Δt)	الفترة الزمنية (Δt)
+Variation (ΔΦ)	التغير (ΔΦ)
+Negative sign	الإشارة السالبة
+Oppose	يُعارِض
+Lenz’s law	قانون لنز
+Polarity	قطبية
+Repulsion	تنافر
+Attraction	تجاذب
+Mutual induction	الحث المتبادل
+Primary coil	الملف الابتدائي
+Secondary coil	الملف الثانوي
+Rheostat	ريوستات / مقاومة متغيرة
+Switch on / switch off	تشغيل / إيقاف
+Coefficient of mutual induction (M)	معامل الحث المتبادل (M)
+Mutual inductance	محاثة متبادلة
+Self induction	الحث الذاتي
+Self inductance (L)	محاثة ذاتية (L)
+Inductance	محاثة
+Henry (H)	هنري (H)
+Neon lamp	مصباح نيون
+Potential difference	فرق جهد
+Electric generator	مولد كهربائي
+Dynamo	دينامو
+Alternating current (AC)	تيار متردد (AC)
+Direct current (DC)	تيار مستمر (DC)
+Frequency (f)	تردد (f)
+Armature	عضو دوّار / ملف العضو الدوار
+Slip rings	حلقات انزلاق
+Brushes (carbon/graphite)	فرش (كربونية/جرافيت)
+External circuit	دائرة خارجية
+Instantaneous value	قيمة لحظية
+Resistance (R)	مقاومة (R)
+Electric transformer	محول كهربائي
+Step-up transformer	محول رافع للجهد
+Step-down transformer	محول خافض للجهد
+Primary	ابتدائي
+Secondary	ثانوي
+Number of turns (Np, Ns)	عدد اللفات (Np, Ns)
+Transformer ratio (K)	نسبة التحويل (K)
+Input power	القدرة الداخلة
+Output power	القدرة الخارجة
+Efficiency (η)	الكفاءة (η)
+Eddy currents	تيارات دوامية
+Heating effect	تأثير حراري
+Laminated iron core	قلب حديدي مُصفّح
+Conservation of energy	قانون بقاء الطاقة

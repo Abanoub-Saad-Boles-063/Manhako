@@ -1,0 +1,12 @@
+{
+    "lessonTitle": "Counting Principle",
+    "items": [
+        {
+            "itemId": "M-U1-L8-Def-01",
+            "anchor": "fundamental-counting-principle",
+            "type": "Definition",
+            "title": "Fundamental Counting Principle",
+            "content": "If the number of ways to perform task 1 = m, task 2 = l, task 3 = n... then methods to perform them together:\n$$ \\text{Total Ways} = m \\times l \\times n \\times ... $$"
+        }
+    ]
+}

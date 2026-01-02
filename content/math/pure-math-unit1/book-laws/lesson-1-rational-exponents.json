@@ -1,0 +1,33 @@
+{
+    "lessonTitle": "Rational Exponents",
+    "items": [
+        {
+            "itemId": "M-U1-L1-Law-01",
+            "anchor": "laws-of-exponents",
+            "type": "Laws",
+            "title": "Laws of Exponents",
+            "content": "<ul>\n<li>$x^n \\times x^m = x^{n+m}$</li>\n<li>$x^n \\div x^m = x^{n-m}$</li>\n<li>$(x^n)^m = x^{nm}$</li>\n<li>$(xy)^n = x^n \\times y^n$</li>\n<li>$(x \\div y)^n = x^n \\div y^n$</li>\n</ul>"
+        },
+        {
+            "itemId": "M-U1-L1-Def-01",
+            "anchor": "rational-exponents-definition",
+            "type": "Definition",
+            "title": "Rational Exponents Definition",
+            "content": "$$ x^{\\frac{m}{n}} = \\sqrt[n]{x^m} = (\\sqrt[n]{x})^m $$"
+        },
+        {
+            "itemId": "M-U1-L1-Note-01",
+            "anchor": "notes-roots",
+            "type": "Note",
+            "title": "Important Notes on Roots",
+            "content": "<ul>\n<li>If n is an **even** number, then x is a real **non-negative** number.</li>\n<li>If n is an **odd** number, then x is a **real** number.</li>\n</ul>"
+        },
+        {
+            "itemId": "M-U1-L1-Rev-01",
+            "anchor": "repeated-multiplication",
+            "type": "Review",
+            "title": "Repeated Multiplication Review",
+            "content": "<ul>\n<li>$x \\times x \\times ... \\times x = x^n$ (where $x \\in R, n \\in Z+$)</li>\n<li>$x^0 = 1$ (where $x \\in R - \\{0\\}$)</li>\n<li>$x^{-n} = \\frac{1}{x^n}$ (where $x \\in R - \\{0\\}$)</li>\n</ul>"
+        }
+    ]
+}

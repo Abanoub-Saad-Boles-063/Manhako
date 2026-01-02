@@ -1,0 +1,26 @@
+{
+    "lessonTitle": "Properties of logarithms",
+    "items": [
+        {
+            "itemId": "M-U1-L5-Law-01",
+            "anchor": "log-properties",
+            "type": "Laws",
+            "title": "Key Properties of Logarithms",
+            "content": "<ol>\n<li>$\\log x + \\log y = \\log(xy)$</li>\n<li>$\\log x - \\log y = \\log(\\frac{x}{y})$</li>\n<li>$\\log x^n = n \\log x$</li>\n<li>$\\log_x x = 1$</li>\n<li>$\\log_x 1 = 0$</li>\n</ol>"
+        },
+        {
+            "itemId": "M-U1-L5-Law-02",
+            "anchor": "change-of-base",
+            "type": "Laws",
+            "title": "Change of Base & Inverse",
+            "content": "<ul>\n<li>**Base changing property:** $\\log_y x = \\frac{\\log_n x}{\\log_n y}$</li>\n<li>**Multiplicative inverse:** $\\log_y x = \\frac{1}{\\log_x y}$</li>\n</ul>"
+        },
+        {
+            "itemId": "M-U1-L5-Note-01",
+            "anchor": "common-logarithm",
+            "type": "Note",
+            "title": "Common Logarithm",
+            "content": "If the base is not mentioned, it is 10.\n<ul>\n<li>$\\log 10 = 1$</li>\n<li>$\\log 100 = 2$</li>\n<li>$\\log 0.1 = -1$</li>\n</ul>"
+        }
+    ]
+}

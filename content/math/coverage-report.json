@@ -1,0 +1,82 @@
+{
+    "reportGeneratedAt": "2026-01-02T00:00:00",
+    "status": "Verified Strict Extraction",
+    "totalLessons": 10,
+    "totalItems": 24,
+    "coverage": [
+        {
+            "lesson": 1,
+            "title": "Rational Exponents",
+            "itemsExtracted": 4,
+            "pageRange": "5-8",
+            "status": "Complete (Matches Book)"
+        },
+        {
+            "lesson": 2,
+            "title": "Solving exponential equations",
+            "itemsExtracted": 1,
+            "pageRange": "9-12",
+            "status": "Complete (Matches Book)"
+        },
+        {
+            "lesson": 3,
+            "title": "Applications on solving exponential equations",
+            "itemsExtracted": 1,
+            "pageRange": "13-15",
+            "status": "Complete (Matches Book)"
+        },
+        {
+            "lesson": 4,
+            "title": "The logarithmic function",
+            "itemsExtracted": 2,
+            "pageRange": "16-18",
+            "status": "Complete (Matches Book)"
+        },
+        {
+            "lesson": 5,
+            "title": "Properties of logarithms",
+            "itemsExtracted": 3,
+            "pageRange": "19-21",
+            "status": "Complete (Matches Book)"
+        },
+        {
+            "lesson": 6,
+            "title": "Solving logarithmic equations",
+            "itemsExtracted": 2,
+            "pageRange": "22-24",
+            "status": "Complete (Matches Book)"
+        },
+        {
+            "lesson": 7,
+            "title": "Solving exponential equations by using logarithms",
+            "itemsExtracted": 1,
+            "pageRange": "25-27",
+            "status": "Complete (Matches Book)"
+        },
+        {
+            "lesson": 8,
+            "title": "Counting Principle",
+            "itemsExtracted": 1,
+            "pageRange": "28-30",
+            "status": "Complete (Matches Book)"
+        },
+        {
+            "lesson": 9,
+            "title": "Factorial of a number, Permutations",
+            "itemsExtracted": 4,
+            "pageRange": "31-34",
+            "status": "Complete (Matches Book)"
+        },
+        {
+            "lesson": 10,
+            "title": "Combinations",
+            "itemsExtracted": 2,
+            "pageRange": "35-38",
+            "status": "Complete (Matches Book)"
+        }
+    ],
+    "verificationNotes": [
+        "Confirmed strict extraction from 'Term 1/Math/كتاب Math Pure.pdf'",
+        "Keywords and PDF Resources sections preserved."
+    ]
+}

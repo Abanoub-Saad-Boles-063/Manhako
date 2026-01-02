@@ -1,0 +1,12 @@
+{
+    "lessonTitle": "Applications on solving exponential equations",
+    "items": [
+        {
+            "itemId": "M-U1-L3-Note-01",
+            "anchor": "applications-note",
+            "type": "Note",
+            "title": "Note on Applications",
+            "content": "This lesson focuses on solving complex exponential equations (e.g., quadratic forms like $49^x - 50 \\times 7^x + 49 = 0$). Refer to solved examples in the book."
+        }
+    ]
+}

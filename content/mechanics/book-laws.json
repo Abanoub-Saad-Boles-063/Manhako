@@ -1,0 +1,231 @@
+{
+    "unitTitle": "Unit 1: Statics",
+    "lessons": [
+        {
+            "lessonNumber": 1,
+            "title": "Moment of a force about a point in 2-D system",
+            "pageRange": "41-42",
+            "items": [
+                {
+                    "type": "Definition",
+                    "title": "Vector product of two vectors",
+                    "body": "The vector product of two vectors $\\vec{A} = (x_1, y_1)$ and $\\vec{B} = (x_2, y_2)$ denoted by $\\vec{A} \\times \\vec{B}$ and:\n$$ \\vec{A} \\times \\vec{B} = (x_1, y_1) \\times (x_2, y_2) = (x_1 y_2 - x_2 y_1) \\vec{k} $$",
+                    "page": 42
+                },
+                {
+                    "type": "Definition",
+                    "title": "Moment of a force",
+                    "body": "Moment of a force ($\\vec{F}$) about a point (O) and denoted by $\\vec{M}_O$:\n$$ \\vec{M}_O = \\vec{r} \\times \\vec{F} $$",
+                    "page": 42
+                },
+                {
+                    "type": "Note",
+                    "title": "Algebraic measure of the moment",
+                    "body": "<ul>\n<li>If $\\vec{F}$ tends to rotate the body about O <strong>anticlockwise</strong>, the algebraic measure is <strong>positive (+)</strong>.</li>\n<li>If $\\vec{F}$ tends to rotate the body about O <strong>clockwise</strong>, the algebraic measure is <strong>negative (-)</strong>.</li>\n</ul>",
+                    "page": 42
+                },
+                {
+                    "type": "Formula",
+                    "title": "Norm of the moment",
+                    "body": "$$ ||\\vec{M}_O|| = F \\times L $$\n$$ L = \\frac{||\\vec{M}_O||}{F} $$\nWhere L is the length of the perpendicular drawn from the center of moment O to the line of action of the force $\\vec{F}$.",
+                    "page": 42
+                },
+                {
+                    "type": "Note",
+                    "title": "Important Note",
+                    "body": "The moment of a force about any point on its line of action equals <strong>zero</strong>.",
+                    "page": 42
+                }
+            ]
+        },
+        {
+            "lessonNumber": 2,
+            "title": "Theorem of moments",
+            "pageRange": "45-46",
+            "items": [
+                {
+                    "type": "Theorem",
+                    "title": "General theorem of moments",
+                    "body": "The sum of algebraic measures of moments of a set of forces about a point equals the moment of the resultant about the same point.",
+                    "page": 45
+                },
+                {
+                    "type": "Note",
+                    "title": "Line of action positions",
+                    "body": "<ul>\n<li>If $\\vec{M}_O = \\vec{M}_H$, then the line of action of $\\vec{R}$ is parallel to $\\overline{OH}$.</li>\n<li>If $\\vec{M}_O = -\\vec{M}_H$, then the line of action of $\\vec{R}$ bisects $\\overline{OH}$.</li>\n<li>If $\\vec{M}_O = \\vec{0}$, then the line of action of $\\vec{R}$ passes through point O.</li>\n</ul>",
+                    "page": 46
+                }
+            ]
+        },
+        {
+            "lessonNumber": 3,
+            "title": "Moment of a force about a point in 3-D coordinate system",
+            "pageRange": "49",
+            "items": [
+                {
+                    "type": "Formula",
+                    "title": "Moment Vector in 3D",
+                    "body": "$$ \\vec{M}_O = \\vec{r} \\times \\vec{F} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ x & y & z \\\\ F_x & F_y & F_z \\end{vmatrix} $$",
+                    "page": 49
+                },
+                {
+                    "type": "Formula",
+                    "title": "Components of moment",
+                    "body": "<ul>\n<li>Component of moment about x-axis: $M_x = yF_z - zF_y$</li>\n<li>Component of moment about y-axis: $M_y = zF_x - xF_z$</li>\n<li>Component of moment about z-axis: $M_z = xF_y - yF_x$</li>\n</ul>",
+                    "page": 49
+                },
+                {
+                    "type": "Formula",
+                    "title": "Perpendicular distance",
+                    "body": "$$ L = \\frac{||\\vec{M}_O||}{||\\vec{F}||} $$",
+                    "page": 49
+                }
+            ]
+        },
+        {
+            "lessonNumber": 4,
+            "title": "Resultant of two parallel forces",
+            "pageRange": "52-53",
+            "items": [
+                {
+                    "type": "Rule",
+                    "title": "Case 1: Same direction",
+                    "body": "If $\\vec{F}_1$ and $\\vec{F}_2$ are parallel and in the same direction:\n<ul>\n<li>$R = F_1 + F_2$</li>\n<li>Direction: Same as $\\vec{F}_1$ and $\\vec{F}_2$</li>\n<li>Point of action divides the distance between them internally inversely proportional to ratio of forces: $F_1 \\times AC = F_2 \\times BC$</li>\n</ul>",
+                    "page": 52
+                },
+                {
+                    "type": "Rule",
+                    "title": "Case 2: Opposite directions",
+                    "body": "If $\\vec{F}_1$ and $\\vec{F}_2$ are parallel and in opposite directions ($F_1 > F_2$):\n<ul>\n<li>$R = F_1 - F_2$</li>\n<li>Direction: Same as the larger force ($\\vec{F}_1$)</li>\n<li>Point of action divides the distance between them externally inversely proportional to ratio of forces: $F_1 \\times AC = F_2 \\times BC$</li>\n</ul>",
+                    "page": 53
+                }
+            ]
+        },
+        {
+            "lessonNumber": 5,
+            "title": "Resultant of set of parallel forces",
+            "pageRange": "56",
+            "items": [
+                {
+                    "type": "Formula",
+                    "title": "Magnitude and Direction",
+                    "body": "Algebraic sum of forces: $R = \\sum F$",
+                    "page": 56
+                },
+                {
+                    "type": "Theorem",
+                    "title": "Line of Action",
+                    "body": "Sum of moments of forces about a point = Moment of Resultant about same point.\n$$ \\sum (F_i \\times x_i) = R \\times x $$",
+                    "page": 56
+                }
+            ]
+        },
+        {
+            "lessonNumber": 6,
+            "title": "Equilibrium a set of coplanar parallel forces",
+            "pageRange": "59",
+            "items": [
+                {
+                    "type": "Condition",
+                    "title": "Conditions of Equilibrium",
+                    "body": "A rigid body is in equilibrium under coplanar parallel forces if:\n1. Algebraic sum of forces equals zero ($R = 0$).\n2. Algebraic sum of moments about any point equals zero ($\\sum M = 0$).",
+                    "page": 59
+                }
+            ]
+        },
+        {
+            "lessonNumber": 7,
+            "title": "The Couple",
+            "pageRange": "63-65",
+            "items": [
+                {
+                    "type": "Definition",
+                    "title": "Couple",
+                    "body": "A system of two forces of equal magnitudes and in opposite directions and acting in different lines of action.",
+                    "page": 64
+                },
+                {
+                    "type": "Theorem",
+                    "title": "Moment of a Couple",
+                    "body": "The moment of a couple is a <strong>constant vector</strong> does not dependent on the point about which we take the moments of the two forces.\n$$ \\vec{M} = \\vec{BA} \\times \\vec{F} = \\vec{AB} \\times (-\\vec{F}) $$",
+                    "page": 64
+                },
+                {
+                    "type": "Formula",
+                    "title": "Norm of the moment",
+                    "body": "Norm of the moment of the couple = magnitude of one of the two forces × the perpendicular distance between the line of action of two forces.\n$$ M = F \\times L $$",
+                    "page": 64
+                },
+                {
+                    "type": "Note",
+                    "title": "Sign of algebraic moment",
+                    "body": "<ul>\n<li>Negative if rotation is clockwise.</li>\n<li>Positive if rotation is anticlockwise.</li>\n</ul>",
+                    "page": 64
+                },
+                {
+                    "type": "Definition",
+                    "title": "Equilibrium and Equivalence",
+                    "body": "<ul>\n<li>If two couples are in <strong>equilibrium</strong>, then the sum of their moments = zero ($M_1 + M_2 = 0$).</li>\n<li>If two couples are <strong>equivalent</strong>, then $M_1 = M_2$.</li>\n</ul>",
+                    "page": 64
+                }
+            ]
+        },
+        {
+            "lessonNumber": 8,
+            "title": "Resultant couple (first case)",
+            "pageRange": "66-68",
+            "items": [
+                {
+                    "type": "Case",
+                    "title": "First case",
+                    "body": "If a set of forces form many couples, then the set is equivalent a resultant couple.\nIts moment = the sum of algebraic measure of the moment of these couples.\n$$ M = M_1 + M_2 + ... + M_n $$",
+                    "page": 67
+                }
+            ]
+        },
+        {
+            "lessonNumber": 9,
+            "title": "Resultant couple (second and third case)",
+            "pageRange": "70-72",
+            "items": [
+                {
+                    "type": "Case",
+                    "title": "Second case",
+                    "body": "A system of coplanar forces is said to be equivalent to a couple if the following two conditions are satisfied together:\n1. The sum of the algebraic components of the forces in any direction = zero.\n2. The sum of the moment of the forces about any point $\\ne 0$.",
+                    "page": 71
+                },
+                {
+                    "type": "Case",
+                    "title": "Third case",
+                    "body": "If the sum of the algebraic measure of the moment of a system of coplanar forces with respect to <strong>three non collinear points</strong> in its plane is constant and is not equal to zero, this system equivalent to a couple the algebraic measure of its moment equals this constant.",
+                    "page": 71
+                }
+            ]
+        },
+        {
+            "lessonNumber": 10,
+            "title": "Resultant couple (fourth case)",
+            "pageRange": "74-75",
+            "items": [
+                {
+                    "type": "Case",
+                    "title": "Fourth case",
+                    "body": "If three coplanar forces act on a rigid body and are completely represented by the sides of a triangle taken the same way round, then this system is equivalent to a couple.",
+                    "page": 74
+                },
+                {
+                    "type": "Formula",
+                    "title": "Magnitude of Moment",
+                    "body": "The magnitude of its moment = 2 × the area of the triangle × the magnitude of the force represented the unit length.\n$$ ||\\vec{M}|| = 2 \\times \\text{Area} \\times \\frac{F}{L} $$",
+                    "page": 74
+                },
+                {
+                    "type": "Note",
+                    "title": "Generalization",
+                    "body": "This rule is generalized for more than three forces.",
+                    "page": 74
+                }
+            ]
+        }
+    ]
+}

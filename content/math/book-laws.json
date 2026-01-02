@@ -1,0 +1,201 @@
+{
+    "unitTitle": "Unit 1: Exponents, Logarithms, Permutations and Combinations",
+    "lessons": [
+        {
+            "lessonNumber": 1,
+            "title": "Rational Exponents",
+            "pageRange": "5-8",
+            "items": [
+                {
+                    "type": "Laws",
+                    "title": "Laws of Exponents",
+                    "body": "<ul>\n<li>$x^n \\times x^m = x^{n+m}$</li>\n<li>$x^n \\div x^m = x^{n-m}$</li>\n<li>$(x^n)^m = x^{nm}$</li>\n<li>$(xy)^n = x^n \\times y^n$</li>\n<li>$(x \\div y)^n = x^n \\div y^n$</li>\n</ul>",
+                    "page": 5
+                },
+                {
+                    "type": "Definition",
+                    "title": "Rational Exponents",
+                    "body": "$$ x^{\\frac{m}{n}} = \\sqrt[n]{x^m} = (\\sqrt[n]{x})^m $$",
+                    "page": 5
+                },
+                {
+                    "type": "Notes",
+                    "title": "Important Notes",
+                    "body": "<ul>\n<li>If n is an **even** number, then x is a real **non-negative** number.</li>\n<li>If n is an **odd** number, then x is a **real** number.</li>\n</ul>",
+                    "page": 5
+                },
+                {
+                    "type": "Review",
+                    "title": "Repeated Multiplication",
+                    "body": "<ul>\n<li>$x \\times x \\times ... \\times x = x^n$ (where $x \\in R, n \\in Z+$)</li>\n<li>$x^0 = 1$ (where $x \\in R - \\{0\\}$)</li>\n<li>$x^{-n} = \\frac{1}{x^n}$ (where $x \\in R - \\{0\\}$)</li>\n</ul>",
+                    "page": 5
+                }
+            ]
+        },
+        {
+            "lessonNumber": 2,
+            "title": "Solving exponential equations",
+            "pageRange": "9-12",
+            "items": [
+                {
+                    "type": "Rules",
+                    "title": "Rules of solving exponential equations",
+                    "body": "<ul>\n<li>If $x^n = x^m$, then $n = m$.</li>\n<li>If $x^n = y^n$, then:\n  <ul>\n  <li>$x = y$ (if n is odd)</li>\n  <li>$x = \\pm y$ (if n is even)</li>\n  <li>$n = 0$ (if $x \\neq y$)</li>\n  </ul>\n</li>\n</ul>",
+                    "page": 9
+                }
+            ]
+        },
+        {
+            "lessonNumber": 3,
+            "title": "Applications on solving exponential equations",
+            "pageRange": "13-15",
+            "items": [
+                {
+                    "type": "Note",
+                    "title": "Applications",
+                    "body": "This lesson focuses on solving complex exponential equations (e.g., quadratic forms like $49^x - 50 \\times 7^x + 49 = 0$). Refer to solved examples in the book.",
+                    "page": 13
+                }
+            ]
+        },
+        {
+            "lessonNumber": 4,
+            "title": "The logarithmic function and its relationship with exponential function",
+            "pageRange": "16-18",
+            "items": [
+                {
+                    "type": "Definition",
+                    "title": "Logarithmic Function",
+                    "body": "If $a \\in R^+ - \\{1\\}$, where $y = \\log_a x$ (logarithmic form), it can be converted to the exponential form:\n$$ x = a^y $$",
+                    "page": 16
+                },
+                {
+                    "type": "Note",
+                    "title": "Notice that",
+                    "body": "<ul>\n<li>There is no logarithm for a **negative number**.</li>\n<li>There is no logarithm for **Zero**.</li>\n</ul>",
+                    "page": 16
+                }
+            ]
+        },
+        {
+            "lessonNumber": 5,
+            "title": "Properties of logarithms",
+            "pageRange": "19-21",
+            "items": [
+                {
+                    "type": "Laws",
+                    "title": "Key Properties",
+                    "body": "<ol>\n<li>$\\log x + \\log y = \\log(xy)$</li>\n<li>$\\log x - \\log y = \\log(\\frac{x}{y})$</li>\n<li>$\\log x^n = n \\log x$</li>\n<li>$\\log_x x = 1$</li>\n<li>$\\log_x 1 = 0$</li>\n</ol>",
+                    "page": 19
+                },
+                {
+                    "type": "Laws",
+                    "title": "Change of Base & Inverse",
+                    "body": "<ul>\n<li>**Base changing property:** $\\log_y x = \\frac{\\log_n x}{\\log_n y}$</li>\n<li>**Multiplicative inverse:** $\\log_y x = \\frac{1}{\\log_x y}$</li>\n</ul>",
+                    "page": 19
+                },
+                {
+                    "type": "Note",
+                    "title": "Common Logarithm",
+                    "body": "If the base is not mentioned, it is 10.\n<ul>\n<li>$\\log 10 = 1$</li>\n<li>$\\log 100 = 2$</li>\n<li>$\\log 0.1 = -1$</li>\n</ul>",
+                    "page": 19
+                }
+            ]
+        },
+        {
+            "lessonNumber": 6,
+            "title": "Solving logarithmic equations",
+            "pageRange": "22-24",
+            "items": [
+                {
+                    "type": "Method",
+                    "title": "Method 1: Equating Bases",
+                    "body": "If $\\log_a x = \\log_a y$, then $x = y$.",
+                    "page": 22
+                },
+                {
+                    "type": "Method",
+                    "title": "Method 2: Exponential Form",
+                    "body": "Convert logarithmic equation to exponential form ($y = \\log_a x \\rightarrow x = a^y$) to solve.",
+                    "page": 22
+                }
+            ]
+        },
+        {
+            "lessonNumber": 7,
+            "title": "Solving exponential equations by using logarithms",
+            "pageRange": "25-27",
+            "items": [
+                {
+                    "type": "Method",
+                    "title": "Using Logarithms",
+                    "body": "To solve equations where bases cannot be unified (e.g., $3^{5x-2} = 7^{x+1}$):\n1. Take logarithm for both sides.\n2. Apply power law ($ \\log a^n = n \\log a $).\n3. Solve the resulting algebraic equation.",
+                    "page": 26
+                }
+            ]
+        },
+        {
+            "lessonNumber": 8,
+            "title": "Counting Principle",
+            "pageRange": "28-30",
+            "items": [
+                {
+                    "type": "Definition",
+                    "title": "Fundamental Counting Principle",
+                    "body": "If the number of ways to perform task 1 = m, task 2 = l, task 3 = n... then methods to perform them together:\n$$ \\text{Total Ways} = m \\times l \\times n \\times ... $$",
+                    "page": 28
+                }
+            ]
+        },
+        {
+            "lessonNumber": 9,
+            "title": "Factorial of a number, Permutations",
+            "pageRange": "31-34",
+            "items": [
+                {
+                    "type": "Definition",
+                    "title": "Factorial",
+                    "body": "Factorial of a positive integer n (written as $n!$ or $\\lfloor n$):\n$$ n! = n(n-1)(n-2) \\times ... \\times 3 \\times 2 \\times 1 $$",
+                    "page": 31
+                },
+                {
+                    "type": "Notes",
+                    "title": "Factorial Properties",
+                    "body": "<ul>\n<li>$0! = 1$</li>\n<li>$1! = 1$</li>\n<li>$n! = n(n-1)!$</li>\n</ul>",
+                    "page": 31
+                },
+                {
+                    "type": "Definition",
+                    "title": "Permutations ($nP_r$)",
+                    "body": "Number of permutations of n distinct objects taken r at a time:\n$$ ^nP_r = n(n-1)(n-2)...(n-r+1) $$\nwhere $r \\leq n, r \\in N, n \\in Z^+$.",
+                    "page": 32
+                },
+                {
+                    "type": "Laws",
+                    "title": "Permutation Laws",
+                    "body": "<ul>\n<li>$^nP_0 = 1$</li>\n<li>$^nP_r = \\frac{n!}{(n-r)!}$</li>\n</ul>",
+                    "page": 32
+                }
+            ]
+        },
+        {
+            "lessonNumber": 10,
+            "title": "Combinations",
+            "pageRange": "35-38",
+            "items": [
+                {
+                    "type": "Definition",
+                    "title": "Combinations ($nC_r$)",
+                    "body": "Number of combinations of r objects chosen from n elements ($^nC_r$).",
+                    "page": 35
+                },
+                {
+                    "type": "Laws",
+                    "title": "Rules of Combinations",
+                    "body": "<ul>\n<li>$^nC_r = \\frac{^nP_r}{r!} = \\frac{n!}{r!(n-r)!}$</li>\n<li>If $^nC_x = ^nC_y$, then $x=y$ OR $x+y=n$.</li>\n<li>Reducing Law: $^nC_r = ^nC_{n-r}$</li>\n<li>$^nC_n = ^nC_0 = 1$</li>\n<li>Ratio Law: $\\frac{^nC_r}{^nC_{r-1}} = \\frac{n-r+1}{r}$</li>\n</ul>",
+                    "page": 35
+                }
+            ]
+        }
+    ]
+}

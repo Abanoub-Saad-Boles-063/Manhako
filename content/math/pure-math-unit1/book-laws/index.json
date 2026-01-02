@@ -1,0 +1,275 @@
+[
+    {
+        "lessonTitle": "Rational Exponents",
+        "topic": "Exponents",
+        "itemId": "M-U1-L1-Law-01",
+        "itemType": "Laws",
+        "title": "Laws of Exponents",
+        "pdfPages": [
+            5,
+            5
+        ],
+        "order": 1,
+        "anchor": "laws-of-exponents"
+    },
+    {
+        "lessonTitle": "Rational Exponents",
+        "topic": "Exponents",
+        "itemId": "M-U1-L1-Def-01",
+        "itemType": "Definition",
+        "title": "Rational Exponents Definition",
+        "pdfPages": [
+            5,
+            5
+        ],
+        "order": 2,
+        "anchor": "rational-exponents-definition"
+    },
+    {
+        "lessonTitle": "Rational Exponents",
+        "topic": "Exponents",
+        "itemId": "M-U1-L1-Note-01",
+        "itemType": "Note",
+        "title": "Important Notes on Roots",
+        "pdfPages": [
+            5,
+            5
+        ],
+        "order": 3,
+        "anchor": "notes-roots"
+    },
+    {
+        "lessonTitle": "Rational Exponents",
+        "topic": "Exponents",
+        "itemId": "M-U1-L1-Rev-01",
+        "itemType": "Review",
+        "title": "Repeated Multiplication Review",
+        "pdfPages": [
+            5,
+            5
+        ],
+        "order": 4,
+        "anchor": "repeated-multiplication"
+    },
+    {
+        "lessonTitle": "Solving exponential equations",
+        "topic": "Exponents",
+        "itemId": "M-U1-L2-Rule-01",
+        "itemType": "Rules",
+        "title": "Rules of Solving Exponential Equations",
+        "pdfPages": [
+            9,
+            9
+        ],
+        "order": 5,
+        "anchor": "rules-exponential-equations"
+    },
+    {
+        "lessonTitle": "Applications on solving exponential equations",
+        "topic": "Exponents",
+        "itemId": "M-U1-L3-Note-01",
+        "itemType": "Note",
+        "title": "Note on Applications",
+        "pdfPages": [
+            13,
+            13
+        ],
+        "order": 6,
+        "anchor": "applications-note"
+    },
+    {
+        "lessonTitle": "The logarithmic function",
+        "topic": "Logarithms",
+        "itemId": "M-U1-L4-Def-01",
+        "itemType": "Definition",
+        "title": "Logarithmic Function Definition",
+        "pdfPages": [
+            16,
+            16
+        ],
+        "order": 7,
+        "anchor": "logarithmic-function-def"
+    },
+    {
+        "lessonTitle": "The logarithmic function",
+        "topic": "Logarithms",
+        "itemId": "M-U1-L4-Note-01",
+        "itemType": "Note",
+        "title": "Notice that",
+        "pdfPages": [
+            16,
+            16
+        ],
+        "order": 8,
+        "anchor": "log-notice"
+    },
+    {
+        "lessonTitle": "Properties of logarithms",
+        "topic": "Logarithms",
+        "itemId": "M-U1-L5-Law-01",
+        "itemType": "Laws",
+        "title": "Key Properties of Logarithms",
+        "pdfPages": [
+            19,
+            19
+        ],
+        "order": 9,
+        "anchor": "log-properties"
+    },
+    {
+        "lessonTitle": "Properties of logarithms",
+        "topic": "Logarithms",
+        "itemId": "M-U1-L5-Law-02",
+        "itemType": "Laws",
+        "title": "Change of Base & Inverse",
+        "pdfPages": [
+            19,
+            19
+        ],
+        "order": 10,
+        "anchor": "change-of-base"
+    },
+    {
+        "lessonTitle": "Properties of logarithms",
+        "topic": "Logarithms",
+        "itemId": "M-U1-L5-Note-01",
+        "itemType": "Note",
+        "title": "Common Logarithm",
+        "pdfPages": [
+            19,
+            19
+        ],
+        "order": 11,
+        "anchor": "common-logarithm"
+    },
+    {
+        "lessonTitle": "Solving logarithmic equations",
+        "topic": "Logarithms",
+        "itemId": "M-U1-L6-Method-01",
+        "itemType": "Method",
+        "title": "Method 1: Equating Bases",
+        "pdfPages": [
+            22,
+            22
+        ],
+        "order": 12,
+        "anchor": "method-equating-bases"
+    },
+    {
+        "lessonTitle": "Solving logarithmic equations",
+        "topic": "Logarithms",
+        "itemId": "M-U1-L6-Method-02",
+        "itemType": "Method",
+        "title": "Method 2: Exponential Form",
+        "pdfPages": [
+            22,
+            22
+        ],
+        "order": 13,
+        "anchor": "method-exponential-form"
+    },
+    {
+        "lessonTitle": "Solving exponential equations by using logarithms",
+        "topic": "Logarithms",
+        "itemId": "M-U1-L7-Method-01",
+        "itemType": "Method",
+        "title": "Using Logarithms Strategy",
+        "pdfPages": [
+            26,
+            26
+        ],
+        "order": 14,
+        "anchor": "using-logarithms-strategy"
+    },
+    {
+        "lessonTitle": "Counting Principle",
+        "topic": "Counting",
+        "itemId": "M-U1-L8-Def-01",
+        "itemType": "Definition",
+        "title": "Fundamental Counting Principle",
+        "pdfPages": [
+            28,
+            28
+        ],
+        "order": 15,
+        "anchor": "fundamental-counting-principle"
+    },
+    {
+        "lessonTitle": "Factorial of a number, Permutations",
+        "topic": "Factorial",
+        "itemId": "M-U1-L9-Def-01",
+        "itemType": "Definition",
+        "title": "Factorial Definition",
+        "pdfPages": [
+            31,
+            31
+        ],
+        "order": 16,
+        "anchor": "factorial-definition"
+    },
+    {
+        "lessonTitle": "Factorial of a number, Permutations",
+        "topic": "Factorial",
+        "itemId": "M-U1-L9-Note-01",
+        "itemType": "Note",
+        "title": "Factorial Properties",
+        "pdfPages": [
+            31,
+            31
+        ],
+        "order": 17,
+        "anchor": "factorial-properties"
+    },
+    {
+        "lessonTitle": "Factorial of a number, Permutations",
+        "topic": "Permutations",
+        "itemId": "M-U1-L9-Def-02",
+        "itemType": "Definition",
+        "title": "Permutations (nPr)",
+        "pdfPages": [
+            32,
+            32
+        ],
+        "order": 18,
+        "anchor": "permutations-npr"
+    },
+    {
+        "lessonTitle": "Factorial of a number, Permutations",
+        "topic": "Permutations",
+        "itemId": "M-U1-L9-Law-01",
+        "itemType": "Laws",
+        "title": "Permutation Laws",
+        "pdfPages": [
+            32,
+            32
+        ],
+        "order": 19,
+        "anchor": "permutation-laws"
+    },
+    {
+        "lessonTitle": "Combinations",
+        "topic": "Combinations",
+        "itemId": "M-U1-L10-Def-01",
+        "itemType": "Definition",
+        "title": "Combinations (nCr)",
+        "pdfPages": [
+            35,
+            35
+        ],
+        "order": 20,
+        "anchor": "combinations-ncr"
+    },
+    {
+        "lessonTitle": "Combinations",
+        "topic": "Combinations",
+        "itemId": "M-U1-L10-Law-01",
+        "itemType": "Laws",
+        "title": "Rules of Combinations",
+        "pdfPages": [
+            35,
+            35
+        ],
+        "order": 21,
+        "anchor": "combinations-rules"
+    }
+]

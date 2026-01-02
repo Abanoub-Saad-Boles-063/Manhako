@@ -1,0 +1,19 @@
+{
+    "lessonTitle": "Combinations",
+    "items": [
+        {
+            "itemId": "M-U1-L10-Def-01",
+            "anchor": "combinations-ncr",
+            "type": "Definition",
+            "title": "Combinations (nCr)",
+            "content": "Number of combinations of r objects chosen from n elements ($^nC_r$)."
+        },
+        {
+            "itemId": "M-U1-L10-Law-01",
+            "anchor": "combinations-rules",
+            "type": "Laws",
+            "title": "Rules of Combinations",
+            "content": "<ul>\n<li>$^nC_r = \\frac{^nP_r}{r!} = \\frac{n!}{r!(n-r)!}$</li>\n<li>If $^nC_x = ^nC_y$, then $x=y$ OR $x+y=n$.</li>\n<li>Reducing Law: $^nC_r = ^nC_{n-r}$</li>\n<li>$^nC_n = ^nC_0 = 1$</li>\n<li>Ratio Law: $\\frac{^nC_r}{^nC_{r-1}} = \\frac{n-r+1}{r}$</li>\n</ul>"
+        }
+    ]
+}

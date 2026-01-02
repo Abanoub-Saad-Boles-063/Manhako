@@ -1,0 +1,191 @@
+Find	أوجد/احسب
+Determine	حدِّد/عيِّن
+Prove	أثبت
+Show that	بيِّن أن
+Deduce	استنتج
+Explain	اشرح
+Suppose	افترض
+Knowing that	علماً بأن
+Respectively	على الترتيب
+According to	بالنسبة إلى/وفقًا لـ
+Force	قوة
+Forces	قوى
+Magnitude	مقدار/شِدّة
+Direction	اتجاه
+Resultant	محصلة
+System of forces	نظام/مجموعة قوى
+Set of forces	مجموعة قوى
+Act	يؤثِّر
+Acts at	يؤثِّر عند
+Point	نقطة
+Origin point	نقطة الأصل
+Point of action	نقطة تأثير القوة
+Line	خط
+Straight line	خط مستقيم
+Line of action	خط تأثير/خط عمل القوة
+Passes through	يمرّ بـ
+Bisects	ينصف
+Parallel	متوازي
+Parallel forces	قوى متوازية
+Same direction	نفس الاتجاه
+Opposite directions	اتجاهان متعاكسان
+Distance	مسافة
+Distant from	يبعد عن
+Perpendicular	عمودي
+Perpendicular distance	المسافة العمودية
+Length	طول
+Perpendicular from ... to ...	العمود من ... على ...
+Plane	مستوى
+Coplanar	في مستوى واحد/مستوي
+Space	الفضاء/الفراغ
+Coordinate system	نظام الإحداثيات
+Coordinate	إحداثي
+Axis	محور
+X-axis	محور س (X)
+Y-axis	محور ص (Y)
+Z-axis	محور ع (Z)
+2-D (two-dimensional)	ثنائي الأبعاد
+3-D (three-dimensional)	ثلاثي الأبعاد
+Vector	متجه
+Vector of a force	متجه القوة
+Vector product / Cross product	الضرب الاتجاهي
+Component	مركّبة
+Component of the moment	مركبة العزم
+Moment	عزم
+Moment of a force	عزم قوة
+Moment vector	متجه العزم
+Theorem	نظرية
+Theorem of moments	نظرية العزوم
+Sum	مجموع
+Sum of moments	مجموع العزوم
+Algebraic measure	القياس الجبري
+Positive	موجب
+Negative	سالب
+Clockwise	مع عقارب الساعة
+Anticlockwise	عكس عقارب الساعة
+Zero	صفر
+Zero vector	المتجه الصفري
+Vanishes	ينعدم/يصبح صفراً
+Norm	المقدار (نورم)
+Norm of the moment	مقدار العزم (نورم العزم)
+Equivalent	مكافئ
+Equivalent to a couple	مكافئ لازدواج
+Equilibrium	اتزان
+Equilibrium of forces	اتزان القوى
+Couple	ازدواج/زوج قوى
+Couples	ازدواجات/أزواج قوى
+Moment of the couple	عزم الازدواج
+Constant vector	متجه ثابت
+Resultant couple	محصلة الازدواجات
+Case	حالة
+First case	الحالة الأولى
+Second case	الحالة الثانية
+Third case	الحالة الثالثة
+Equal	يساوي/متساوٍ
+Equals	يساوي
+Less than	أقل من
+Greater than	أكبر من
+Ratio	نسبة
+Product	حاصل ضرب
+Diagram / Figure	شكل/رسم
+Opposite figure	الشكل المقابل
+Triangle	مثلث
+Rectangle	مستطيل
+Square	مربع
+Parallelogram	متوازي أضلاع
+Hexagon	مسدس
+Regular	منتظم
+Side	ضلع
+Side length	طول الضلع
+Diagonal	قطر
+Angle	زاوية
+Measure of angle	قياس الزاوية
+Degree (°)	درجة
+Rod	قضيب
+Light rod	قضيب خفيف
+Regular rod	قضيب منتظم
+Support	مسند/دعامة
+Supports	مساند/دعامات
+Rest(s) on	يرتكز على
+Suspended	معلّق
+Point of suspension	نقطة التعليق
+Horizontal	أفقي
+Vertical	رأسي/عمودي
+Rotate	يدور
+About to rotate	على وشك الدوران
+Weight	وزن
+Weights	أوزان
+Perpendicular distance between forces	المسافة العمودية بين خطَّي تأثير القوتين
+Distance between lines of action	المسافة بين خطَّي التأثير
+Newton	نيوتن
+cm	سم
+kg.wt	كجم-وزن
+gm.wt	جم-وزن
+Upwards	لأعلى
+Downwards	لأسفل
+Upward	لأعلى
+Downward	لأسفل
+To the right	إلى اليمين
+To the left	إلى اليسار
+Perpendicular to	عمودي على
+Equal to zero	يساوي صفراً
+Moment unit	وحدة عزم
+Force unit	وحدة قوة
+Length unit	وحدة طول
+In the same direction	في نفس الاتجاه
+In opposite directions	في اتجاهين متعاكسين
+Moment about a point	عزم حول نقطة
+About the origin	حول نقطة الأصل
+With respect to	بالنسبة إلى
+In the plane	في المستوى
+In the space	في الفراغ
+Perpendicular from the origin	العمود من نقطة الأصل
+Length of perpendicular	طول العمود
+Distance between two points	المسافة بين نقطتين
+Point of application	نقطة تطبيق القوة
+Locate / Position	حدِّد الموضع
+Position	موضع/موقع
+Horizontal position	وضع أفقي
+Vertical upwards	رأسي لأعلى
+Vertically downwards	رأسي لأسفل
+Perpendicular to AB	عمودي على AB
+Line segment	قطعة مستقيمة
+Bisector	منصف
+Parallel to	موازٍ لـ
+Perpendicular on	عمود على
+Moment of the resultant	عزم المحصلة
+Resultant passes by the point	المحصلة تمرّ بالنقطة
+Resultant vanishes	المحصلة تنعدم
+Equivalent and equilibrium of two couples	تكافؤ واتزان ازدواجين
+Point of action of the resultant	نقطة تأثير المحصلة
+Distance between supports	المسافة بين المساند
+Rest on two supports	يرتكز على مسندين
+In the opposite direction	في الاتجاه المعاكس
+Algebraic measures of moments	القياسات الجبرية للعزوم
+Vector notation	ترميز المتجهات
+Cross (×)	علامة الضرب الاتجاهي (×)
+Parallel symbol (//)	علامة التوازي (//)
+Perpendicular symbol (⊥)	علامة التعامد (⊥)
+Angle C	الزاوية C
+Side AB	الضلع AB
+Distance AB	المسافة AB
+Side length 10 cm	طول الضلع 10 سم
+Difference	فرق
+Addition (+)	جمع (+)
+Subtraction (-)	طرح (-)
+Square root (√)	الجذر التربيعي (√)
+Value	قيمة
+Constant	ثابت
+Variable	متغيّر
+Unknown	مجهول
+Equation	معادلة
+Solve for	أوجد قيمة/حلّ من أجل
+Substitute	عوّض
+Hence / Therefore	إذن/وبالتالي
+Because	لأن
+Given that	معطى أن
+Let	لتكن/افترض
+Perimeter	محيط
+Midpoint	منتصف
+Segment	قطعة
+Perpendicular bisector	العمود المنصف

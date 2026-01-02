@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Book Laws Index - Manhagko</title>
+    <link rel="stylesheet" href="../../../styles/futuristic.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .laws-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            background: var(--surface);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .laws-table th,
+        .laws-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .laws-table th {
+            background: rgba(0, 0, 0, 0.2);
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .laws-table tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .tag.Laws {
+            background: rgba(0, 240, 255, 0.2);
+            color: #00f0ff;
+        }
+
+        .tag.Definition {
+            background: rgba(0, 255, 136, 0.2);
+            color: #00ff88;
+        }
+
+        .tag.Note {
+            background: rgba(255, 200, 0, 0.2);
+            color: #ffc800;
+        }
+
+        .tag.Method {
+            background: rgba(255, 0, 234, 0.2);
+            color: #ff00ea;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+
+        .back-btn:hover {
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="../../Math/index.html" class="back-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Back to Math
+        </a>
+
+        <div class="lesson-header">
+            <h1>Math Book Laws Index</h1>
+            <h2>فهرس قوانين الكتاب (Unit 1)</h2>
+            <p style="color: var(--text-secondary); margin-top: 0.5rem;">Strict extraction from "كتاب Math Pure.pdf"</p>
+        </div>
+
+        <div style="overflow-x: auto;">
+            <table class="laws-table" id="indexTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Topic</th>
+                        <th>Type</th>
+                        <th>Title</th>
+                        <th>Page</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populated by JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        fetch('../../../content/math/pure-math-unit1/book-laws/index.json')
+            .then(response => response.json())
+            .then(data => {
+                const tbody = document.querySelector('#indexTable tbody');
+                data.forEach(item => {
+                    const row = document.createElement('tr');
+                    const lessonMap = {
+                        "Rational Exponents": 1,
+                        "Solving exponential equations": 2,
+                        "Applications on solving exponential equations": 3,
+                        "The logarithmic function": 4,
+                        "Properties of logarithms": 5,
+                        "Solving logarithmic equations": 6,
+                        "Solving exponential equations by using logarithms": 7,
+                        "Counting Principle": 8,
+                        "Factorial of a number, Permutations": 9,
+                        "Combinations": 10
+                    };
+                    const lessonNum = lessonMap[item.lessonTitle];
+
+                    row.innerHTML = `
+                        <td><code style="background:rgba(255,255,255,0.1); padding:2px 4px; border-radius:4px;">${item.itemId}</code></td>
+                        <td>${item.topic}</td>
+                        <td><span class="tag ${item.itemType}">${item.itemType}</span></td>
+                        <td>${item.title}</td>
+                        <td>${item.pdfPages}</td>
+                        <td><a href="../../Math/index.html?lesson=${lessonNum}#${item.anchor}" style="color:var(--primary);">Go to Law →</a></td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error loading index:', error));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+definition	تعريف
+notes	ملاحظات
+rule	قاعدة
+law	قانون
+theorem	نظرية
+prove	أثبت
+show that	أثبت أن
+deduce	استنتج
+statement	عبارة
+result	ناتج
+value	قيمة
+evaluate	احسب / قيّم
+calculate	احسب
+simplify	بسّط
+solve	حل
+find	أوجد
+use	استخدم
+using	باستخدام
+verify	تحقق
+substitute	عوّض
+nearest	لأقرب
+decimal places	منازل عشرية
+to the nearest two decimal places	لأقرب منزلتين عشريتين
+calculator	آلة حاسبة
+shift key	زر Shift
+set	مجموعة
+solution set (S.S.)	مجموعة الحل
+element	عنصر
+object	شيء / عنصر
+different objects	عناصر مختلفة
+taking r at a time	أخذ r في كل مرة
+condition	شرط
+such that	بحيث
+and so on	وهكذا
+together	معًا
+number of ways	عدد الطرق
+group	مجموعة
+choose	اختر
+select	اختر / انتقِ
+form	كوّن
+formed from	مكوَّن من
+arranged	مرتّب / منظّم
+arrangement	ترتيب
+row	صف
+circle	دائرة
+competition	مسابقة
+match	مباراة
+team	فريق
+committee	لجنة
+members	أعضاء
+persons	أشخاص
+students	طلاب
+seats	مقاعد
+desk	مقعد/مكتب
+uniform	زي
+shirt	قميص
+trousers	بنطلون
+boy	ولد
+girl	بنت
+digit	رقم
+3-digit number	عدد مكوَّن من 3 أرقام
+odd number	عدد فردي
+even number	عدد زوجي
+units place	خانة الآحاد
+tens place	خانة العشرات
+hundreds place	خانة المئات
+place value	قيمة الخانة
+remainder	المتبقي
+cannot	لا يمكن
+zero	صفر
+real numbers (R)	الأعداد الحقيقية (R)
+integers (Z)	الأعداد الصحيحة (Z)
+positive integers (Z+)	الأعداد الصحيحة الموجبة (Z+)
+natural numbers (N)	الأعداد الطبيعية (N)
+belongs to (∈)	ينتمي إلى (∈)
+not equal (≠)	لا يساوي (≠)
+less than (<)	أقل من (<)
+greater than (>)	أكبر من (>)
+less than or equal (≤)	أقل من أو يساوي (≤)
+greater than or equal (≥)	أكبر من أو يساوي (≥)
+therefore (∴)	إذن / بالتالي (∴)
+refused	مرفوض
+plus (+)	زائد (+)
+minus (-)	ناقص (-)
+times (×)	ضرب (×)
+divide (÷)	قسمة (÷)
+power	أس / قوة
+square	مربع
+cube	مكعب
+fraction	كسر
+numerator	بسط
+denominator	مقام
+ratio	نسبة
+Exponent	أس / قوة
+Exponents	الأسس / القوى
+exponential	أُسّي
+exponential function	الدالة الأُسّية
+exponential equation	معادلة أُسّية
+Repeated Multiplication	الضرب المتكرر
+laws of exponents	قوانين الأسس
+base	الأساس
+index	الأس
+zero exponent	أس صفر
+negative exponent	أس سالب
+positive exponent	أس موجب
+rational exponent	أس كسري
+Rational Exponents	الأسس الكسرية
+nth root	الجذر النوني
+square root	الجذر التربيعي
+radical sign	علامة الجذر
+non-negative	غير سالب
+odd	فردي
+even	زوجي
+Logarithm	لوغاريتم
+logarithm (log)	لوغاريتم (log)
+logarithmic	لوغاريتمي
+logarithmic function	الدالة اللوغاريتمية
+laws of logarithms	قوانين اللوغاريتمات
+properties of logarithms	خواص اللوغاريتمات
+logarithmic equation	معادلة لوغاريتمية
+convert	حوِّل
+convert to exponential form	حوِّل للصيغة الأُسّية
+convert to logarithmic form	حوِّل للصيغة اللوغاريتمية
+common logarithm (base 10)	لوغاريتم عشري (أساس 10)
+base changing property	خاصية تغيير الأساس
+product rule (logs)	قاعدة حاصل الضرب (لللوغاريتمات)
+quotient rule (logs)	قاعدة القسمة (لللوغاريتمات)
+power rule (logs)	قاعدة الأس (لللوغاريتمات)
+Counting	العد
+Counting Principle	مبدأ العد
+Fundamental Counting Principle	مبدأ العد الأساسي
+conditional counting principle	مبدأ عد بشرط
+Factorial	عامِل (Factorial)
+factorial of a number	عامِل العدد
+Permutation	تباديل / ترتيب
+Permutations	التباديل
+Combination	توافيق / اختيار
+Combinations	التوافيق
+arrange in a row	رتّب في صف
+arrange in a circle	رتّب في دائرة
+nPr	عدد التباديل (nPr)
+nCr	عدد التوافيق (nCr)
+taking without repetition	بدون تكرار
+repetition	تكرار
+Expression	عبارة
+Algebra	جبر
+Equation	معادلة
+variable	متغير
+constant	ثابت
+coefficient	معامل
+term (in expression)	حد

@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظري تخصص (AI) - منهجكو</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Orbitron:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../styles/futuristic.css">
+    <style>
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(5, 5, 16, 0.9);
+            backdrop-filter: blur(30px);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(0, 240, 255, 0.15);
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            text-decoration: none;
+        }
+
+        .back-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(0, 240, 255, 0.1);
+            border: 1px solid rgba(0, 240, 255, 0.3);
+            color: var(--primary);
+            padding: 0.6rem 1.2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-family: 'Cairo';
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--primary);
+            color: var(--bg-dark);
+        }
+
+        .menu-btn {
+            background: rgba(0, 240, 255, 0.1);
+            border: 1px solid rgba(0, 240, 255, 0.3);
+            color: var(--primary);
+            padding: 0.6rem 1.2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Cairo';
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .menu-btn:hover {
+            background: var(--primary);
+            color: var(--bg-dark);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: -380px;
+            width: 380px;
+            height: 100vh;
+            background: rgba(5, 5, 16, 0.98);
+            backdrop-filter: blur(30px);
+            z-index: 200;
+            transition: right 0.4s ease;
+            padding: 2rem 1rem;
+            border-left: 1px solid var(--primary);
+            overflow-y: auto;
+        }
+
+        .sidebar.active {
+            right: 0;
+        }
+
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(0, 240, 255, 0.3);
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: var(--primary);
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .chapter-title {
+            color: var(--secondary);
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 1.5rem 0 0.5rem;
+            padding: 0.8rem;
+            background: rgba(255, 0, 234, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .lesson-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.8rem 1rem;
+            margin: 0.3rem 0;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid transparent;
+            border-radius: 10px;
+            color: var(--text);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .lesson-item:hover,
+        .lesson-item.active {
+            border-color: var(--primary);
+            background: rgba(0, 240, 255, 0.1);
+            transform: translateX(-5px);
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 150;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Main */
+        main {
+            position: relative;
+            z-index: 1;
+            padding: 100px 2rem 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Welcome */
+        .welcome {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .welcome h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .welcome p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .feature {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .feature i {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Flashcards */
+        .flashcard-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .flashcard {
+            width: 100%;
+            max-width: 500px;
+            height: 280px;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+
+        .flashcard-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flashcard.flipped .flashcard-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-front,
+        .flashcard-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            /* Align into top to prevent cutting off top content */
+            padding: 1.5rem;
+            /* Slightly reduced padding */
+            overflow-y: auto;
+            /* Enable scrolling inside the card */
+
+            /* Custom Scrollbar */
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary) rgba(0, 0, 0, 0.1);
+        }
+
+        /* Webkit Scrollbar Styling */
+        .flashcard-front::-webkit-scrollbar,
+        .flashcard-back::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .flashcard-front::-webkit-scrollbar-track,
+        .flashcard-back::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 3px;
+        }
+
+        .flashcard-front::-webkit-scrollbar-thumb,
+        .flashcard-back::-webkit-scrollbar-thumb {
+            background-color: var(--primary);
+            border-radius: 3px;
+        }
+
+        .flashcard-front {
+            background: linear-gradient(135deg, rgba(0, 240, 255, 0.2), rgba(255, 0, 234, 0.1));
+            border: 2px solid var(--primary);
+        }
+
+        .flashcard-back {
+            background: linear-gradient(135deg, rgba(255, 0, 234, 0.2), rgba(0, 240, 255, 0.1));
+            border: 2px solid var(--secondary);
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-front h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            text-align: center;
+        }
+
+        .flashcard-back p {
+            font-size: 1.1rem;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .flashcard-controls {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .flashcard-btn {
+            background: rgba(0, 240, 255, 0.1);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 0.8rem 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Cairo';
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .flashcard-btn:hover {
+            background: var(--primary);
+            color: var(--bg-dark);
+        }
+
+        .flashcard-btn.correct {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .flashcard-btn.wrong {
+            border-color: var(--secondary);
+            color: var(--secondary);
+        }
+
+        .progress-bar {
+            width: 100%;
+            max-width: 500px;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s;
+        }
+
+        /* Card Styles */
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .card-title {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .lesson-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .lesson-header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .lesson-header h2 {
+            color: var(--text-muted);
+            font-weight: normal;
+            font-size: 1rem;
+        }
+
+        /* PDF Links */
+        .pdf-link {
+            display: block;
+            padding: 1rem;
+            background: rgba(0, 240, 255, 0.1);
+            border: 1px solid rgba(0, 240, 255, 0.3);
+            border-radius: 10px;
+            color: var(--text);
+            text-decoration: none;
+            transition: all 0.3s;
+            margin-bottom: 0.8rem;
+        }
+
+        .pdf-link:hover {
+            transform: translateX(-5px);
+            background: rgba(0, 240, 255, 0.2);
+            border-color: var(--primary);
+        }
+
+        .pdf-link i {
+            margin-left: 0.5rem;
+            color: var(--primary);
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            header {
+                padding: 0.8rem 1rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            main {
+                padding: 80px 1rem 1rem;
+            }
+
+            .sidebar {
+                width: 100%;
+                right: -100%;
+            }
+
+            .welcome h1 {
+                font-size: 2rem;
+            }
+
+            .flashcard {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="aurora-bg"></div>
+    <div class="particles-3d"></div>
+
+    <header>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <a href="../../index.html" class="back-btn">
+                <i class="fas fa-arrow-right"></i> الرئيسية
+            </a>
+            <span class="logo holo-text">
+                <i class="fas fa-robot"></i> نظري تخصص (AI)
+            </span>
+        </div>
+        <button class="menu-btn" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i> الأقسام
+        </button>
+    </header>
+
+    <div class="overlay" onclick="toggleSidebar()"></div>
+
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3><i class="fas fa-book"></i> الأقسام</h3>
+            <button class="close-btn" onclick="toggleSidebar()">×</button>
+        </div>
+        <div class="chapter-title"><i class="fas fa-clone"></i> بطاقات الحفظ</div>
+        <div class="lesson-item" onclick="loadSection('flashcards')"><i class="fas fa-brain"></i> بنك الأسئلة (263 سؤال)
+        </div>
+
+        <div class="chapter-title"><i class="fas fa-clipboard-check"></i> الاختبارات</div>
+        <div class="lesson-item" onclick="loadSection('quiz')"><i class="fas fa-tasks"></i> اختبر نفسك</div>
+
+        <div class="chapter-title"><i class="fas fa-file-pdf"></i> تحميل الملفات</div>
+        <div class="lesson-item" onclick="loadSection('pdfs')"><i class="fas fa-download"></i> ملف الأسئلة</div>
+    </nav>
+
+    <main id="main-content"></main>
+
+    <script src="../../scripts/ai-system.js"></script>
+    <script src="ai_questions_parsed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Flashcard data is loaded from ai_questions_parsed.js
+
+        // Initialize
+        // Note: allFlashcards is defined in ai_questions_parsed.js as a const.
+        // We must NOT redeclare it with let/const here.
+        if (typeof allFlashcards === 'undefined') {
+            console.error("Critical: Falshcard data not loaded.");
+            window.allFlashcards = [];
+        }
+
+        // Ensure arrays are initialized based on the data
+        let cardStatus = new Array(window.allFlashcards ? allFlashcards.length : 0).fill(0);
+
+        // Quiz Variables
+        let quizScore = 0;
+        let quizWrong = 0;
+        let quizIndex = 0;
+        let quizWrongAnswers = [];
+        let isQuizActive = false;
+
+        let currentCard = 0;
+        let correctCount = 0;
+        let wrongCount = 0;
+
+
+        function getWelcomeHTML() {
+            return `
+            <div class="welcome reveal">
+                <h1 class="holo-text"><i class="fas fa-robot"></i> نظري تخصص (AI)</h1>
+                <img src="../../Manhagko Logo2.png" alt="Manhagko Logo" style="width: 160px; height: 160px; border-radius: 16px; object-fit: contain; margin: 15px auto; display: block;">
+                <p style="color: var(--accent);">بطاقات حفظ ذكية + بنك الأسئلة!</p>
+                <div class="features">
+                    <div class="card-3d feature" onclick="loadSection('flashcards')" style="cursor: pointer;"><i class="fas fa-clone"></i><br>بطاقات حفظ</div>
+                    <div class="card-3d feature" onclick="loadSection('quiz')" style="cursor: pointer;"><i class="fas fa-clipboard-check"></i><br>اختبر نفسك</div>
+                    <div class="card-3d feature" onclick="loadSection('pdfs')" style="cursor: pointer;"><i class="fas fa-file-pdf"></i><br>تحميل الملف</div>
+                </div>
+            </div>`;
+        }
+
+        function getFlashcardsHTML() {
+            return `
+            <div class="lesson-header reveal">
+                <h1 class="holo-text"><i class="fas fa-brain"></i> بطاقات الحفظ الذكية</h1>
+                <h2>اضغط على البطاقة لرؤية الإجابة</h2>
+            </div>
+            
+            <div class="card-3d reveal" style="text-align: center;">
+                <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 10px;">
+                    <div onclick="setFlashcardFilter('all')" style="cursor: pointer; padding: 5px; border-radius: 10px; transition: 0.3s;" id="filter-all" class="filter-active">
+                        <span style="font-size: 1.5rem; color: var(--primary);">${allFlashcards.length}</span><br>الكل
+                    </div>
+                    <div onclick="setFlashcardFilter('correct')" style="cursor: pointer; padding: 5px; border-radius: 10px; transition: 0.3s;" id="filter-correct">
+                        <span style="font-size: 1.5rem; color: var(--accent);" id="correctCount">0</span><br>حفظتها
+                    </div>
+                    <div onclick="setFlashcardFilter('wrong')" style="cursor: pointer; padding: 5px; border-radius: 10px; transition: 0.3s;" id="filter-wrong">
+                        <span style="font-size: 1.5rem; color: var(--secondary);" id="wrongCount">0</span><br>للمراجعة
+                    </div>
+                </div>
+                <div class="progress-bar" style="margin-top: 1rem;">
+                    <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                </div>
+                <p style="margin-top: 5px; font-size: 0.8rem; color: var(--text-muted);" id="filterStatusText">يعرض حالياً: جميع البطاقات</p>
+            </div>
+            
+            <div class="flashcard-container reveal">
+                <p style="color: var(--text-muted);" id="cardProgress">البطاقة 1 من ${allFlashcards.length}</p>
+                
+                <div class="flashcard" id="flashcard" onclick="flipCard()">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <div class="flashcard-content">
+                                <i class="fas fa-question-circle" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                                <h3 id="question">${allFlashcards[0] ? allFlashcards[0].q : 'No question available'}</h3>
+                                <p style="color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">${allFlashcards[0] ? allFlashcards[0].cat : ''}</p>
+                            </div>
+                        </div>
+                        <div class="flashcard-back">
+                            <div class="flashcard-content">
+                                <i class="fas fa-lightbulb" style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+                                <p id="answer">${allFlashcards[0] ? allFlashcards[0].a.replace(/\n/g, '<br>') : 'No answer available'}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flashcard-controls">
+                    <button class="flashcard-btn wrong" onclick="markWrong(event)"><i class="fas fa-redo"></i> راجع لاحقاً</button>
+                    <button class="flashcard-btn correct" onclick="markCorrect(event)"><i class="fas fa-check"></i> حفظتها!</button>
+                </div>
+                <div class="flashcard-controls">
+                    <button class="flashcard-btn" onclick="prevCard(event)"><i class="fas fa-arrow-right"></i></button>
+                    <button class="flashcard-btn" onclick="shuffleCards(event)"><i class="fas fa-random"></i> خلط</button>
+                    <button class="flashcard-btn" onclick="nextCard(event)"><i class="fas fa-arrow-left"></i></button>
+                </div>
+            </div>`;
+        }
+
+        function getQuizHTML() {
+            return `
+            <div class="lesson-header reveal">
+                <h1 class="holo-text"><i class="fas fa-clipboard-check"></i> اختبر نفسك</h1>
+                <h2>جاوب و قيم مستواك!</h2>
+            </div>
+            
+            <div id="quiz-container" class="flashcard-container reveal">
+                <!-- Quiz Content -->
+                <div class="card-3d" style="width: 100%; max-width: 800px; text-align: center;">
+                    <div id="quiz-stats" style="display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: bold;">
+                        <span style="color: var(--accent);">صحيح: <span id="q-correct">0</span></span>
+                        <span style="color: var(--text);">سؤال: <span id="q-current">1</span> / ${allFlashcards.length}</span>
+                        <span style="color: var(--secondary);">خطأ: <span id="q-wrong">0</span></span>
+                    </div>
+                    
+                    <div id="quiz-content">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <h3 id="quiz-question" style="margin: 0; color: var(--primary); font-size: 1.3rem; flex-grow: 1;" dir="auto"></h3>
+                            <button onclick="showQuizResult()" class="flashcard-btn wrong" style="font-size: 0.9rem; padding: 5px 10px; margin-right: 10px; white-space: nowrap;">
+                                <i class="fas fa-flag-checkered"></i> إنهاء
+                            </button>
+                        </div>
+                        <div id="quiz-options" style="display: flex; flex-direction: column; gap: 10px;"></div>
+                    </div>
+                    
+                    <div id="quiz-result" style="display: none;">
+                        <i class="fas fa-trophy" style="font-size: 4rem; color: var(--warning); margin-bottom: 20px;"></i>
+                        <h2>النتيجة النهائية</h2>
+                        <div class="circular-progress" id="score-circle">
+                            <span class="progress-value">0%</span>
+                        </div>
+                        <p id="final-score-text" style="font-size: 1.2rem; margin: 20px 0;"></p>
+                        <button class="btn-glow" onclick="startQuiz()">إعادة الاختبار</button>
+                    </div>
+
+                    <div id="quiz-review" style="display: none;">
+                        <h2 class="holo-text" style="margin-bottom: 20px;"><i class="fas fa-eye"></i> مراجعة الأسئلة</h2>
+                        <p id="review-count" style="color: var(--text-muted); margin-bottom: 15px;">سؤال 1 من X</p>
+                        <h3 id="review-q" style="margin-bottom: 20px; color: var(--primary); font-size: 1.3rem;" dir="auto"></h3>
+                        <div id="review-options" style="display: flex; flex-direction: column; gap: 10px;"></div>
+                        <div class="flashcard-controls" style="margin-top: 20px;">
+                            <button class="flashcard-btn" onclick="prevReview()"><i class="fas fa-arrow-right"></i> السابق</button>
+                            <button class="flashcard-btn" onclick="exitReview()"><i class="fas fa-times"></i> إنهاء المراجعة</button>
+                            <button class="flashcard-btn" onclick="nextReview()">التالي <i class="fas fa-arrow-left"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+        }
+
+        function getPDFsHTML() {
+            return `
+            <div class="lesson-header reveal">
+                <h1 class="holo-text"><i class="fas fa-file-pdf"></i> تحميل الملفات</h1>
+                <h2>بنك الأسئلة والملخصات</h2>
+            </div>
+            
+            <div class="card-3d reveal">
+                <div class="card-title"><i class="fas fa-book"></i> الملفات المتاحة</div>
+                <a href="../نظري التخصص/Question Bank for AI.docx" target="_blank" class="pdf-link">
+                    <i class="fas fa-file-word"></i> تحميل بنك الأسئلة (Question Bank for AI.docx)
+                </a>
+            </div>`;
+        }
+
+        // Section Loader
+        window.loadSection = function (section) {
+            const main = document.getElementById('main-content');
+            main.style.opacity = '0';
+            setTimeout(() => {
+                if (section === 'flashcards') {
+                    main.innerHTML = getFlashcardsHTML();
+                    currentCard = 0;
+                    correctCount = 0;
+                    wrongCount = 0;
+                    cardStatus = new Array(allFlashcards.length).fill(0);
+                    if (allFlashcards.length > 0) {
+                        updateCard();
+                    }
+                } else if (section === 'quiz') {
+                    main.innerHTML = getQuizHTML();
+                    startQuiz();
+                } else if (section === 'pdfs') {
+                    main.innerHTML = getPDFsHTML();
+                } else { // 'welcome'
+                    main.innerHTML = getWelcomeHTML();
+                }
+
+                main.style.opacity = '1';
+                initReveal(); // Changed from initScrollReveal to initReveal
+            }, 300);
+            toggleSidebar(); // Close sidebar after selecting a section
+        };
+
+        // Quiz Logic
+        window.startQuiz = function () {
+            quizScore = 0;
+            quizWrong = 0;
+            quizIndex = 0;
+            quizUserAnswers = [];
+            isQuizActive = true;
+
+            document.getElementById('quiz-content').style.display = 'block';
+            document.getElementById('quiz-result').style.display = 'none';
+            document.getElementById('quiz-review').style.display = 'none';
+            document.getElementById('quiz-stats').style.display = 'flex'; // Ensure stats are visible
+            updateQuizStats();
+            loadQuizQuestion();
+        };
+
+        window.updateQuizStats = function () {
+            document.getElementById('q-correct').textContent = quizScore;
+            document.getElementById('q-wrong').textContent = quizWrong;
+            document.getElementById('q-current').textContent = quizIndex + 1;
+        };
+
+        window.loadQuizQuestion = function () {
+            if (quizIndex >= allFlashcards.length) {
+                showQuizResult();
+                return;
+            }
+
+            const card = allFlashcards[quizIndex];
+            const qEl = document.getElementById('quiz-question');
+            const optsEl = document.getElementById('quiz-options');
+
+            qEl.textContent = card.q.split('\n\n')[0].replace('السؤال:', '').replace('Question:', '').trim(); // Show only question part
+            optsEl.innerHTML = '';
+
+            // Check if we have structured options
+            if (card.opts && card.opts.length > 0) {
+                card.opts.forEach((opt, idx) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'quiz-option';
+                    btn.textContent = opt;
+                    btn.onclick = () => checkAnswer(idx, btn);
+                    optsEl.appendChild(btn);
+                });
+            } else {
+                // Fallback for non-structured questions (Show answer button)
+                optsEl.innerHTML = `<button class="btn-glow" onclick="alert('${card.a.replace(/'/g, "\\'")}')">إظهار الإجابة (قيم نفسك يدوياً)</button>
+                                     <div style="margin-top:10px; display:flex; gap:10px; justify-content:center;">
+                                        <button class="flashcard-btn correct" onclick="handleManualResult(true)">صح</button>
+                                        <button class="flashcard-btn wrong" onclick="handleManualResult(false)">خطأ</button>
+                                     </div>`;
+            }
+
+            updateQuizStats();
+        };
+
+        window.checkAnswer = function (selectedIdx, btnElement) {
+            const card = allFlashcards[quizIndex];
+            const correctIdx = card.correct;
+            const options = document.querySelectorAll('.quiz-option');
+
+            // Disable all buttons
+            options.forEach(btn => btn.disabled = true);
+
+            const isCorrect = selectedIdx === correctIdx;
+
+            if (isCorrect) {
+                btnElement.classList.add('correct');
+                quizScore++;
+                Swal.fire({
+                    position: 'top-end', icon: 'success', title: 'إجابة صحيحة!',
+                    showConfirmButton: false, timer: 1000, background: '#0a0a1a', color: '#fff'
+                });
+            } else {
+                btnElement.classList.add('wrong');
+                // Highlight correct answer
+                if (correctIdx !== -1 && correctIdx < options.length) {
+                    options[correctIdx].classList.add('correct');
+                }
+                quizWrong++;
+                Swal.fire({
+                    position: 'top-end', icon: 'error', title: 'إجابة خاطئة!',
+                    showConfirmButton: false, timer: 1000, background: '#0a0a1a', color: '#fff'
+                });
+            }
+
+            quizUserAnswers.push({
+                cardIndex: quizIndex,
+                userOptIdx: selectedIdx,
+                isCorrect: isCorrect
+            });
+
+            setTimeout(() => {
+                quizIndex++;
+                loadQuizQuestion();
+            }, 1500);
+        };
+
+        window.handleManualResult = function (isCorrect) {
+            if (isCorrect) quizScore++; else quizWrong++;
+            quizUserAnswers.push({
+                cardIndex: quizIndex,
+                userOptIdx: isCorrect ? -2 : -3, // -2 manual correct, -3 manual wrong
+                isCorrect: isCorrect
+            });
+            quizIndex++;
+            loadQuizQuestion();
+        };
+
+        window.showQuizResult = function () {
+            document.getElementById('quiz-content').style.display = 'none';
+            document.getElementById('quiz-result').style.display = 'block';
+            document.getElementById('quiz-stats').style.display = 'none';
+
+            const total = allFlashcards.length;
+            const percentage = Math.round((quizScore / total) * 100);
+
+            document.querySelector('.progress-value').textContent = `${percentage}%`;
+            document.getElementById('final-score-text').innerHTML = `
+                جاوبت <b>${quizScore}</b> صح و <b>${quizWrong}</b> غلط <br> من أصل ${total} سؤال.
+                <br><br>
+                ${percentage >= 50 ? '<span style="color:var(--accent)">مستوى ممتاز! استمر يا بطل 🚀</span>' : '<span style="color:var(--secondary)">محتاج مراجعة شوية، جرب تاني! 💪</span>'}
+                <br><br>
+                <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+                    <button class="flashcard-btn correct" onclick="startReview('correct')"><i class="fas fa-check"></i> مراجعة الإجابات الصحيحة</button>
+                    <button class="flashcard-btn wrong" onclick="startReview('wrong')"><i class="fas fa-times"></i> مراجعة الإجابات الخاطئة</button>
+                    <button class="flashcard-btn" onclick="startReview('all')"><i class="fas fa-list"></i> مراجعة الكل</button>
+                </div>
+            `;
+
+            // Circular Progress Animation
+            document.getElementById('score-circle').style.background = `conic-gradient(var(--primary) ${percentage * 3.6}deg, rgba(255,255,255,0.1) 0deg)`;
+        };
+
+        // Review System
+        window.startReview = function (filter) {
+            reviewList = quizUserAnswers.filter(ans => {
+                if (filter === 'correct') return ans.isCorrect;
+                if (filter === 'wrong') return !ans.isCorrect;
+                return true;
+            });
+
+            if (reviewList.length === 0) {
+                Swal.fire({ icon: 'info', title: 'لا يوجد أسئلة', text: 'لا توجد أسئلة في هذا القسم.', background: '#0a0a1a', color: '#fff' });
+                return;
+            }
+
+            reviewIndex = 0;
+            document.getElementById('quiz-result').style.display = 'none';
+            document.getElementById('quiz-review').style.display = 'block';
+            loadReviewCard();
+        };
+
+        window.loadReviewCard = function () {
+            const answerData = reviewList[reviewIndex];
+            const card = allFlashcards[answerData.cardIndex];
+
+            document.getElementById('review-count').textContent = `سؤال ${reviewIndex + 1} من ${reviewList.length}`;
+            document.getElementById('review-q').textContent = card.q.split('\n\n')[0].replace('السؤال:', '').replace('Question:', '').trim();
+
+            const optsEl = document.getElementById('review-options');
+            optsEl.innerHTML = '';
+
+            if (card.opts && card.opts.length > 0) {
+                card.opts.forEach((opt, idx) => {
+                    const div = document.createElement('div');
+                    div.className = 'quiz-option';
+                    div.textContent = opt;
+                    div.style.cursor = 'default';
+
+                    // Style logic
+                    if (idx === card.correct) {
+                        div.classList.add('correct'); // Always show correct answer
+                        div.innerHTML += ' <i class="fas fa-check-circle"></i>';
+                    }
+                    if (idx === answerData.userOptIdx && !answerData.isCorrect) {
+                        div.classList.add('wrong'); // Show user's wrong choice
+                        div.innerHTML += ' <i class="fas fa-times-circle"></i>';
+                    }
+                    // Highlight selected correct usage if needed
+                    if (idx === answerData.userOptIdx && answerData.isCorrect) {
+                        // Already handled by first if, maybe add checkmark
+                    }
+
+                    optsEl.appendChild(div);
+                });
+            } else {
+                optsEl.innerHTML = `<div class="card" style="text-align:center;">
+                    <p style="color:var(--text-muted)">الإجابة الصحيحة:</p>
+                    <p style="color:var(--accent); font-size:1.2rem;">${card.a}</p>
+                    <hr style="border-color:rgba(255,255,255,0.1); margin:10px 0;">
+                    <p style="color:${answerData.isCorrect ? 'var(--accent)' : 'var(--secondary)'}">
+                        ${answerData.isCorrect ? 'إجابتك صحيحة' : 'إجابتك خاطئة'}
+                    </p>
+                 </div>`;
+            }
+        };
+
+        window.nextReview = function () {
+            if (reviewIndex < reviewList.length - 1) {
+                reviewIndex++;
+                loadReviewCard();
+            }
+        };
+
+        window.prevReview = function () {
+            if (reviewIndex > 0) {
+                reviewIndex--;
+                loadReviewCard();
+            }
+        };
+
+        window.exitReview = function () {
+            document.getElementById('quiz-review').style.display = 'none';
+            document.getElementById('quiz-result').style.display = 'block';
+        };
+
+        // Initialize
+        if (typeof allFlashcards === 'undefined') {
+            console.error("Critical: Flashcard data not loaded.");
+            window.allFlashcards = [];
+        }
+
+        // We already declared cardStatus above or in previous blocks
+        // Ideally we should move all initializations to the top or check existence
+        if (typeof cardStatus === 'undefined') {
+            window.cardStatus = new Array(window.allFlashcards ? allFlashcards.length : 0).fill(0);
+        }
+
+        // Ensure flashcardFilter is defined if not already (it might be in a different block)
+        if (typeof flashcardFilter === 'undefined') {
+            window.flashcardFilter = 'all';
+        }
+
+        // ... quiz variables ...
+
+        // ...
+
+        // Filter Logic
+        window.setFlashcardFilter = function (filter) {
+            flashcardFilter = filter;
+
+            // Update UI
+            document.querySelectorAll('[id^="filter-"]').forEach(el => {
+                el.style.background = 'transparent';
+                el.style.transform = 'scale(1)';
+            });
+            const activeEl = document.getElementById(`filter-${filter}`);
+            if (activeEl) {
+                activeEl.style.background = 'rgba(255, 255, 255, 0.1)';
+                activeEl.style.transform = 'scale(1.05)';
+            }
+
+            const statusText = document.getElementById('filterStatusText');
+            if (filter === 'all') statusText.textContent = 'يعرض حالياً: جميع البطاقات';
+            else if (filter === 'correct') statusText.textContent = 'يعرض حالياً: البطاقات المحفوظة (صحيح)';
+            else if (filter === 'wrong') statusText.textContent = 'يعرض حالياً: البطاقات التي تحتاج مراجعة';
+
+            // Find first card matching filter
+            let found = false;
+            for (let i = 0; i < allFlashcards.length; i++) {
+                if (matchesFilter(i)) {
+                    currentCard = i;
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found && filter !== 'all') {
+                Swal.fire({
+                    icon: 'info',
+                    title: 'لا توجد بطاقات',
+                    text: 'لا توجد بطاقات في هذا التصنيف حتى الآن.',
+                    background: '#0a0a1a',
+                    color: '#fff'
+                });
+                setFlashcardFilter('all'); // Revert
+                return;
+            }
+            updateCard();
+        };
+
+        function matchesFilter(index) {
+            if (flashcardFilter === 'all') return true;
+            if (flashcardFilter === 'correct') return cardStatus[index] === 1;
+            if (flashcardFilter === 'wrong') return cardStatus[index] === -1;
+            return true;
+        }
+
+        // Card functions
+        window.flipCard = function () {
+            document.getElementById('flashcard').classList.toggle('flipped');
+        };
+
+        window.updateCard = function () {
+            if (allFlashcards.length === 0) return;
+
+            // Safety check for currentCard vs Filter
+            if (!matchesFilter(currentCard)) {
+                // If current card doesn't match, find next one that does
+                let found = false;
+                // Forward search
+                for (let i = currentCard; i < allFlashcards.length; i++) {
+                    if (matchesFilter(i)) { currentCard = i; found = true; break; }
+                }
+                // Backward search if not found
+                if (!found) {
+                    for (let i = currentCard; i >= 0; i--) {
+                        if (matchesFilter(i)) { currentCard = i; found = true; break; }
+                    }
+                }
+            }
+
+            const card = allFlashcards[currentCard];
+
+            // Format Question
+            const questionEl = document.getElementById('question');
+            questionEl.setAttribute('dir', 'auto'); // Auto-detect direction (LTR/RTL)
+            questionEl.style.textAlign = 'center'; // Align based on direction
+
+            // Format text: Replace newlines with <br>, make "Choices" bold/colored
+            // Format text: Smart handling of spacing
+            let formattedQ = card.q;
+
+            // 1. Handle "Choices" / "الاختيارات" with controlled spacing (removing surrounding newlines)
+            formattedQ = formattedQ.replace(/[\n\s]*(Choices:|الاختيارات:)[\n\s]*/g, '<div style="margin: 15px 0 10px; color: var(--accent); font-weight: bold;">$1</div>');
+
+            // 2. Collapse multiple newlines into a single break to prevent huge gaps
+            formattedQ = formattedQ.replace(/(?:\r\n|\r|\n){2,}/g, '<br>');
+            formattedQ = formattedQ.replace(/(?:\r\n|\r|\n)/g, '<br>');
+
+            questionEl.innerHTML = formattedQ;
+
+            // Format Answer
+            const answerEl = document.getElementById('answer');
+            answerEl.setAttribute('dir', 'auto');
+            answerEl.innerHTML = card.a.replace(/\n/g, '<br>');
+
+            // Update Progress Text
+            let filterCount = 0;
+            let currentFilterIndex = 0;
+            for (let i = 0; i < allFlashcards.length; i++) {
+                if (matchesFilter(i)) {
+                    filterCount++;
+                    if (i <= currentCard) currentFilterIndex++;
+                }
+            }
+
+            document.getElementById('cardProgress').textContent = `البطاقة ${currentFilterIndex} من ${filterCount} ${flashcardFilter !== 'all' ? '(' + (flashcardFilter === 'correct' ? 'محفوظة' : 'مراجعة') + ')' : ''}`;
+            document.getElementById('flashcard').classList.remove('flipped');
+            updateProgress();
+
+            // Check manual centering
+            checkCentering();
+        };
+
+        function checkCentering() {
+            // Apply flex centering logic
+            const fronts = document.querySelectorAll('.flashcard-front, .flashcard-back');
+            fronts.forEach(el => {
+                el.style.display = 'flex';
+                el.style.flexDirection = 'column';
+                el.style.overflowY = 'auto'; // ensure scroll
+            });
+
+            const contents = document.querySelectorAll('.flashcard-content');
+            contents.forEach(el => {
+                el.style.margin = 'auto'; // Center vertically and horizontally
+                el.style.width = '100%';
+                el.style.textAlign = 'center';
+            });
+        }
+
+        window.updateProgress = function () {
+            const done = cardStatus.filter(s => s !== 0).length;
+            const pct = (done / allFlashcards.length) * 100;
+            document.getElementById('progressFill').style.width = pct + '%';
+            document.getElementById('correctCount').textContent = cardStatus.filter(s => s === 1).length;
+            document.getElementById('wrongCount').textContent = cardStatus.filter(s => s === -1).length;
+        };
+
+        window.nextCard = function (e) {
+            if (e) e.stopPropagation();
+            let next = (currentCard + 1) % allFlashcards.length;
+            let loops = 0;
+            while (!matchesFilter(next) && loops < allFlashcards.length) {
+                next = (next + 1) % allFlashcards.length;
+                loops++;
+            }
+            if (loops < allFlashcards.length) {
+                currentCard = next;
+                updateCard();
+            }
+        };
+
+        window.prevCard = function (e) {
+            if (e) e.stopPropagation();
+            let prev = (currentCard - 1 + allFlashcards.length) % allFlashcards.length;
+            let loops = 0;
+            while (!matchesFilter(prev) && loops < allFlashcards.length) {
+                prev = (prev - 1 + allFlashcards.length) % allFlashcards.length;
+                loops++;
+            }
+            if (loops < allFlashcards.length) {
+                currentCard = prev;
+                updateCard();
+            }
+        };
+
+        window.markCorrect = function (e) {
+            if (e) e.stopPropagation();
+            if (cardStatus[currentCard] !== 1) {
+                cardStatus[currentCard] = 1;
+                updateProgress();
+            }
+            nextCard();
+        };
+
+        window.markWrong = function (e) {
+            if (e) e.stopPropagation();
+            if (cardStatus[currentCard] !== -1) {
+                cardStatus[currentCard] = -1;
+                updateProgress();
+            }
+            nextCard();
+        };
+
+        window.shuffleCards = function (e) {
+            if (e) e.stopPropagation();
+            // Shuffle only current view or all? usually all.
+            for (let i = allFlashcards.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [allFlashcards[i], allFlashcards[j]] = [allFlashcards[j], allFlashcards[i]];
+                [cardStatus[i], cardStatus[j]] = [cardStatus[j], cardStatus[i]];
+            }
+            // Find first matching after shuffle
+            for (let i = 0; i < allFlashcards.length; i++) {
+                if (matchesFilter(i)) {
+                    currentCard = i;
+                    break;
+                }
+            }
+            updateCard();
+        };
+
+        function showLesson(num) {
+            const main = document.getElementById('main-content');
+            let content = '';
+            switch (num) {
+                case 1: content = getFlashcardsHTML(); break;
+                case 2: content = getPDFsHTML(); break;
+                default: content = getWelcomeHTML();
+            }
+            main.innerHTML = content;
+            toggleSidebar();
+            initReveal();
+        }
+
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+            document.querySelector('.overlay').classList.toggle('active');
+        }
+
+        function initReveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach((el, i) => {
+                setTimeout(() => el.classList.add('active'), i * 100);
+            });
+        }
+
+        // Create particles
+        function createParticles() {
+            const container = document.querySelector('.particles-3d');
+            if (!container) return;
+            for (let i = 0; i < 20; i++) {
+                const p = document.createElement('div');
+                p.className = 'particle';
+                p.style.left = Math.random() * 100 + '%';
+                p.style.animationDuration = (15 + Math.random() * 20) + 's';
+                p.style.animationDelay = Math.random() * 20 + 's';
+                container.appendChild(p);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('main-content').innerHTML = getWelcomeHTML();
+            createParticles();
+            initReveal();
+        });
+    </script>
+</body>
+
+</html>

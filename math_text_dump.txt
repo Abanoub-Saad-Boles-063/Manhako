@@ -1,0 +1,1642 @@
+--- Page 1 ---
+ الصف الثاني – تكنولوجيا الخدع والمؤثرات الفنية  
+ 
+2 
+ 
+ 
+  
+  
+2023 - 2024 
+PURE MATHEMATICS 
+Third Grade  
+For industrial (English) 
+الرياضيات البحتة 
+الصف الثالث
+  
+طلاب مدارس التكنولوجيا التطبيقية (لغة انجليزية) 
+3rd. 
+
+
+--- Page 2 ---
+Administration and Operation Unit of Applied Technology Schools.
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+--- Page 3 ---
+dministration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 3 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Lesson number Subject Page 
+The first term 
+First Rational Exponents 5 
+Second Solving exponential equations  9 
+Third Applications on exponential equations 13 
+Fourth The logarithmic function and its relationship 
+with exponential function   
+16 
+Fifth Properties of logarithms 19 
+Sixth Solving logarithmic equations  22 
+Seventh Solving exponential equations by using 
+logarithms 
+25 
+Eighth Counting Principle  28 
+Ninth Factorial of a number, Permutations 31 
+Tenth Combinations   35 
+Eleventh Unit Test  38 
+Twelfth Assessment 39 
+First Unit 
+Exponents, Logarithms, Permutations and Combinations 
+ 
+
+
+--- Page 4 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 5 
+ 
+ 
+ 
+ 
+Dear student, by the end studying of this unit you should have the following 
+abilities and knowledge: 
+ To define the exponential function. 
+ To know the laws of exponents. 
+ To solve the exponential equations. 
+ To know the logarithmic function. 
+ To convert from exponential to logarithmic form.  
+ To know the laws of Logarithms. 
+ To solve the logarithmic equations.  
+ To solve problems on the logarithmic laws.  
+ To find the value of logarithmic of a number by using the calculator . 
+ To knew Counting Principle and application on it. 
+ To know Permutations and Combinations. 
+ To use the calculator to calculate Permutations and Combinations. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Unit One 
+Exponents, Logarithms. Permutations and Combinations 
+ 
+
+
+--- Page 5 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 6 
+ 
+ 
+ 
+ 
+We studied before Repeated Multiplication: 
+ x × x × x  ×………….  × x = xn,    where   x ∈ R and  n ∈ Z+  
+ xzero = 1.                                         where x ∈ R – {0} 
+ 𝐱 - n = 𝟏
+𝐱𝐧                                            where x ∈ R – {0}, 
+Laws of the Exponents 
+(1) xn × xm = xn + m 
+(2) xn÷ xm = xn - m  
+(3) (xn)m = xnm 
+(4) (x y)n = xn × yn  
+(5) (x ÷ y)n = xn ÷ yn 
+Rational Exponents 
+                                          √𝒙𝒏
+ = 𝒙
+𝟏
+𝒏 
+Notes: 
+If n is an even number, then x is a real non-negative number. 
+If n is an odd number, then x is a real. 
+ 
+Definition: 
+ 
+ 
+ 
+ 
+ 
+ 
+Lesson 1 
+Rational Exponents 
+ 
+(𝐱)
+𝐦
+𝐧  = √𝐱𝐦𝐧
+ = ( √𝐱 𝐧
+)m 
+
+
+--- Page 6 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 7 
+Example 1: 
+Put in the simplest form:   𝟔−𝟑×𝟔𝟓
+𝟔𝟐  
+Solution 
+  𝟔−𝟑×𝟔𝟓
+𝟔𝟐  = (6)-3+5 -2 = 6zero = 1 
+Example 2: 
+Put in the simplest form:   ( 4- 3 )5 × (46)3 
+Solution 
+  (4- 3 )5 × (46)3= (4)- 15 × (4)18 = 43 = 64 
+ 
+Example 3: 
+Find the value of:   (𝟏𝟔)
+𝟏
+𝟒 
+Solution 
+(𝟏𝟔)
+𝟏
+𝟒 = √𝟏𝟔𝟒
+ = 2 
+Example 4: 
+Find the value of:    − (𝟐𝟕)
+𝟏
+𝟑 
+Solution: 
+− (𝟐𝟕)
+𝟏
+𝟑 =  −√𝟐𝟕𝟑
+ = - 3 
+Example 5: 
+Find the value of:   (𝟏𝟔)
+𝟑
+𝟐 
+Solution: 
+ (𝟏𝟔)
+𝟑
+𝟐 = (√𝟏𝟔)3 = (4)3 =64 
+
+
+--- Page 7 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 8 
+Example 6: 
+Find the value of:  (𝟐𝟕)
+𝟒
+𝟑 
+Solution: 
+(𝟐𝟕)
+𝟒
+𝟑 = (√𝟐𝟕𝟑
+)4 = (3)4 = 81 
+ 
+Example 7: 
+Reduce to the simplest form: 𝟏𝟎𝟐𝒙+𝟏×𝟐𝟐𝒙
+𝟒𝒙×𝟐𝟓𝒙+ 𝟏
+𝟐
+ then find the value of the result  
+at x = 𝟏
+𝟐 
+Solution 
+  𝟏𝟎𝟐𝒙+𝟏×𝟐𝟐𝒙
+𝟒𝒙×𝟐𝟓𝒙+ 𝟏
+𝟐
+  = 𝟐𝟐𝒙+𝟏× 𝟓𝟐𝒙+𝟏 ×𝟐𝟐𝒙
+𝟐𝟐𝒙×𝟓𝟐𝒙+𝟏  = 𝟐𝟐𝒙+𝟏 
+= 𝟐𝟐×𝟏
+𝟐+𝟏 = 4 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+--- Page 8 ---
+ Administration and Operation Unit of Applied Technology Schools.
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 9 
+  
+ 
+By using the laws of the exponents, reduce the following to the simplest form: 
+ 
+(1) 𝟐−𝟒×𝟐𝟕
+𝟐𝟑  
+ 
+(2) (3- 2 )2 × (33)-1 
+ 
+(3) 𝟑−𝟔×𝟑𝟑
+𝟑− 𝟓  
+ 
+(4) (−𝟖𝟏)
+𝟑
+𝟒 
+ 
+(5) (𝟏𝟐𝟖)
+−𝟐
+𝟕  
+ 
+(6) − (𝟑𝟒𝟑)
+𝟐
+𝟑 
+ 
+(7) Prove that: 𝟗𝟒𝒙+𝟏×𝟒𝟐−𝟐𝒙
+𝟒𝟗𝒙+𝟏×𝟒𝟖𝟏−𝒙 = 1 
+ 
+(8) Prove that: 𝟑𝟒𝟑𝟐𝒙−𝟏
+𝟑×𝟒𝟑𝒙+𝟏
+𝟏𝟗𝟔𝟑𝒙×𝟒  = 𝟏
+𝟕 
+ 
+(9) Simplify to the simplest form: 𝟓𝟐𝒙×𝟒𝒙
+𝟏𝟎𝟐𝒙−𝟏 
+ 
+ 
+ 
+ 
+ 
+ 
+Exercise 1  
+
+
+--- Page 9 ---
+ Administration and Operation Unit of Applied Technology Schools.
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 10 
+ 
+ 
+ 
+ 
+ 
+Rules of solving exponential equations: 
+ If xn = xm ,  then n = m. 
+ If xn = yn ,  then  x = y              if n is an odd number. 
+                      Or  x = ± y          if n is an even number. 
+                      Or  n = 𝒛𝒆𝒓𝒐      if x ≠ y. 
+Example 1: 
+                          If   3x – 5 = 9,  find the value of x  
+Solution: 
+                   3x – 5 = 32 
+ 
+                 ∴ x – 5 = 2                        
+                 ∴ x = 7                                 
+         
+ 
+Example 2: 
+                          If   3x + 7 = 1,  find the value of x  
+Solution: 
+                   3x + 7 = 3zero 
+ 
+                 ∴ x + 7 = zero                        
+                 ∴ x = -7                                   
+ 
+ 
+ 
+ 
+ 
+ 
+Example 3: 
+Lesson 2 
+Solving exponential equations 
+ 
+
+
+--- Page 10 ---
+ Administration and Operation Unit of Applied Technology Schools.
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 11 
+                          If  4 x – 1   = 5 x – 1  , find the value of x  
+Solution: 
+                   x – 1 = zero 
+ 
+                 ∴ x = 1                        
+ 
+Example 4: 
+                          If   52x – 1  = 𝟏 
+𝟏𝟐𝟓 ,  find the value of x  
+Solution: 
+                   52x – 1  = 5-3 
+ 
+                 ∴ 2x – 1 = - 3                       
+                 ∴ 2x = - 2                           ∴ x = - 1                                   
+                         
+Example 5: 
+                          If ( 𝟑
+𝟓 )x  =( 𝟐𝟕 
+𝟏𝟐𝟓)-1. then find the value of x  
+Solution: 
+                   ( 𝟑
+𝟓 )x  =( 𝟑
+𝟓)-3 
+                  
+                 ∴ x = - 3               
+Example 6: 
+                   Solve the equation: √𝟗𝟑
+ = 27x +2 
+Solution: 
+   
+9 = 273 (x +2) 
+         32 = 39 (x +2) 
+                 ∴ 9(x+2) = 2 
+                 ∴ x = 𝟐
+𝟗 – 2                                         ∴ x= - 𝟏𝟔
+𝟗  
+ 
+ 
+ 
+ 
+
+
+--- Page 11 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 12 
+Example 7: 
+ 
+Find the value of x which satisfies the equation: 
+                      3 x+1 + 3 x – 1 = 90. 
+Solution: 
+                      3x (3 + 3-1) = 90 
+                      3x × 𝟏𝟎
+𝟑  = 90            (By dividing both of sides by 𝟏𝟎
+𝟑  ) 
+                      3x = 27             
+                      3x = 33              
+                   ∴ x = 3               
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+--- Page 12 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 13 
+ 
+ 
+ 
+(1) Find the Solution Set of the following equations in R: 
+ 
+(a) 𝐱 
+𝟕
+𝟐 = 128                             (b) (𝟐𝐱 + 𝟑) 
+𝟒
+𝟑 = 81                             (c) 𝐱 
+𝟑
+𝟐 = 64   
+ 
+(2) If 5x = 2 then 25x = ……….. 
+ 
+(3) Find the Solution Set of the following equations: 
+ 
+(a) 𝐱 
+𝟓
+𝟐 = 
+𝟏
+𝟑𝟐                             (b)√(𝐱 − 𝟏)𝟓𝟑
+ = 32                             (c) 3x + 1= 
+𝟏
+𝟐𝟕  
+ 
+(4) Find in R the Solution Set of the following equations: 
+ 
+(a) 2x – 3 = 5x – 3                                                  (b) 7 x + 1 = 3 2x + 2 
+ 
+(5) If 3 x+1 – 3 x – 1 = 72,   find the value of x 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Exercise 2  
+
+
+--- Page 13 ---
+ Administration and Operation Unit of Applied Technology Schools.
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 14 
+ 
+ 
+ 
+ 
+Example 1: 
+Find the Solution Set of the following equation: 
+           49x – 50× 7x + 49 = 0 
+Solution: 
+           7 2x – 50× 7x + 49 = 0 
+           ( 7x – 1 )( 7x – 49) = 0           
+                         7x – 1 = 0                                   7x – 49 = 0 
+                         7x  = 1                                        7x = 72 
+                        ∴ x = 0                                     ∴ x = 2 
+                               S.S. = { 0, 2} 
+Example 2: 
+If f(x) = 5x, then find the value of x if     f(x) + f(3 – x) = 30 
+Solution: 
+                             5x + 53 – x = 30                  (multiply by 5x) 
+                             5 2x + 53 = 30 × 5x 
+                             5 2x – 30 × 5x + 125 = 0 
+                            ( 5x – 25 )( 5x – 5) = 0           
+                         5x = 25 = 52 5x = 5 
+                        ∴ x = 2                                        ∴ x = 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Lesson 3 
+Applications on solving exponential equations 
+ 
+
+
+--- Page 14 ---
+ Administration and Operation Unit of Applied Technology Schools.
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 15 
+ 
+ Example 3: 
+           Solve the equation: 
+𝐱
+𝟒
+𝟓 – 3 𝐱
+𝟐
+𝟓 – 4 = 0 
+Solution: 
+                                ( 𝐱
+𝟐
+𝟓 – 4)( 𝐱
+𝟐
+𝟓 + 1 ) = 0  
+                   𝐱
+𝟐
+𝟓 = 4                                     𝐱
+𝟐
+𝟓 = -1       
+                    x = 𝟒
+𝟓
+ 𝟐                                   x = (−𝟏)
+𝟓
+𝟐      (refused) 
+                    x = ± 32 
+ 
+                             S.S. = { 32, -32} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+--- Page 15 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 16 
+ 
+(1) Find the Solution Set of the equation: 
+                                              4x +  2×2x  – 8 = 0 
+ 
+(2) If f(x) = 7x,  find the value of x which satisfies: 
+                                             f(x) + f(2 – x) = 50 
+ 
+(3) If f(x) = 3x,  find the value of x which satisfies: 
+                                             f(x) + f(2 – x) = 6 
+ 
+(4) Solve the  equation:  
+                                              22x – 6 ×2x  + 8 = 0 
+ 
+(5) Solve the equation:  
+                                              𝐱
+𝟒
+𝟑  – 3𝐱
+𝟐
+𝟑  – 4 = 0 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Exercise 3  
+
+
+--- Page 16 ---
+ Administration and Operation Unit of Applied Technology Schools.
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 17 
+ 
+ 
+ 
+The logarithmic function: 
+If a ∈ R+– {1}   where:  y = loga x       (logarithmic form) 
+ can be converted to the exponential form   x = ay 
+Notice that: 
+ There is no logarithm for a negative number. 
+ There is no logarithm for Zero. 
+Example 1: 
+Find the value of x if: log𝑥 81 = 4  
+Solution: 
+         logx 81 = 4       (convert to the exponential form) 
+        ∴ x4 = 81 
+        ∴ x = (81)
+1
+4                                         
+        ∴ x = 3         ( and the negative value is refused) 
+ 
+Example 2: 
+Find the value of x if: log5 125 = x 
+Solution: 
+         log5 125 = x       (convert to the exponential form) 
+        ∴ 5x = 125
+        ∴ 5x = 53                             
+        ∴ x= 3  
+ 
+ 
+ 
+ 
+ 
+ 
+Lesson 4 
+The logarithmic function and its relationship 
+with exponential function   
+
+
+--- Page 17 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 18 
+Example 3: 
+Solve the equation:   𝐥𝐨𝐠𝟐(𝐱𝟐 + 𝟐𝐱) = 3 
+Solution: 
+         𝐥𝐨𝐠𝟐(𝐱𝟐 + 𝟐𝐱) = 3(We can convert to exponential form) 
+        ∴ (𝐱𝟐 + 𝟐𝐱)= 23 
+        ∴ x2 + 2x – 8 = 0 
+        (x + 4)(x – 2 ) = 0 
+        ∴ x = -4           or    x = 2 
+       ∴ S.S. = { -4, 2 } 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+--- Page 18 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 19 
+ 
+ 
+ 
+(1) Solve the equation: 𝐥𝐨𝐠𝟑(𝟐𝐱 − 𝟓) = 1 
+ 
+(2) Solve the equation: 𝐥𝐨𝐠𝐱(𝐱 + 𝟐) = 2 
+ 
+(3) Solve the equation: 𝐥𝐨𝐠𝟖𝟏 𝐱 = 𝟑
+𝟒 
+ 
+(4) Solve the equation: 𝐥𝐨𝐠𝐱 𝟓𝐱 = 2 
+ 
+(5) Solve the equation: 𝐥𝐨𝐠𝟑 𝟐𝟕 = x + 2 
+ 
+(6) Solve the equation: 𝐥𝐨𝐠𝟐(𝟒𝐱 −  𝟐) = x 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Exercise 4  
+
+
+--- Page 19 ---
+ Administration and Operation Unit of Applied Technology Schools.
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 20 
+ 
+ 
+ 
+ 
+(1)  log x + log y = log xy. 
+(2)  log x - log y = log  𝐱
+𝐲. 
+(3)  log xn = n log x 
+(4) 𝐥𝐨𝐠𝐱 𝒙 = 1 
+(5)  𝐥𝐨𝐠𝐱 𝟏 = zero 
+(6)  Base changing property: 𝐥𝐨𝐠𝐲 𝐱 = 𝐥𝐨𝐠𝐧 𝐱
+𝐥𝐨𝐠𝐧 𝐲  
+(7) The multiplicative inverse property: 𝐥𝐨𝐠𝐲 𝐱 = 𝟏
+𝐥𝐨𝐠𝐱 𝐲 
+ 
+Note:  
+ 
+ 
+ 
+     
+ 
+ 
+ 
+Example 1: 
+Simplify:    log 2 + 2 log 3 + log 1 – log 18 
+Solution: 
+The expression = log 2 + log 32 + log 1 – log 18 
+ 
+                            = 𝐥𝐨𝐠𝟐×𝟗×𝟏 
+𝟏𝟖 = log 1  = zero 
+ 
+Lesson 5 
+Properties of logarithms 
+   
+If the base is not mentioned, then it is 10 and is called  
+the common logarithm 
+log 10 = 1                              , log 100 = 2                 , log 1000 = 3 
+    log 0.1 = - 1                        , log 0.01 = -2                , log 0.001 = -3 
+
+
+--- Page 20 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 21 
+ 
+Example 2: 
+Prove that:    𝐥𝐨𝐠
+𝟏𝟕𝟎
+𝟕  – 𝐥𝐨𝐠
+𝟏𝟖
+𝟑𝟓  + 𝐥𝐨𝐠
+𝟑𝟔
+𝟏𝟕 = 2 
+  
+Solution: 
+L.H.S. =𝐥𝐨𝐠
+𝟏𝟕𝟎
+𝟕  ×𝟑𝟔
+𝟏𝟕
+𝟏𝟖
+𝟑𝟓
+ = log 100 = 2 = R.H.S. 
+ 
+ 
+Example 2: 
+Prove that:   𝐥𝐨𝐠𝟏𝟐𝟓 – 2 𝐥𝐨𝐠 𝟐𝟕  + 
+𝟑
+𝟐 𝐥𝐨𝐠𝟏𝟎𝟎 = 3 log 4.5 
+  
+Solution: 
+L.H.S. = 𝐥𝐨𝐠𝟏𝟐𝟓 – 𝐥𝐨𝐠 𝟐𝟕𝟐  + 𝐥𝐨𝐠 𝟏𝟎𝟎
+𝟑
+𝟐  
+  
+            = log
+𝟏𝟐𝟓×𝟐𝟕𝟐
+𝟏𝟎𝟎
+𝟑
+𝟐
+  = log 
+𝟕𝟐𝟗
+𝟖  
+ 
+R.H.S.= 3 log 4.5 = log (4.5)3 = log 
+𝟕𝟐𝟗
+𝟖  
+∴ The two sides are equal. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+--- Page 21 ---
+Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 22 
+ 
+ 
+ 
+(1) Simplify to the simplest form: log 2 + log 5 
+ 
+(2) Simplify to the simplest form: 𝐥𝐨𝐠𝟓 𝟏𝟓 – 𝐥𝐨𝐠𝟓 𝟑 
+ 
+(3) Simplify to the simplest form: log 54 – 3 log 3 – log 2  
+ 
+(4) Simplify to the simplest form: 𝐥𝐨𝐠𝐚𝐛𝐜 𝐚 + 𝐥𝐨𝐠𝐚𝐛𝐜 𝐛 + 𝐥𝐨𝐠𝐚𝐛𝐜 𝐜 
+ 
+(5) Prove that: 𝐥𝐨𝐠𝟒 𝟑𝟖 – 𝐥𝐨𝐠𝟒 𝟒𝟐 + 𝐥𝐨𝐠𝟒 𝟓𝟔 – 𝐥𝐨𝐠𝟒 𝟏𝟗 + 𝐥𝐨𝐠𝟒 𝟐𝟒 = 3 
+ 
+(6) without using calculator, Prove that:  𝟐𝐥𝐨𝐠𝟗 × 𝐥𝐨𝐠𝟖
+𝐥𝐨𝐠𝟑×𝟑𝐥𝐨𝐠𝟐  = 4 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Exercise 5  
+
+
+--- Page 22 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 23 
+ 
+ 
+ 
+ 
+Example 1: 
+Solve the equation: 𝐥𝐨𝐠𝟑 𝐱 = 𝐥𝐨𝐠𝐱 𝟑 
+Solution: 
+ 
+                 𝐥𝐨𝐠 𝐱 
+𝐥𝐨𝐠 𝟑 = 𝐥𝐨𝐠 𝟑 
+𝐥𝐨𝐠 𝐱 
+ 
+            (log x)2 = (log 3)2 
+ 
+            Log x = ± log 3 
+     log x = log 3                                  Or           log x = - log 3                                   
+    ∴ x = 3                                                            log x = log (3)- 1  
+                                                                                  ∴  x = 𝟏
+𝟑                
+ 
+               ∴ S.S.= {3, 𝟏
+𝟑} 
+ 
+Example 2: 
+Solve the equation:  log (x2 + 9x) = 1 
+Solution: 
+Convert from logarithmic form to exponential form  
+( note: the base is 10) 
+ 
+                      x2 + 9x = 10 
+                      x2 + 9x – 10 = 0 
+        (x + 10)(x – 1) =  0      
+        ∴ x = - 10         or      x = 1 
+    ∴ S.S. ={ -10, 1} 
+ 
+Lesson 6 
+Solving logarithmic equations   
+
+
+--- Page 23 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 24 
+Example 3: 
+Solve the equation: 𝐥𝐨𝐠𝟐(𝐱𝟐  +  𝟔𝐱 +  𝟗) – 𝐥𝐨𝐠𝟐(𝐱 − 𝟏) = 𝐥𝐨𝐠𝟓 𝟔𝟐𝟓 
+Solution: 
+ 
+   𝐥𝐨𝐠𝟐
+𝐱𝟐 + 𝟔𝐱 + 𝟗
+𝐱−𝟏  = 4 𝐥𝐨𝐠𝟓 𝟓 = 4 
+ 
+      𝐱𝟐 + 𝟔𝐱 + 𝟗
+𝐱−𝟏  = 24 =16 
+ 
+ 
+    𝐱𝟐  +  𝟔𝐱 +  𝟗 = 16x – 16  
+   x2 – 10x + 25 = 0 
+   (x – 5 )2 = 0 
+        ∴ x = 5    
+    ∴ S.S. = { 5 } 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+--- Page 24 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 25 
+ 
+ 
+(1) Solve the equation: 𝐥𝐨𝐠𝟐 𝐱 + 𝐥𝐨𝐠𝐱 𝟐 = 2 
+ 
+(2) Solve the equation: 𝐥𝐨𝐠𝟐 𝐱 + 𝐥𝐨𝐠𝟐(𝐱 + 𝟏𝟐) = 3 
+ 
+(3) Find the Solution Set of the following equation:  
+                  log (x – 1)3 – 3 log (x – 3) = log 8 
+ 
+(4) Solve the equation: 𝐥𝐨𝐠𝟐 𝟐𝐱 + 𝐥𝐨𝐠𝟐 𝐱 = 3 
+ 
+(5) Solve the equation: log (x+ 8) – log (x – 1) = 1 
+ 
+(6) Solve the equation: 𝐥𝐨𝐠𝟑(𝐱 + 𝟔) = 2 𝐥𝐨𝐠𝟑 𝐱  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Exercise 6  
+
+
+--- Page 25 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 26 
+ 
+ 
+ 
+ 
+We can use calculator to find the value of logarithm as follow: 
+ 
+(1) find the value of: 𝐥𝐨𝐠𝟐 𝟒                     
+ 
+(2) find the value of: log 8 
+ 
+Practice: 
+Use the calculator to find the value of: 
+ 
+ 𝐥𝐨𝐠𝟑 𝟏𝟐 = …. 
+ 𝐥𝐨𝐠𝟑 𝟐𝟒 = .… 
+ log 128 = … 
+ 𝐥𝐨𝐠𝟓 𝟏𝟐𝟓 = …. 
+ log 100 = … 
+ log 1000 = … 
+ log 500 = … 
+ 
+ 
+ 
+ 
+ 
+Lesson 7 
+Solving exponential equations by using 
+logarithms 
+ 
+
+
+--- Page 26 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 27 
+ 
+Example 1: 
+Find the value of x if: 35x – 2 = 7x +1 
+Solution: 
+ 
+(by taking logarithm for both sides) 
+            (5x – 2 ) log 3 = (x + 1) log 7 
+            5x log 3 – 2log 3 = x log 7 + log 7 
+            5x log 3 – x log 7 = 2log 3 + log 7 
+            x(5 log 3 –  log 7) = 2log 3 + log 7 
+ 
+        ∴ x = 
+𝟐 𝐥𝐨𝐠 𝟑+𝐥𝐨𝐠 𝟕
+𝟓 𝐥𝐨𝐠 𝟑 − 𝐥𝐨𝐠 𝟕  ≃ 1.17  
+ 
+Example 2: 
+If: 5x + 2 = 32x – 5, then Find the value of x to the nearest two decimals places  
+Solution: 
+ 
+            (x + 2 ) log 5 = (2x – 5) log 3 
+            x log 5 + 2log 5 = 2x log 3 – 5log 3 
+            x log 5 – 2x log 3 = -2log 5 – 5 log 3 
+            x(log 5 – 2 log 3) = -2log 5 – 5 log 3 
+ 
+        ∴ x = 
+−𝟐 𝐥𝐨𝐠 𝟓−𝟓𝐥𝐨𝐠𝟓
+𝐥𝐨𝐠𝟓−𝟐𝐥𝐨𝐠 𝟑   ≃ 14.82  
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+--- Page 27 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 28 
+ 
+ 
+(1) If (𝒙 + 𝟒)
+𝟐
+𝟑 = 6.123,find the value of x to the nearest two decimal places. 
+ 
+(2) Find the value of x to the nearest two decimal places where:  
+                                                   73x – 2 =5 
+ 
+(3) Find the value of x to the nearest two decimal places where:  
+                                                  7x + 1 = 5 x – 3  
+ 
+(4) Find the value of x to the nearest two decimal places where:  
+                                                  7x – 2 = 4 x + 3  
+ 
+(5) Find the value of x to the nearest two decimal places where:  
+                                                  7 7 – 2x = 13.4 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Exercise 7  
+
+
+--- Page 28 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 29 
+ 
+ 
+ 
+ 
+ 
+Fundamental Counting Principle: 
+If the number of ways to perform a certain task = m, 
+ the number of ways to perform another certain task = l, 
+the number of ways to perform a third certain task = n and so on …. 
+then: the number of ways to perform these tasks together = m×l ×n ×…… 
+Example 1: 
+By how many ways it is possible to choose a boy from a group of three boys 
+and a girl from a group of two girls?  
+Solution: 
+Number of ways = 3 × 2 = 6 ways. 
+ 
+Example 2: 
+By how many ways it is possible to choose a uniform which consists of a shirt 
+and a trousers from 5 shirts and 3 trousers? 
+Solution: 
+Number of ways = 5 × 3 = 15 ways. 
+Example 3: 
+By how many ways it is possible to forma  3-digit number from the set  
+    { 1, 2, 3, 4}?  
+Solution: 
+Number of ways = 4 × 4 × 4 = 64 ways. 
+ 
+Example 4: 
+By how many ways it is possible to form a 3-digit from the set { 0, 1, 2, 3, 4}?  
+ 
+ 
+Solution: 
+Number of ways = 5 × 5 × 4 = 100 ways. 
+Lesson 8 
+Counting Principle 
+Hundreds tens units 
+4 4 4 
+ 
+
+
+--- Page 29 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 30 
+ 
+Example 5: (conditional counting principal) 
+By how many ways it is possible to form different 3-digit number from the set  
+                              {1, 2, 3, 4}?  
+Solution: 
+Number of ways = 4 × 3 × 2 = 24 ways. 
+One of the digits takes units place and is not repeated in the other places  
+One of the 3 remainder digits takes tens place and isn’t used again. 
+The remaining 2 digits takes hundreds place. 
+ 
+Example 6: (conditional counting principal) 
+By how many ways it is possible to form a 3-digit different number from the 
+set  
+                              {0, 1, 2, 3, 4}?  
+Solution: 
+Number of ways = 3 × 4 × 4 = 48 ways. 
+ 
+We cannot put the zero in the hundreds place.   
+Number of ways to choose a digit in the hundreds place = 4 
+Number of ways to choose a digit in the tens place = 4 
+Number of ways to choose a digit in the units place = 3 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Hundreds tens units 
+2 3 4 
+ 
+Hundreds tens units 
+4 4 3 
+ 
+
+
+--- Page 30 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 31 
+ 
+ 
+ 
+(1) By how many ways it is possible to form a 2 different -digit number from 
+the set {0, 1, 2, 3, 4}?  
+ 
+(2) By how many ways can four students sit down on four desks in a raw? 
+ 
+(3) How many 3- digit odd numbers can be formed from the set {2, 3, 6, 8}?  
+ 
+(4) By how many ways it is possible to form a 4 different -digit numbers from 
+the set {2, 3, 4, 5} such that tens digit is an even? 
+ 
+(5) How many 3- digit numbers can formed from the set { 2, 3, 5} 
+  
+(6) How many 4 different - digit numbers can form from the set {2, 3, 6, 8} 
+such that units digit is 6? 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Exercise 8  
+
+
+--- Page 31 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 32 
+ 
+ 
+ 
+ 
+ 
+Factorial of a positive integer number (n) is written as  n where: 
+ 
+  n     = n (n – 1)(n – 2)……………..× 3× 2 × 1 
+ 
+Notes: 
+    0   = 1    ,         1   = 1    ,             n    = n  n – 1  
+ 
+Number of sitting down of ( n) people in a one row =    n 
+ 
+Number of sitting down of ( n) people in a circle =    n –1 
+Example 1:  
+Find  
+(a)    
+𝟏𝟎
+𝟖
+                                (b) if    n     = 120 then find the value of n 
+Solution: 
+(a)    
+𝟏𝟎
+𝟖
+    = 
+𝟏𝟎 ×𝟗 ×    𝟖
+𝟖
+     = 90 
+ 
+(b)    n     = 120                       n     =    5                     n = 5   
+ 
+Example 2:  
+Find the solution set of: 
+    𝐧       
+𝐧−𝟐
+ = 30 
+Solution: 
+    𝐧 (𝐧−𝟏)    𝐧−𝟐      
+𝐧−𝟐
+ = 3                   n (n – 1) = 6 × 5                       n = 6 
+Lesson 9 
+Factorial of a number, Permutation 
+
+
+--- Page 32 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 33 
+Permutations: 
+How many 3-digit numbers can be formed from the set { 2, 3, 5} 
+Number of numbers = 3 × 2 × 1 = 6  numbers. 
+Every number of those numbers is called permutation and is written as 3P3  
+Definition 
+the number of permutations of (n) different objects taking (r) at a time is 
+denoted by nPr   where: 
+   nPr = n (n – 1) (n – 2) …….. (n – r + 1)            r ≤ n , r ∈ N and n ∈ Z+ 
+Notes:  
+(a) n Pzero = 1                         (b)  nPr = 
+𝒏
+𝒏−𝒓
+  
+ 
+Example 1: 
+ 6P3 = 6× 5× 4 = 120 
+ 7P5 = 7×6× 5 ×4 × 3 = 2520 
+  4P4 = 4× 3×2×1 = 24 
+Example 2: 
+Find the number of ways to sit 5 students on 7 seats in one row. 
+Solution: 
+Number of ways = 7P5 = 7×6× 5 ×4 × 3 = 2520 
+ 
+We can use the calculator: 
+ 
+ 
+ 
+ 
+
+
+--- Page 33 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 34 
+Example 3: 
+By how many ways can 7 persons be arranged to sit on 7 seats in the form of  
+ a circle ?   
+Solution: 
+ 
+Number of ways = 7P7  = 7 × 6× 5 ×4 × 3 × 2 × 1 = 5040 
+ 
+Example 4: 
+ 
+If  7Pr = 840 then find the value of       r – 4  
+ 
+Solution: 
+ 
+                     7Pr = 840 = 7P4 
+                    ∴ r = 4  
+    
+                      r – 4 =     0      = 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+--- Page 34 ---
+Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 35 
+ 
+ 
+(1) By how many ways it is possible to form a 2 different -digit number from 
+the set {3, 4, 5, 6}? 
+ 
+(2)By how many ways can 7 children be arranged in a circle ? 
+ 
+(3) How many ways can a president and vice president be selected from  
+a 12-member committee? 
+ 
+(4) Find the value of n which satisfies: 
+    (a)    n     = 24  
+ 
+    (b) 
+   𝒏+𝟏 
+𝒏−𝟏
+ = 42 
+ 
+ 
+     (c) 15Pn = 2730 
+ 
+(5) If 9Pr – 1  = 504,  find the value of:     r + 1  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Exercise 9  
+
+
+--- Page 35 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 36 
+ 
+ 
+ 
+ 
+ 
+Definition: 
+We denote to number of combinations formed from (r) objects chosen from 
+(n) elements by   nCr    where    r ≤ n,    r ∈ N,   n ∈ Z+ 
+ 
+The rules of combinations: 
+For all   r ≤ n,    r ∈ Z+,    n ∈ Z+ 
+ 
+ nCr =    𝒏
+𝒓        𝒏−𝒓          
+  
+ 
+ If  nC x = nC y , then: x = y or x + y = n 
+ nCr = nCn-r                              (reducing law) 
+ nCn = nCzero = 1 
+ 
+𝒏𝑪𝒓
+𝒏𝑪𝒓−𝟏
+ = 
+𝒏−𝒓+𝟏
+𝒏 (ratio law) 
+  Example 1:   
+If  n C n – 2 = 36, then: find the value of n 
+Solution: 
+ 
+   n C n – 2 = n C 2 = 36 = 9 C 2 
+ 
+∴ n = 9 
+ 
+ 
+ 
+ 
+ 
+Lesson 10 
+Combinations 
+
+
+--- Page 36 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 37 
+ 
+ 
+  Example 2:   
+If  21 C 4n – 7 = 21 C 3n   then find the value of n 
+Solution: 
+ 
+   4n – 7 = 3n                                         4n – 7 + 3n = 21 
+ 
+∴ n = 7                                                   ∴ n = 4 
+ 
+  Example 3:   
+If      7 C r = 7 C 3r – 5 ,    n C r : n C r – 1 = 8 : 3 ,  find the value of n and r 
+Solution: 
+ 
+   3r – 5 = r                                        3r – 5 + r = 7 
+ 
+∴ 2r= 5 ( refused)                             ∴ r = 3 
+ 
+                         n C r : n C r – 1 = 8 : 3   
+ 
+    
+𝐧−𝟑+𝟏
+𝟑  = 
+𝟖
+𝟑          ∴ n – 2 = 8                      ∴ n = 10 
+ 
+  Example 4:  
+By using the calculator, find the value of: 5C 4 + 7 C 2 
+Solution: 
+5 shift ÷ 4 + 7 shift ÷ 2 = 
+ The result = 26 
+ 
+
+
+--- Page 37 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 38 
+ 
+ 
+ 
+ 
+(1) If  13 C r : 13 C r + 1  = 9 : 5,  find the value of r 
+ 
+(2) Find the value of (n) if  n C n – 3  =  120 
+ 
+(3) Find the value of (n) if  25 C 3n – 5  =  25 C 2n 
+ 
+(4) By using the calculator, find the value of:   17C 9 –  17 C 14 
+ 
+(5) By how many ways can a 4 members team be selected from 9 persons? 
+ 
+(6) 7 persons subscribe in a competition so that one match is held between 
+each two find the number of matches of this competition.  
+ 
+(7)  A class contains 10 boys and 8 girls, by how many ways can we form an 
+    activity committee of five people so that it consists of three boys and two  
+    girls?  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Exercise 10  
+
+
+--- Page 38 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 39 
+ 
+ 
+ 
+First Question:  
+(1) Find the value of x which satisfies the equation: 
+                      3 x+1 + 3 x – 1 = 90. 
+(2) Solve the equation: 𝐥𝐨𝐠𝟐(𝒙𝟐 + 𝟐𝒙) = 3 
+ 
+Second Question:  
+(1) If   28 C r = 28 C 2r – 5  ,   find the value of r 
+(2) Simplify:    log 2 + 2 log 3 + log 1 – log 18 
+ 
+Third Question:  
+(1) Simplify to the simplest form:    
+𝟓𝟐𝐱×𝟒𝐱
+𝟏𝟎𝟐𝐱−𝟏 
+(2) Find the Solution Set of the  equation:  
+                  log (x – 1)3 – 3 log (x – 3) = log 8 
+ 
+Fourth Question:  
+(1) Solve the equation: 𝐥𝐨𝐠𝟐 𝐱 + 𝐥𝐨𝐠𝐱 𝟐 = 2 
+ (2) If: 9Pr – 1  = 504, then find the value of:     r + 3  
+ 
+Fifth Question:  
+(1) Solve the equation:  
+                                              𝐱
+𝟒
+𝟑 – 3𝐱
+𝟐
+𝟑 – 4 = 0 
+(2) Find the value of x to the nearest two decimal places where:  
+                                                   73x – 2 =5 
+ 
+ 
+Unit Test 
+   
+
+
+--- Page 39 ---
+Management and Operations Unit for Schools of Applied Technology
+   
+Algebra & Dynamics                         Third Form secondary                                     Second term                                 
+ 
+1  
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+

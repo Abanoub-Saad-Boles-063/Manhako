@@ -1,0 +1,19 @@
+{
+    "lessonTitle": "The logarithmic function",
+    "items": [
+        {
+            "itemId": "M-U1-L4-Def-01",
+            "anchor": "logarithmic-function-def",
+            "type": "Definition",
+            "title": "Logarithmic Function Definition",
+            "content": "If $a \\in R^+ - \\{1\\}$, where $y = \\log_a x$ (logarithmic form), it can be converted to the exponential form:\n$$ x = a^y $$"
+        },
+        {
+            "itemId": "M-U1-L4-Note-01",
+            "anchor": "log-notice",
+            "type": "Note",
+            "title": "Notice that",
+            "content": "<ul>\n<li>There is no logarithm for a **negative number**.</li>\n<li>There is no logarithm for **Zero**.</li>\n</ul>"
+        }
+    ]
+}

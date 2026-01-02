@@ -1,0 +1,103 @@
+{
+    "totalPdfPages": 76,
+    "totalLaws": 22,
+    "units": {
+        "1": {
+            "title": "Statics - Moments & Forces",
+            "lessonCount": 7,
+            "lawCount": 17
+        },
+        "2": {
+            "title": "Resultant Couples",
+            "lessonCount": 3,
+            "lawCount": 5
+        }
+    },
+    "pageCoverage": [
+        {
+            "page": 41,
+            "lesson": 1,
+            "hasLaws": true
+        },
+        {
+            "page": 42,
+            "lesson": 1,
+            "hasLaws": true
+        },
+        {
+            "page": 45,
+            "lesson": 2,
+            "hasLaws": true
+        },
+        {
+            "page": 46,
+            "lesson": 2,
+            "hasLaws": true
+        },
+        {
+            "page": 49,
+            "lesson": 3,
+            "hasLaws": true
+        },
+        {
+            "page": 52,
+            "lesson": 4,
+            "hasLaws": true
+        },
+        {
+            "page": 53,
+            "lesson": 4,
+            "hasLaws": true
+        },
+        {
+            "page": 56,
+            "lesson": 5,
+            "hasLaws": true
+        },
+        {
+            "page": 59,
+            "lesson": 6,
+            "hasLaws": true
+        },
+        {
+            "page": 63,
+            "lesson": 7,
+            "hasLaws": true
+        },
+        {
+            "page": 66,
+            "lesson": 8,
+            "hasLaws": true
+        },
+        {
+            "page": 68,
+            "lesson": 8,
+            "hasLaws": true
+        },
+        {
+            "page": 70,
+            "lesson": 9,
+            "hasLaws": true
+        },
+        {
+            "page": 71,
+            "lesson": 9,
+            "hasLaws": true
+        },
+        {
+            "page": 72,
+            "lesson": 9,
+            "hasLaws": true
+        },
+        {
+            "page": 74,
+            "lesson": 10,
+            "hasLaws": true
+        },
+        {
+            "page": 75,
+            "lesson": 10,
+            "hasLaws": true
+        }
+    ]
+}

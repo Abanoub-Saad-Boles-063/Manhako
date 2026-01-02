@@ -1,0 +1,2267 @@
+Card 1
+Question:
+1. Step one
+Choices:
+a. Data Understanding
+b. Business Understanding
+c. Data preparation
+d. Modeling
+e. Deployment
+f. Evaluation
+Answer:
+b. Business Understanding
+
+Card 2
+Question:
+2. Step two
+Choices:
+a. Data Understanding
+b. Business Understanding
+c. Data preparation
+d. Modeling
+e. Deployment
+f. Evaluation
+Answer:
+a. Data Understanding
+
+Card 3
+Question:
+3. Step three
+Choices:
+a. Data Understanding
+b. Business Understanding
+c. Data preparation
+d. Modeling
+e. Deployment
+f. Evaluation
+Answer:
+c. Data preparation
+
+Card 4
+Question:
+4. Step four
+Choices:
+a. Data Understanding
+b. Business Understanding
+c. Data preparation
+d. Modeling
+e. Deployment
+f. Evaluation
+Answer:
+d. Modeling
+
+Card 5
+Question:
+5. Step five
+Choices:
+a. Data Understanding
+b. Business Understanding
+c. Data preparation
+d. Modeling
+e. Deployment
+f. Evaluation
+Answer:
+f. Evaluation
+
+Card 6
+Question:
+6. Step six
+Choices:
+a. Data Understanding
+b. Business Understanding
+c. Data preparation
+d. Modeling
+e. Deployment
+f. Evaluation
+Answer:
+e. Deployment
+
+Card 7
+Question:
+__________ is an example for popular graphs for data understanding.
+Choices:
+{df.T, df.shape, histogram, 20, 80, Data Cleaning, Logistic Regression, df.head(5), Correlation Matrix, Joblib}
+Answer:
+histogram
+
+Card 8
+Question:
+If we have dataset named "df" so what is the python function for showing the values of the first 5 rows in "df"__________.
+Choices:
+{df.T, df.shape, histogram, 20, 80, Data Cleaning, Logistic Regression, df.head(5), Correlation Matrix, Joblib}
+Answer:
+df.head(5)
+
+Card 9
+Question:
+If we have dataset named "df" so what is the python function for showing the shape in "df"__________.
+Choices:
+{df.T, df.shape, histogram, 20, 80, Data Cleaning, Logistic Regression, df.head(5), Correlation Matrix, Joblib}
+Answer:
+Df.shape
+
+Card 10
+Question:
+__________ is showing illustrate relationships between multiple variables, identifying strong correlations.
+Choices:
+{df.T, df.shape, histogram, 20, 80, Data Cleaning, Logistic Regression, df.head(5), Correlation Matrix, Joblib}
+Answer:
+Correlation Matrix
+
+Card 11
+Question:
+__________ is a code that making the row columns and the columns row in the dataset "df".
+Choices:
+{df.T, df.shape, histogram, 20, 80, Data Cleaning, Logistic Regression, df.head(5), Correlation Matrix, Joblib}
+Answer:
+df.T
+
+Card 12
+Question:
+__________ can be considered as Data preparation tasks.
+Choices:
+{df.T, df.shape, histogram, 20, 80, Data Cleaning, Logistic Regression, df.head(5), Correlation Matrix, Joblib}
+Answer:
+Data Cleaning
+
+Card 13
+Question:
+__________ is converting two categorical  variables into numerical format.
+Choices:
+{df.T, df.shape, histogram, 20, 80, Data Cleaning, Logistic Regression, df.head(5), Correlation Matrix, Joblib}
+Answer:
+Label Encoding
+
+Card 14
+Question:
+__________ transforming numerical variables to a scaled range between 0 and 1.
+Choices:
+{df.T, df.shape, histogram, 20, 80, Data Cleaning, Logistic Regression, df.head(5), Correlation Matrix, Joblib}
+Answer:
+MinMaxScaler
+
+Card 15
+Question:
+In train test split we allocate _____% of the data to the training set and _____% to the testing set.
+Choices:
+{df.T, df.shape, histogram, 20, 80, Data Cleaning, Logistic Regression, df.head(5), Correlation Matrix, Joblib}
+Answer:
+80, 20
+
+Card 16
+Question:
+__________ is well suited for binary classification tasks like churn prediction.
+Choices:
+{df.T, df.shape, histogram, 20, 80, Data Cleaning, Logistic Regression, df.head(5), Correlation Matrix, Joblib}
+Answer:
+Logistic Regression
+
+Card 17
+Question:
+__________ (AUC) quantifies the overall performance of the model by measuring the area beneath the ROC curve.
+Choices:
+{sklearn, numpy, The Area Under Curve, Boxplot¸ Gradio, Correlation Matrix, Stratified K-Fold Cross-Validation , Confusion Matrix, Joblib, Leave-One-Out Cross-Validation, Accuracy Score }
+Answer:
+The Area Under Curve
+
+Card 18
+Question:
+__________ Is a table illustrating the counts of true positive, true negative, false positive, and false negative predictions.
+Choices:
+{sklearn, numpy, The Area Under Curve, Boxplot¸ Gradio, Correlation Matrix, Stratified K-Fold Cross-Validation , Confusion Matrix, Joblib, Leave-One-Out Cross-Validation, Accuracy Score }
+Answer:
+Confusion Matrix
+
+Card 19
+Question:
+__________ is a library that used for numerical operations.
+Choices:
+{sklearn, numpy, The Area Under Curve, Boxplot¸ Gradio, Correlation Matrix, Stratified K-Fold Cross-Validation , Confusion Matrix, Joblib, Leave-One-Out Cross-Validation, Accuracy Score }
+Answer:
+numpy
+
+Card 20
+Question:
+__________ is a library that used for saving and loading Python objects, such as models and preprocessing steps.
+Choices:
+{sklearn, numpy, The Area Under Curve, Boxplot¸ Gradio, Correlation Matrix, Stratified K-Fold Cross-Validation , Confusion Matrix, Joblib, Leave-One-Out Cross-Validation, Accuracy Score }
+Answer:
+Joblib
+
+Card 21
+Question:
+__________ is a python library that used for creating interface for websites.
+Choices:
+{sklearn, numpy, The Area Under Curve, Boxplot¸ Gradio, Correlation Matrix, Stratified K-Fold Cross-Validation , Confusion Matrix, Joblib, Leave-One-Out Cross-Validation, Accuracy Score }
+Answer:
+Gradio
+
+Card 22
+Question:
+__________ is a technique that divide the data into balanced folds
+Choices:
+{sklearn, numpy, The Area Under Curve, Boxplot¸ Gradio, Correlation Matrix, Stratified K-Fold Cross-Validation , Confusion Matrix, Joblib, Leave-One-Out Cross-Validation, Accuracy Score }
+Answer:
+Stratified K-Fold Cross-Validation
+
+Card 23
+Question:
+__________ is a technique that divide the data into observations (smallest unite in data)
+Choices:
+{sklearn, numpy, The Area Under Curve, Boxplot¸ Gradio, Correlation Matrix, Stratified K-Fold Cross-Validation , Confusion Matrix, Joblib, Leave-One-Out Cross-Validation, Accuracy Score }
+Answer:
+Leave-One-Out Cross-Validation
+
+Card 24
+Question:
+__________ is used for visualizing numerical variables
+Choices:
+{sklearn, numpy, The Area Under Curve, Boxplot¸ Gradio, Correlation Matrix, Stratified K-Fold Cross-Validation , Confusion Matrix, Joblib, Leave-One-Out Cross-Validation, Accuracy Score }
+Answer:
+Boxplot
+
+Card 25
+Question:
+__________ This metric quantifies the accuracy of the model by calculating the proportion of correctly classified instances in both training and testing datasets.
+Choices:
+{sklearn, numpy, The Area Under Curve, Boxplot¸ Gradio, Correlation Matrix, Stratified K-Fold Cross-Validation , Confusion Matrix, Joblib, Leave-One-Out Cross-Validation, Accuracy Score }
+Answer:
+Accuracy Score
+
+Card 26
+Question:
+__________ Provides various preprocessing techniques such as OneHotEncoder, MinMaxScaler, and Label Encode
+Choices:
+{sklearn, numpy, The Area Under Curve, Boxplot¸ Gradio, Correlation Matrix, Stratified K-Fold Cross-Validation , Confusion Matrix, Joblib, Leave-One-Out Cross-Validation, Accuracy Score }
+Answer:
+sklearn
+
+Card 27
+Question:
+Function "fillna( )" returning "false" if we have null values?
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 28
+Question:
+One hot encoding is converting two categorical variables into numerical format.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 29
+Question:
+Local sharing means Uploading the project files to hugging face website.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 30
+Question:
+When we are creating new space we choose streamlit as SDK.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 31
+Question:
+The heatmap is indeed a powerful tool for visualizing relationships within data, offering an intuitive and colorful representation.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 32
+Question:
+Cross Validation has four types
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 33
+Question:
+In K-Fold cross validation we divide the data into equal folds.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 34
+Question:
+Joblib is used for data manipulation and analysis.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 35
+Question:
+numpy Provides various preprocessing techniques such as OneHotEncoder, MinMaxScaler, and LabelEncoder.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 36
+Question:
+Windows 10 Home edition is suitable for basic AI projects but has limited GPU support.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 37
+Question:
+Linux distributions are generally free to use and modify.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 38
+Question:
+Windows 7 is the most suitable version for complex AI tasks due to its modern features.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 39
+Question:
+Linux offers a variety of distributions that can cater to different hardware capabilities.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 40
+Question:
+The GPU is essential for basic AI projects on Windows
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 41
+Question:
+Windows 8.1 was primarily designed with touch-friendly features.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 42
+Question:
+Open-source software is generally more customizable than commercial software.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 43
+Question:
+Linux distributions always require high-end hardware to run efficiently.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 44
+Question:
+The Professional edition of Windows 10 provides better GPU support for AI tasks than the Home edition.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 45
+Question:
+Windows 10 Pro includes BitLocker encryption for enhanced data security.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 46
+Question:
+Windows 7 Home Basic offers advanced features like joining domains
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 47
+Question:
+Linux distributions such as Ubuntu and Linux Mint are considered beginner-friendly.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 48
+Question:
+The Education edition of Windows 10 has more features tailored to businesses than schools.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 49
+Question:
+Open-source licenses like the MIT license allow users to modify and redistribute software.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 50
+Question:
+An SSD is recommended over an HDD for faster loading and performance in AI projects.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 51
+Question:
+Windows 11 requires more RAM and better CPU performance compared to Windows 7.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 52
+Question:
+Most modern AI software can run on Windows 7 without any compatibility issues.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 53
+Question:
+The Ultimate edition of Windows 7 includes all features of the Professional edition and more, such as BitLocker.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 54
+Question:
+Windows 10 Pro provides the same level of security and management features as Windows 10 Home.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 55
+Question:
+Most Linux distributions can be downloaded and installed at no cost, making them an economical choice for AI development.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 56
+Question:
+Windows licenses can sometimes be transferred to another computer if it’s a retail version.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 57
+Question:
+Puppy Linux is designed to be lightweight and is ideal for low-spec computers.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 58
+Question:
+A retail Windows license allows the license to be transferred to another computer.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 59
+Question:
+It is not necessary to check for software compatibility before installing an application.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 60
+Question:
+Creating a backup before OS installation is optional but highly recommended.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 61
+Question:
+The compatibility check for Linux distributions can be performed using a tool called Distrochooser.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 62
+Question:
+During OS installation, choosing the "Custom" type allows users to modify partitions.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 63
+Question:
+An operating system’s user guide often provides troubleshooting tips for common issues.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 64
+Question:
+Data transfer between devices can be done via both cloud and portable storage options.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 65
+Question:
+The installation process for Windows and Linux never requires internet access.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 66
+Question:
+Which Windows version is best for AI development with full GPU support? A) Windows 7 B) Windows 10 Home C) Windows 10 Pro D) Windows 11 Enterprise
+Answer:
+C
+
+Card 67
+Question:
+What is a key advantage of using Linux for AI development? A) High cost B) Limited distribution options C) Open-source nature D) Complex licensing fees
+Answer:
+C
+
+Card 68
+Question:
+Which Linux distribution is best for low-spec machines? A) Kubuntu B) Puppy Linux C) Pop!_OS D) Fedora
+Answer:
+B
+
+Card 69
+Question:
+Which Windows edition provides features for joining domains and encryption? A) Home Basic B) Home Premium C) Professional D) Ultimate
+Answer:
+C
+
+Card 70
+Question:
+What is one of the main benefits of using a Linux distribution for AI projects? A) Limited software options B) High cost of installation C) Greater control over system customization D) Less community support
+Answer:
+C
+
+Card 71
+Question:
+Which edition of Windows is typically pre-installed by manufacturers and tied to the specific computer? A) Retail License B) OEM License C) Education License D) Open License
+Answer:
+B
+
+Card 72
+Question:
+What is a common feature of open-source software? A) It is expensive and proprietary. B) It allows user modification and redistribution. C) It can only be used in educational settings. D) It does not require any license.
+Answer:
+B
+
+Card 73
+Question:
+Which Linux distribution is known for balancing performance and ease of use? A) Puppy Linux B) Ubuntu C) Gentoo D) Arch Linux
+Answer:
+B
+
+Card 74
+Question:
+Which edition of Windows 7 is targeted toward business users? A) Home Basic B) Home Premium C) Professional D) Ultimate
+Answer:
+C
+
+Card 75
+Question:
+What is the common advantage of using open-source Linux for AI projects? A) Limited community support B) High license fees C) Customizability and transparency D) Complicated licensing terms
+Answer:
+C
+
+Card 76
+Question:
+The minimum RAM recommended for complex AI projects is _______ GB.
+ ( 4, 8, 16, 32)
+Answer:
+16
+
+Card 77
+Question:
+To run most AI tools like TensorFlow, the ideal type of GPU is from the _______ series. 
+( NVIDIA GeForce GTX, Intel UHD, AMD Radeon, NVIDIA Quadro)
+Answer:
+NVIDIA GeForce GTX
+
+Card 78
+Question:
+_______ is an example of a Linux distribution designed for lightweight, low-resource environments. 
+( Ubuntu, Kubuntu, Puppy Linux, Fedora)
+Answer:
+Puppy Linux
+
+Card 79
+Question:
+The main benefit of using Linux over Windows for AI development is its _______ nature. 
+( costly, restrictive, open-source, closed-source)
+Answer:
+open-source
+
+Card 80
+Question:
+Before installing any operating system, it is important to perform a _______ check for hardware compatibility. 
+( license, compatibility, update, network)
+Answer:
+compatibility
+
+Card 81
+Question:
+Before upgrading an OS, it is recommended to perform a _______ to prevent data loss. 
+(compatibility check, driver update, backup, software installation)
+Answer:
+backup
+
+Card 82
+Question:
+Windows Pro editions often include advanced features like _______ for remote access. 
+( Remote Desktop, Sticky Notes, Internet Explorer, Cortana)
+Answer:
+Remote Desktop
+
+Card 83
+Question:
+The _______ distribution is ideal for users with minimal technical experience but wanting a Linux OS for AI projects. 
+( Ubuntu, Arch Linux, Puppy Linux, Kali Linux)
+Answer:
+Ubuntu
+
+Card 84
+Question:
+_______ is a type of license that allows users to use software only on the original computer it was installed on. 
+( OEM, Retail, Trial, Open-Source)
+Answer:
+OEM
+
+Card 85
+Question:
+_______ is a Windows tool that helps check system compatibility for upgrading to a new version. 
+(Windows Update Assistant, Device Manager, File Explorer, Task Scheduler)
+Answer:
+Windows Update Assistant
+
+Card 86
+Question:
+Windows 7
+Choices:
+A) Basic edition suitable for everyday tasks
+B) Sleek design, focused on multitasking
+C) Beginner-friendly, with good community support
+D) Outdated, limited GPU support
+E) Excellent for gaming
+F) Strong mid-level performance distribution
+Answer:
+D) Outdated, limited GPU support
+
+Card 87
+Question:
+Windows 10 Home
+Choices:
+A) Basic edition suitable for everyday tasks
+B) Sleek design, focused on multitasking
+C) Beginner-friendly, with good community support
+D) Outdated, limited GPU support
+E) Excellent for gaming
+F) Strong mid-level performance distribution
+Answer:
+A) Basic edition suitable for everyday tasks
+
+Card 88
+Question:
+Windows 11
+Choices:
+A) Basic edition suitable for everyday tasks
+B) Sleek design, focused on multitasking
+C) Beginner-friendly, with good community support
+D) Outdated, limited GPU support
+E) Excellent for gaming
+F) Strong mid-level performance distribution
+Answer:
+B) Sleek design, focused on multitasking
+
+Card 89
+Question:
+Ubuntu
+Choices:
+A) Basic edition suitable for everyday tasks
+B) Sleek design, focused on multitasking
+C) Beginner-friendly, with good community support
+D) Outdated, limited GPU support
+E) Excellent for gaming
+F) Strong mid-level performance distribution
+Answer:
+C) Beginner-friendly, with good community support
+
+Card 90
+Question:
+5- Linux Mint
+Choices:
+A) Basic edition suitable for everyday tasks
+B) Sleek design, focused on multitasking
+C) Beginner-friendly, with good community support
+D) Outdated, limited GPU support
+E) Excellent for gaming
+F) Strong mid-level performance distribution
+Answer:
+F) Strong mid-level performance distribution
+
+Card 91
+Question:
+Windows 10 Pro
+Choices:
+A) Basic but supports multitasking
+B) User-friendly, strong community support
+C) Full GPU support, recommended for AI
+D) Offers advanced features including BitLocker
+E) Noted for its Start Screen design
+F) Mid-level distribution for general use
+Answer:
+C) Full GPU support, recommended for AI
+
+Card 92
+Question:
+Windows 8.1
+Choices:
+A) Basic but supports multitasking
+B) User-friendly, strong community support
+C) Full GPU support, recommended for AI
+D) Offers advanced features including BitLocker
+E) Noted for its Start Screen design
+F) Mid-level distribution for general use
+Answer:
+E) Noted for its Start Screen design
+
+Card 93
+Question:
+Ubuntu
+Choices:
+A) Basic but supports multitasking
+B) User-friendly, strong community support
+C) Full GPU support, recommended for AI
+D) Offers advanced features including BitLocker
+E) Noted for its Start Screen design
+F) Mid-level distribution for general use
+Answer:
+B) User-friendly, strong community support
+
+Card 94
+Question:
+Windows 7 Ultimate
+Choices:
+A) Basic but supports multitasking
+B) User-friendly, strong community support
+C) Full GPU support, recommended for AI
+D) Offers advanced features including BitLocker
+E) Noted for its Start Screen design
+F) Mid-level distribution for general use
+Answer:
+D) Offers advanced features including BitLocker
+
+Card 95
+Question:
+Linux Mint
+Choices:
+A) Basic but supports multitasking
+B) User-friendly, strong community support
+C) Full GPU support, recommended for AI
+D) Offers advanced features including BitLocker
+E) Noted for its Start Screen design
+F) Mid-level distribution for general use
+Answer:
+F) Mid-level distribution for general use
+
+Card 96
+Question:
+Check for Sufficient Disk Space
+Choices:
+A) Ensures that the current system meets the minimum technical requirements.
+B) Confirms there is enough space for installing the operating system and applications.
+C) Protects data in case of installation failure.
+D) Decides between upgrade, custom, or basic setup.
+E) Install software directly without any preparation.
+F) Ensure the program or application can run on the selected OS.
+Answer:
+B) Confirms there is enough space for installing the operating system and applications.
+
+Card 97
+Question:
+Verify Hardware Compatibility
+Choices:
+A) Ensures that the current system meets the minimum technical requirements.
+B) Confirms there is enough space for installing the operating system and applications.
+C) Protects data in case of installation failure.
+D) Decides between upgrade, custom, or basic setup.
+E) Install software directly without any preparation.
+F) Ensure the program or application can run on the selected OS.
+Answer:
+A) Ensures that the current system meets the minimum technical requirements.
+
+Card 98
+Question:
+3- Choose Installation Type
+Choices:
+A) Ensures that the current system meets the minimum technical requirements.
+B) Confirms there is enough space for installing the operating system and applications.
+C) Protects data in case of installation failure.
+D) Decides between upgrade, custom, or basic setup.
+E) Install software directly without any preparation.
+F) Ensure the program or application can run on the selected OS.
+Answer:
+D) Decides between upgrade, custom, or basic setup.
+
+Card 99
+Question:
+4- Create a Backup
+Choices:
+A) Ensures that the current system meets the minimum technical requirements.
+B) Confirms there is enough space for installing the operating system and applications.
+C) Protects data in case of installation failure.
+D) Decides between upgrade, custom, or basic setup.
+E) Install software directly without any preparation.
+F) Ensure the program or application can run on the selected OS.
+Answer:
+C) Protects data in case of installation failure.
+
+Card 100
+Question:
+5- 8Verify Software Requirements
+Choices:
+A) Ensures that the current system meets the minimum technical requirements.
+B) Confirms there is enough space for installing the operating system and applications.
+C) Protects data in case of installation failure.
+D) Decides between upgrade, custom, or basic setup.
+E) Install software directly without any preparation.
+F) Ensure the program or application can run on the selected OS.
+Answer:
+F) Ensure the program or application can run on the selected OS.
+
+Card 101
+Question:
+Select Backup Destination
+Choices:
+A) Ensures data has been copied without corruption.
+B) Use portable storage for moving files.
+C) Choose between cloud services and physical storage.
+D) Copies files directly to an online backup service.
+E) Moves data without verifying .
+F) Set up meetings to align with client schedules.
+Answer:
+C) Choose between cloud services and physical storage.
+
+Card 102
+Question:
+
+Choices:
+A) Ensures data has been copied without corruption.
+B) Use portable storage for moving files.
+C) Choose between cloud services and physical storage.
+D) Copies files directly to an online backup service.
+E) Moves data without verifying .
+F) Set up meetings to align with client schedules.
+Answer:
+D) Copies files directly to an online backup service.
+
+Card 103
+Question:
+Upload Data to Cloud
+Choices:
+A) Ensures data has been copied without corruption.
+B) Use portable storage for moving files.
+C) Choose between cloud services and physical storage.
+D) Copies files directly to an online backup service.
+E) Moves data without verifying .
+F) Set up meetings to align with client schedules.
+Answer:
+A) Ensures data has been copied without corruption.
+
+Card 104
+Question:
+Check Data Integrity
+Choices:
+A) Ensures data has been copied without corruption.
+B) Use portable storage for moving files.
+C) Choose between cloud services and physical storage.
+D) Copies files directly to an online backup service.
+E) Moves data without verifying .
+F) Set up meetings to align with client schedules.
+Answer:
+B) Use portable storage for moving files.
+
+Card 105
+Question:
+Transfer Data to External Drive
+Choices:
+A) Ensures data has been copied without corruption.
+B) Use portable storage for moving files.
+C) Choose between cloud services and physical storage.
+D) Copies files directly to an online backup service.
+E) Moves data without verifying .
+F) Set up meetings to align with client schedules.
+Answer:
+F) Set up meetings to align with client schedules.
+
+Card 106
+Question:
+1-Backup Planning
+Choices:
+A) Allows for use on multiple machines with transfer rights
+B) A key step to ensure data safety before installing an OS
+C) Verifies if the computer's components support the intended OS
+D) Software whose source code can be modified and shared
+E) Preparing devices and checking resources before installation
+F) Guarantees software is always proprietary .
+Answer:
+B) A key step to ensure data safety before installing an OS
+
+Card 107
+Question:
+2-Retail License
+Choices:
+A) Allows for use on multiple machines with transfer rights
+B) A key step to ensure data safety before installing an OS
+C) Verifies if the computer's components support the intended OS
+D) Software whose source code can be modified and shared
+E) Preparing devices and checking resources before installation
+F) Guarantees software is always proprietary .
+Answer:
+A) Allows for use on multiple machines with transfer rights
+
+Card 108
+Question:
+3-Hardware Compatibility
+Choices:
+A) Allows for use on multiple machines with transfer rights
+B) A key step to ensure data safety before installing an OS
+C) Verifies if the computer's components support the intended OS
+D) Software whose source code can be modified and shared
+E) Preparing devices and checking resources before installation
+F) Guarantees software is always proprietary .
+Answer:
+C) Verifies if the computer's components support the intended OS
+
+Card 109
+Question:
+4-Pre-Installation Planning
+Choices:
+A) Allows for use on multiple machines with transfer rights
+B) A key step to ensure data safety before installing an OS
+C) Verifies if the computer's components support the intended OS
+D) Software whose source code can be modified and shared
+E) Preparing devices and checking resources before installation
+F) Guarantees software is always proprietary .
+Answer:
+E) Preparing devices and checking resources before installation
+
+Card 110
+Question:
+5-Open-Source Software
+Choices:
+A) Allows for use on multiple machines with transfer rights
+B) A key step to ensure data safety before installing an OS
+C) Verifies if the computer's components support the intended OS
+D) Software whose source code can be modified and shared
+E) Preparing devices and checking resources before installation
+F) Guarantees software is always proprietary .
+Answer:
+D) Software whose source code can be modified and shared
+
+Card 111
+Question:
+Licensing Fees
+Choices:
+A) Important for faster read and write speeds compared to HDDs
+B) Addresses potential problems during installation and setup
+C) Costs associated with using a specific version of an OS
+D) Ensures that the chosen software runs smoothly on a system
+E) Organizing tasks and setting deadlines for installations
+F) Free and open for any user .
+Answer:
+C) Costs associated with using a specific version of an OS
+
+Card 112
+Question:
+AI Software Compatibility
+Choices:
+A) Important for faster read and write speeds compared to HDDs
+B) Addresses potential problems during installation and setup
+C) Costs associated with using a specific version of an OS
+D) Ensures that the chosen software runs smoothly on a system
+E) Organizing tasks and setting deadlines for installations
+F) Free and open for any user .
+Answer:
+D) Ensures that the chosen software runs smoothly on a system
+
+Card 113
+Question:
+3-SSD Storage
+Choices:
+A) Important for faster read and write speeds compared to HDDs
+B) Addresses potential problems during installation and setup
+C) Costs associated with using a specific version of an OS
+D) Ensures that the chosen software runs smoothly on a system
+E) Organizing tasks and setting deadlines for installations
+F) Free and open for any user .
+Answer:
+A) Important for faster read and write speeds compared to HDDs
+
+Card 114
+Question:
+4-Project Planning
+Choices:
+A) Important for faster read and write speeds compared to HDDs
+B) Addresses potential problems during installation and setup
+C) Costs associated with using a specific version of an OS
+D) Ensures that the chosen software runs smoothly on a system
+E) Organizing tasks and setting deadlines for installations
+F) Free and open for any user .
+Answer:
+E) Organizing tasks and setting deadlines for installations
+
+Card 115
+Question:
+5-Troubleshooting OS Issues
+Choices:
+A) Important for faster read and write speeds compared to HDDs
+B) Addresses potential problems during installation and setup
+C) Costs associated with using a specific version of an OS
+D) Ensures that the chosen software runs smoothly on a system
+E) Organizing tasks and setting deadlines for installations
+F) Free and open for any user .
+Answer:
+B) Addresses potential problems during installation and setup
+
+Card 116
+Question:
+1-Insufficient Disk Space
+Choices:
+A) Check available storage and free up space if needed.
+B) Verify that all drivers are updated before installation.
+C) Ensure an active internet connection is stable.
+D) Activation keys are incorrect or missing.
+E) Use older installation files to avoid errors .
+F) Check the type of storage (HDD or SSD) used.
+Answer:
+A) Check available storage and free up space if needed.
+
+Card 117
+Question:
+2-Network Connectivity Problems
+Choices:
+A) Check available storage and free up space if needed.
+B) Verify that all drivers are updated before installation.
+C) Ensure an active internet connection is stable.
+D) Activation keys are incorrect or missing.
+E) Use older installation files to avoid errors .
+F) Check the type of storage (HDD or SSD) used.
+Answer:
+C) Ensure an active internet connection is stable.
+
+Card 118
+Question:
+3-Driver Incompatibility
+Choices:
+A) Check available storage and free up space if needed.
+B) Verify that all drivers are updated before installation.
+C) Ensure an active internet connection is stable.
+D) Activation keys are incorrect or missing.
+E) Use older installation files to avoid errors .
+F) Check the type of storage (HDD or SSD) used.
+Answer:
+B) Verify that all drivers are updated before installation.
+
+Card 119
+Question:
+4-Licensing Errors
+Choices:
+A) Check available storage and free up space if needed.
+B) Verify that all drivers are updated before installation.
+C) Ensure an active internet connection is stable.
+D) Activation keys are incorrect or missing.
+E) Use older installation files to avoid errors .
+F) Check the type of storage (HDD or SSD) used.
+Answer:
+D) Activation keys are incorrect or missing.
+
+Card 120
+Question:
+5-Slow Installation Speed
+Choices:
+A) Check available storage and free up space if needed.
+B) Verify that all drivers are updated before installation.
+C) Ensure an active internet connection is stable.
+D) Activation keys are incorrect or missing.
+E) Use older installation files to avoid errors .
+F) Check the type of storage (HDD or SSD) used.
+Answer:
+F) Check the type of storage (HDD or SSD) used.
+
+Card 121
+Question:
+1-Verify RAM Capacity
+Choices:
+A) Helps the system boot from the correct installation media.
+B) Verifies that the computer can handle the OS requirements.
+C) Determines if the CPU meets the minimum GHz required.
+D) Confirms whether storage is SSD or HDD for performance.
+E) Starts the installation process without issues (Incorrect).
+F) Ensures all critical data is safely stored.
+Answer:
+B) Verifies that the computer can handle the OS requirements.
+
+Card 122
+Question:
+2-Check Processor Speed
+Choices:
+A) Helps the system boot from the correct installation media.
+B) Verifies that the computer can handle the OS requirements.
+C) Determines if the CPU meets the minimum GHz required.
+D) Confirms whether storage is SSD or HDD for performance.
+E) Starts the installation process without issues (Incorrect).
+F) Ensures all critical data is safely stored.
+Answer:
+C) Determines if the CPU meets the minimum GHz required.
+
+Card 123
+Question:
+3-Confirm Storage Type
+Choices:
+A) Helps the system boot from the correct installation media.
+B) Verifies that the computer can handle the OS requirements.
+C) Determines if the CPU meets the minimum GHz required.
+D) Confirms whether storage is SSD or HDD for performance.
+E) Starts the installation process without issues (Incorrect).
+F) Ensures all critical data is safely stored.
+Answer:
+D) Confirms whether storage is SSD or HDD for performance.
+
+Card 124
+Question:
+4-Review Backup Plan
+Choices:
+A) Helps the system boot from the correct installation media.
+B) Verifies that the computer can handle the OS requirements.
+C) Determines if the CPU meets the minimum GHz required.
+D) Confirms whether storage is SSD or HDD for performance.
+E) Starts the installation process without issues (Incorrect).
+F) Ensures all critical data is safely stored.
+Answer:
+F) Ensures all critical data is safely stored.
+
+Card 125
+Question:
+5-Ensure BIOS Settings
+Choices:
+A) Helps the system boot from the correct installation media.
+B) Verifies that the computer can handle the OS requirements.
+C) Determines if the CPU meets the minimum GHz required.
+D) Confirms whether storage is SSD or HDD for performance.
+E) Starts the installation process without issues (Incorrect).
+F) Ensures all critical data is safely stored.
+Answer:
+A) Helps the system boot from the correct installation media.
+
+Card 126
+Question:
+Maintenance prevents system failures and ensures the ongoing reliability of the model.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 127
+Question:
+maintenance helps prevent breakdowns and ensures smooth operation
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 128
+Question:
+tools and technologies aren’t essential for conducting maintenance.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 129
+Question:
+Timely updates avoid system instability and  improve overall performance.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 130
+Question:
+Machine learning drift occurs when the performance of a model degrades over time.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 131
+Question:
+Drift can lead to accurate predictions, increased model performance, and reliable results
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 132
+Question:
+Detecting and resolving drift ensures that models remain reliable and aligned with real-world data.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 133
+Question:
+Data distribution can shift due to new data patterns only.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 134
+Question:
+Changes in the Relationship Between Features and Target leading to model drift
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 135
+Question:
+Changes in the Business Context can lead to model drift
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 136
+Question:
+Data quality issues like missing values, noise, or outliers can affect model performance (drift model)
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 137
+Question:
+Concept drift occurs when the statistical properties of the target variable change, leading to model drift
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 138
+Question:
+Missing data negatively affects a model's ability to learn effectively and can lead to poor results.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 139
+Question:
+Differences in feature scales can negatively impact a model's performance.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 140
+Question:
+Underfitting occurs when a model is too simple to capture the underlying patterns in the data.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 141
+Question:
+Underfitting leading to high performance on both training and validation datasets
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 142
+Question:
+Overfitting occurs when the model becomes too complex, capturing noise in the data instead of true patterns.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 143
+Question:
+Overfitting leading to good performance on the training data but poor generalization on new data.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 144
+Question:
+To solve Underfitting use a more complex model, increase the number of training iterations, or decrease regularization.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 145
+Question:
+These are effective strategies for solving overfitting like using simpler models, add regularization, use cross-validation.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 146
+Question:
+high model performance in the face of data drift can mislead decision-making.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 147
+Question:
+Regularly monitoring key performance metrics over time helps detect when drift occurs.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 148
+Question:
+Effective management of the ML life cycle ensures that issues like drift are addressed
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 149
+Question:
+Unit Testing Involves testing individual components before integration.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 150
+Question:
+in unit testing, individual components or functions are tested in isolation to ensure they work correctly.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 151
+Question:
+The goal of  integration testing is to identify issues that may arise when the individual modules interact with each other.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 152
+Question:
+Integration Testing Involves testing individual component before integration.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 153
+Question:
+Drift in machine learning models always improves predictions.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 154
+Question:
+Outliers can decrease the performance of a machine learning model.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 155
+Question:
+Missing data has no impact on a model’s performance.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 156
+Question:
+Concept drift occurs when the statistical properties of the target variable change.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 157
+Question:
+Machine learning models do not require updates once deployed.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 158
+Question:
+Overfitting occurs when the model is too simple to capture data patterns.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 159
+Question:
+System testing is performed to evaluate the entire system's functionality.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 160
+Question:
+System testing focuses on evaluating the overall behaviour and functionality of a complete system or application
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 161
+Question:
+Machine learning drift only occurs when the target variable changes.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 162
+Question:
+Unit testing checks how well a model performs on new, unseen data.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 163
+Question:
+Monitoring model performance helps to detect issues like drift and underfitting.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 164
+Question:
+Model drift occurs when there is a change in the training data.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 165
+Question:
+Maintenance is only necessary when a system breaks down.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 166
+Question:
+A model that is overfitting will perform well on new, unseen data.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 167
+Question:
+Concept drift refers to a change in the relationship between input features and the target variable.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 168
+Question:
+Why is maintenance important for an AI system?  A) To decorate the system  B) To prevent system failures  C) To add new features  D) To slow down performance
+Answer:
+B
+
+Card 169
+Question:
+What does maintenance of an AI system ensure?  A) Increased errors and bugs B) Smooth operation  C) More system crashes  D) Decreased reliability
+Answer:
+B
+
+Card 170
+Question:
+How do updates affect an AI system?  A) Lead to system stability  B) Slow down the system  C) Cause errors  D) Have no effect
+Answer:
+A
+
+Card 171
+Question:
+What happens during machine learning drift?  A) The model improves automatically  B) Performance decreases due to data changes  C) The system becomes faster  D) The system becomes more accurate
+Answer:
+B
+
+Card 172
+Question:
+What is one result of drift in machine learning models?  A) More accurate predictions  B) Increased performance  C) Incorrect predictions  D) No effect on results
+Answer:
+C
+
+Card 173
+Question:
+How can detecting and resolving drift help a system?  A) It makes models reliable  B) It ensures the model is always up-to-date C) It increases errors  D) It prevents data collection
+Answer:
+A
+
+Card 174
+Question:
+Why can data distribution shift?  A) New patterns or market changes  B) Consistent data input  C) Fixed systems  D) Perfect data analysis
+Answer:
+A
+
+Card 175
+Question:
+What can changes in feature relationships lead to?  A) Better accuracy  B) Model drift  C) More reliable data  D) No changes
+Answer:
+B
+
+Card 176
+Question:
+How can changes in business context affect models?  A) Improve accuracy automatically  B) Lead to model drift  C) Reduce the need for monitoring  D) Prevent data shifts
+Answer:
+B
+
+Card 177
+Question:
+What is the concept of drift?  A) When training stops unexpectedly  B) When the statistical properties of the target change  C) When new hardware is added  D) When data quality improves
+Answer:
+B
+
+Card 178
+Question:
+How can missing data impact a model?  A) It improves learning  B) It creates accurate results  C) It makes learning harder  D) It has no effect
+Answer:
+C
+
+Card 179
+Question:
+What happens when features have different scales?  A) The model performs poorly  B) The model improves  C) The data becomes cleaner  D) The system becomes faster
+Answer:
+A
+
+Card 180
+Question:
+What happens when a model is underfitting?  A) The model is too complex and overfits the data. B) The model performs well on both the training and test data. C) The model performance will be too poor. D) The model performs only well on the training.
+Answer:
+B
+
+Card 181
+Question:
+What is the result of underfitting?  A) High performance on all datasets  B) Low performance on training and validation datasets  C) Perfect generalization  D) Accurate predictions always
+Answer:
+B
+
+Card 182
+Question:
+What happens when a model is overfitting?  A) It performs well on training data but poorly on new data  B) It ignores noise in the data  C) It works better than underfitting models  D) It reduces complexity automatically
+Answer:
+A
+
+Card 183
+Question:
+How can underfitting be solved?  A) Use a simpler model  B) Use a more complex model or reduce regularization  C) Decrease training iterations  D) Ignore the issue
+Answer:
+B
+
+Card 184
+Question:
+How can overfitting be addressed?  A) Use simpler models and add regularization  B) Increase the model complexity  C) Use more training data without changes  D) Stop monitoring performance
+Answer:
+A
+
+Card 185
+Question:
+Can drift cause high performance and good decision-making?  A) Yes, always  B) No, it leads to poor decision-making  C) Only in rare cases  D) It has no effect on decisions
+Answer:
+B
+
+Card 186
+Question:
+Why is regular monitoring important?  A) It makes the system slower  B) It helps detect when drift occurs  C) It replaces the need for updates  D) It ensures continuous failures
+Answer:
+B
+
+Card 187
+Question:
+What are the key steps in the machine learning life cycle?  A) Data collection and deployment only  B) Data collection, model training, validation, deployment, and monitoring  C) Training the model multiple times only  D) System maintenance only
+Answer:
+B
+
+Card 188
+Question:
+How does managing the machine learning life cycle help?  A) It ignores issues like drift  B) It addresses issues like drift  C) It simplifies deployment only  D) It ensures no updates are needed
+Answer:
+B
+
+Card 189
+Question:
+Why is regularization used in models?  A) To improve accuracy by reducing overfitting  B) To remove all features  C) To stop the model from learning  D) To ignore training data
+Answer:
+A
+
+Card 190
+Question:
+What is the purpose of a test dataset?  A) To train the model  B) To evaluate performance on unseen data  C) To improve the validation process  D) To simplify feature engineering
+Answer:
+B
+
+Card 191
+Question:
+Why is f Feature engineering is an important step in the machine learning process?  A) It improves the quality of input data  B) It decreases model performance  C) It skips preprocessing  D) It avoids complex models
+Answer:
+A
+
+Card 192
+Question:
+Why is feature scaling important?  A) To keep all features the same  B) To prevent differences in feature ranges from affecting model performance  C) To add noise  D) To ignore large features
+Answer:
+B
+
+Card 193
+Question:
+What does system maintenance prevent?  A) System improvements  B) System failures  C) Adding new features  D) Increased reliability
+Answer:
+B
+
+Card 194
+Question:
+Why is ongoing maintenance important?  A) To make systems outdated  B) To improve reliability  C) To remove unused features  D) To increase errors
+Answer:
+B
+
+Card 195
+Question:
+What is the goal of regular updates?  A)  To assure system instability.   B) To improve system performance  C) To ignore outdated parts  D) To increase complexity
+Answer:
+B
+
+Card 196
+Question:
+Why does machine learning drift occur?  A) Due to new patterns or changes in the environment B) Because the model was trained on perfect data C) Due to the model becoming too complex over time D) Because the model is updated frequently
+Answer:
+A
+
+Card 197
+Question:
+How can drift impact a machine learning model?  A) It makes predictions more accurate  B) It reduces model reliability  C) It enhances model performance  D) It avoids retraining
+Answer:
+B
+
+Card 198
+Question:
+What is the purpose of monitoring performance metrics?  A) To detect drift  B) To avoid retraining  C) To add new features  D) To improve feature scaling
+Answer:
+A
+
+Card 199
+Question:
+How can overfitting be addressed?  A) Simplify the model  B) Add regularization  C) Use cross-validation  D) All of the above
+Answer:
+D
+
+Card 200
+Question:
+Why are unit tests performed?  A) To test individual components  B) To ensure all components work together  C) To test entire systems  D) To evaluate deployment
+Answer:
+A
+
+Card 201
+Question:
+What is integration testing?  A) Testing individual parts  B) Testing combined components  C) Testing deployment only  D) Avoiding hardware testing
+Answer:
+B
+
+Card 202
+Question:
+What is system testing?  A) Testing the entire hardware or software system  B) Testing a single feature  C) Testing user feedback only  D) Testing training models
+Answer:
+A
+
+Card 203
+Question:
+What is the importance of recording maintenance results?  A) To track activities performed  B) To ignore tests run  C) To avoid system updates  D) To increase system downtime
+Answer:
+A
+
+Card 204
+Question:
+Name every step of the machine learning lifecycle on the below diagram :
+Answer:
+data collection
+
+Card 205
+Question:
+Name every step of the machine learning lifecycle on the below diagram :
+Answer:
+model development
+
+Card 206
+Question:
+Name every step of the machine learning lifecycle on the below diagram :
+Answer:
+training
+
+Card 207
+Question:
+Name every step of the machine learning lifecycle on the below diagram :
+Answer:
+validation deployment
+
+Card 208
+Question:
+Name every step of the machine learning lifecycle on the below diagram :
+Answer:
+continuous monitoring.
+
+Card 209
+Question:
+Quality Assurance (QA) focuses on defect identification during production.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 210
+Question:
+Quality Control (QC) involves systematic activities like testing and inspections.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 211
+Question:
+Defect detection is not a primary objective of Quality Control.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 212
+Question:
+QA emphasizes prevention over detection.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 213
+Question:
+Exploratory testing is a scripted approach to identifying defects.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 214
+Question:
+Agile methodologies prioritize iterative development and collaboration.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 215
+Question:
+JIRA is an example of a static analysis tool.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 216
+Question:
+Black box testing requires knowledge of internal code structure.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 217
+Question:
+Grey box testing is a mix of black box and white box testing.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 218
+Question:
+Compliance with standards is a QA objective.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 219
+Question:
+Training is an essential part of QA implementation.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 220
+Question:
+TDD involves writing test cases after code is written.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 221
+Question:
+QA fosters a culture of continuous improvement.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 222
+Question:
+A key aspect of QA is identifying root causes of quality issues.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 223
+Question:
+Documentation and reporting are part of QA activities.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 224
+Question:
+QA activities include audits and process improvements.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 225
+Question:
+Continuous Monitoring involves stakeholder feedback on product quality.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 226
+Question:
+Defect tracking helps prevent recurring issues.
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 227
+Question:
+Unit Testing is Ensure components work together
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 228
+Question:
+System Testing is Validate the whole system
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 229
+Question:
+decreased efficiency and productivity is Benefits of Continuous Improvement
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 230
+Question:
+Risk Management is not from the objectives of QA
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 231
+Question:
+QA methodologies include Behavior-Driven Development (BDD).
+Choices:
+A) True
+B) False
+Answer:
+True
+
+Card 232
+Question:
+Configuration management excludes version control.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 233
+Question:
+Continuous improvement is unnecessary for long-term sustainability.
+Choices:
+A) True
+B) False
+Answer:
+False
+
+Card 234
+Question:
+Which of these is NOT an objective of QC? A. Defect Detection B. Customer Satisfaction C. Continuous Improvement D. Predicting Market Trends
+Answer:
+D
+
+Card 235
+Question:
+Which of the following is a QA planning activity? A. Developing QA processes B. Managing project budget C. Writing source code D. Conducting market analysis
+Answer:
+A
+
+Card 236
+Question:
+The goal of configuration management is to: A. Test product performance B. Manage changes in software configurations C. Train team members D. Write testing frameworks
+Answer:
+B
+
+Card 237
+Question:
+What is the primary focus of Quality Control (QC)? a) Preventing defects b) Identifying defects c) Training employees d) Marketing products
+Answer:
+B
+
+Card 238
+Question:
+Which of the following is NOT a technique used in QC? a) Static Analysis b) Exploratory Testing c) Behavior-Driven Development (BDD) d) Black Box Testing
+Answer:
+C
+
+Card 239
+Question:
+What is the main objective of Quality Assurance (QA)? a) Reduce development time b) Meet or exceed customer expectations c) Increase software size d) Monitor employee performance
+Answer:
+B
+
+Card 240
+Question:
+Which of these is a QC process? a) Risk assessment b) Configuration Management c) User Training d) Market Analysis
+Answer:
+B
+
+Card 241
+Question:
+What does a code coverage tool measure? a) Project budget allocation b) Test case coverage of source code c) Customer satisfaction levels d) Network performance
+Answer:
+B
+
+Card 242
+Question:
+Which is NOT an objective of QC? a) Defect Detection b) Customer Satisfaction c) Resource Optimization d) Team Collaboration
+Answer:
+D
+
+Card 243
+Question:
+One principle of QA is: a) Emphasizing detection over prevention b) Prioritizing customer needs c) Avoiding continuous improvement d) Promoting individual work
+Answer:
+B
+
+Card 244
+Question:
+What methodology focuses on writing tests before writing code? a) Agile b) Test-Driven Development (TDD) c) Continuous Integration d) Behavior-Driven Development (BDD)
+Answer:
+B
+
+Card 245
+Question:
+ISO 9001 is a standard for: a) Product design b) Performance testing c) Quality Management System d) Network optimization
+Answer:
+C
+
+Card 246
+Question:
+Lean QA Principles aim to: a) Minimize waste and maximize value b) Focus solely on defect correction c) Increase production costs d) Remove customer involvement
+Answer:
+A
+
+Card 247
+Question:
+What is the first step in QA planning? a) Conducting audits b) Defining quality objectives c) Allocating budgets d) Writing test cases
+Answer:
+B
+
+Card 248
+Question:
+Which of these is part of QA implementation? a) Test planning b) Bug prioritization c) Continuous monitoring d) All of the above
+Answer:
+D
+
+Card 249
+Question:
+Root cause analysis in QA evaluation focuses on: a) Product cost estimation b) Identifying defect causes c) Developing marketing plans d) Coding style preferences
+Answer:
+B
+
+Card 250
+Question:
+Which activity is NOT part of QA implementation? a) Developing marketing strategies b) Process audits c) Documentation d) Team training
+Answer:
+A
+
+Card 251
+Question:
+Which is a key benefit of continuous improvement? a) Decreased efficiency b) Increased costs c) Enhanced software quality d) Limited user feedback
+Answer:
+C
+
+Card 252
+Question:
+What does an inspection process in QC involve? a) Performance monitoring b) Systematic examination of artifacts c) Identifying new markets d) Automating user feedback
+Answer:
+B
+
+Card 253
+Question:
+A checklist for laptops includes all EXCEPT: a) Keyboard responsiveness b) Application variety c) Battery life d) Screen resolution
+Answer:
+B
+
+Card 254
+Question:
+Which is a simulated inspection parameter for mobile phones? a) Operating system performance b) Connectivity reliability c) Build quality d) All of the above
+Answer:
+D
+
+Card 255
+Question:
+What is a key objective in OCR system development? a) Enhance coding languages b) Ensure high text recognition accuracy c) Increase physical storage size d) Focus on manual testing only
+Answer:
+B
+
+Card 256
+Question:
+Which one is from Testing Types? Unit Testing Integration Testing System Testing All of the above
+Answer:
+D
+
+Card 257
+Question:
+Which of the following is NOT a QA methodology? A) Agile B) Waterfall C) Scrum D) Code reviews
+Answer:
+D
+
+Card 258
+Question:
+What do bug tracking systems manage? A) Software performance B) Test case execution C) Logging, tracking, and resolution of defects D) Code quality metrics
+Answer:
+C
+
+Card 259
+Question:
+Which of these is a quality parameter for laptops? A) Code coverage B) Battery life C) Number of commits D) Code reviews
+Answer:
+B
+
+Card 260
+Question:
+What is the main goal of Test-Driven Development (TDD)? A) To write code before writing tests B) To develop code incrementally while writing tests first C) To automate all tests D) To refactor the code before testing
+Answer:
+B
+
+Card 261
+Question:
+Which is a benefit of continuous improvement in QA? A) Reduced development cost B) Better collaboration among teams C) Faster bug resolution D) Consistent delivery of high-quality software
+Answer:
+D
+
+Card 262
+Question:
+Which of these is NOT a QA documentation practice? A) Test case creation B) Code versioning C) Test plan creation D) Test result reporting
+Answer:
+B
+
+Card 263
+Question:
+Which phase involves verifying software functionality? A) Design phase B) Implementation phase C) Testing phase D) Deployment phase
+Answer:
+C

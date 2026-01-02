@@ -1,0 +1,1571 @@
+
+--- Page 1 ---
+ الصف الثاني – تكنولوجيا الخدع والمؤثرات الفنية  
+ 
+4 
+ 
+ 
+ 
+  
+ 
+2023 - 2024 
+MECHANICS 
+Third Grade  
+For industrial (English) 
+ميكانيكا 
+الصف الثالث
+  
+التخصصات الصناعية (لغة انجليزية)
+  
+3rd. 
+
+--- Page 2 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 1 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 3 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 4 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Lesson 
+number 
+Subject Page 
+The first term 
+First Moment of a force about a point in 2-D system  41 
+Second Theorem of moments 45 
+Third Moment of a force about a point in 3-D coordinate system 49 
+Fourth Resultant of two of parallel  forces 52 
+Fifth Resultant of set of parallel  forces 56 
+Sixth Equilibrium a set of coplanar parallel forces 59 
+Seventh The couple 63 
+Eighth Resultant couple (first case) 66 
+Ninth Resultant couple (second and third case) 70 
+Tenth Resultant couple (second and third case) 73 
+Eleventh Unit Test 76 
+Twelfth  Assessment 78 
+ Unit  
+STATICS 
+   
+First
+--- Page 4 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 41 
+ 
+  
+ 
+ 
+Dear student by the end of studying that unit you must have the following 
+abilities and knowledge: 
+1) Recognize and find moment of a force according to a point in the space. 
+2) Find the norm and the vector of a force according to a point. 
+3) Find moment of coplanar forces according to a point in its plane. 
+4) Recognize the general theorem of the moments. 
+5) Solve many applications on the moments. 
+6) Recognize the coplanar parallel forces. 
+7) Determine the line of action of the resultant of two parallel forces if they are in the 
+same direction or in two opposite directions  
+8) Find moments of a set of parallel forces about a point. 
+9) Find the resultant of a set of parallel forces. 
+10) Deduce that the sum of moments of several parallel forces bout a point equals the 
+moment of the resultant bout the same point.  
+11) Deduce that the sum of moments of several parallel forces bout a point equals zero if 
+the resultant passes by   the same point. 
+12) Deduce that the sum of moments of several parallel forces bout a point equals zero if 
+their resultant vanishes. 
+13 ) Recognize the concept of the couple ,find the moment of the couple and deduce  that 
+the moment of the couple is a constant vector . 
+14) Recognize the equivalent and the equilibrium of two couples. 
+15 ) Find the resultant of several couples . 
+16 ) Prove that a set of forces equivalent to a couple by different methods  
+ 
+Unit (1) 
+Statics 
+--- Page 5 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 42 
+𝑟റ 
+𝐹റ 
+o 
+L 
+𝜃 
+ 
+ 
+  
+ 
+ 
+DEFINATION : The vector product of two vectors : A⃑⃑റ = ( x1,y1) ,B⃑⃑റ = ( x2,y2) denoted by 
+𝐴റ x 𝐵⃑റ  and     𝐴റ x 𝐵⃑റ =( x1,y1) × ( x2,y2) = (x1 y2 - x2 y1) e⃑റ 
+Moment of a force (𝑓റ ) about a point (o) and denoted by  𝑀𝑂⃑⃑⃑⃑⃑⃑റ  
+ 
+ 
+Notes  :  
+1- The algebraic measure of the moment : 
+@ If 𝐹റ makes the rotation about ( o ) anticlockwise then the algebraic measure is 
+positive . 
+@ If 𝐹റ makes the rotation about ( o ) clockwise then the algebraic measure is 
+negative . 
+2- Norm of the moment: 
+‖𝑀𝑂⃑⃑⃑⃑⃑⃑റ‖ = 𝐹 L                                     L =‖𝑀𝑂⃑⃑⃑⃑⃑⃑⃑റ‖
+𝐹  
+Where : L is the length of perpendicular from ( O ) to the line of action of 𝐹റ 
+3- Moment of  a force about a point on its line of action = zero  
+ 
+Lesson (1) 
+Moment of a force about a point in 2-D system  
+𝑀𝑂⃑⃑⃑⃑⃑⃑റ= 𝑟റ × 𝐹 
+--- Page 6 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 43 
+ 
+Example (1) : 
+The  force 𝐹റ = 𝑖റ− 3𝑗റ acts at the point A  (-1 ,2 ) find moment of 𝐹റ about the 
+point B (2 , 0 ), then find the length of perpendicular  from B  to the line of 
+action of 𝐹റ   
+Solution 
+𝑟റ =𝐵𝐴⃑⃑⃑⃑⃑റ = 𝐴റ − 𝐵⃑റ = (-1 ,2 )- (2 , 0 ) = (- 3 , 2) 
+𝑀𝐵⃑⃑⃑⃑⃑റ= 𝑟റ 𝑥 𝐹റ = (- 3 , 2) x (1 , -3) = 7𝑘⃑റ                 
+  L = 
+‖𝑀𝐵⃑⃑⃑⃑⃑⃑⃑റ‖
+𝑓   = 7
+√10 = 7√10
+10   length unit  
+Example (2): 
+ the force 𝐹റ = −3𝑖⃑⃑⃑റ + 𝑘𝑗റ acts at the point A (3 ,1) if the  moment of 𝑓റ about the 
+point B(-2 , 4 ) is 7𝑘⃑റ  find value of m    
+Solution 
+𝑀𝐵⃑⃑⃑⃑⃑റ = 𝑟റ 𝑥 𝐹റ = (5 , -3) x (-3 , k) = 6𝑘,⃑⃑⃑റ 
+∴   5k – 9 = 6                                 5k= 15                       k = 3    
+Example (3): 
+ the force 𝐹റ = 𝑖റ+ 𝑗റ acts at the point A  (2 ,2) prove that the  moment vector of 
+ 𝐹റ about the origin point  is the zero vector ,explain the answer ? 
+Solution 
+𝑀𝑜⃑⃑⃑⃑⃑റ= 𝑟റ 𝑥 𝐹റ = (2 , 2) x (1 , 1)= (2-2)𝑘⃑റ = 0 𝑘⃑⃑⃑റ   
+∴ the line of action of 𝐹റ  passes by the origin point 
+ 
+ 
+--- Page 7 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 44 
+ 
+Example (4): 
+The two forces  𝐹1⃑⃑⃑റ = 𝑖റ− 𝑗റ  , 𝐹2⃑⃑⃑⃑റ = 𝑚𝑖റ+ 2𝑗റ act at the two points A( 3 ,0 ),  B (0 ,3 ) 
+respectively, determine the value of the constant m such that the sum of 
+moments of the two forces about the origin point vanishes.? 
+Solution 
+𝑟1⃑⃑⃑റ × 𝐹2⃑⃑⃑⃑റ       +   𝑟1⃑⃑⃑⃑റ × 𝐹2⃑⃑⃑⃑റ  = 0⃑റ 
+(3 , 0) x (1 ,- 1) + (0 , 3) x (m ,2)  = 0 𝑘⃑⃑⃑റ 
+−3 − 3𝑚 = 0    
+−3𝑚 = 3  
+ ∴ 𝑚 = −1  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 8 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 45 
+ 
+ 
+ 
+1) The force 𝐹റ = 3𝑖റ+ 4𝑗⃑⃑⃑റ  act at the point A (3,0 ) find the moment vector of the 
+force with respect to the point B (-2,4) then find the length of perpendicular  
+from B to the line of action of the force 𝐹റ ? 
+2) The two forces   𝐹1⃑⃑⃑റ = 𝑖റ+ 6𝑗റ  ,   𝐹2⃑⃑⃑⃑റ = 3𝑖റ− 2𝑗റ  act at the point A(-1,2 )  
+    find the moment vector of the two force with respect to the point B(0,7) 
+3) The two forces 𝐹1⃑⃑⃑റ = 5𝑖⃑⃑⃑റ + 𝑗റ  , 𝐹2⃑⃑⃑⃑റ = −𝑖റ+ 2𝑗റ  act at the point A(2,5) find the 
+      moment vector of the two force with respect to the point B(1,1)     
+4) The force  𝐹റ = 𝑚𝑖റ+ 𝑛𝑗⃑⃑⃑റ   at the point A (4,2) if its moment about the origin 
+point equals −15𝑘⃑റ and its moment about B (0 ,5 ) equals 15𝑘⃑റ  
+         Find values of the constants m  , n ?   
+5) The force 𝐹റ = 6𝑖റ+ 8𝑗⃑⃑⃑റ   at the point A (-1,2 ) find the moment vector of the 
+force with respect to the point B (2,5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Exercise (1) 
+--- Page 9 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 46 
+ 
+ 
+ 
+Notes : 
+1-if  𝑀𝑂⃑⃑⃑⃑⃑⃑റ =𝑀𝐻⃑⃑⃑⃑⃑⃑റ,  then the line of action of 𝐹 ⃑⃑⃑റ// 𝑂𝐻̅̅̅̅  
+2-if  𝑀𝑂⃑⃑⃑⃑⃑⃑റ =−𝑀𝐻⃑⃑⃑⃑⃑⃑റ  then the line of action of 𝐹 ⃑⃑⃑റ bisects  𝑂𝐻̅̅̅̅ 
+Example (1):  
+The forces 𝐹1⃑⃑⃑റ = 2𝑖റ+ 3𝑗റ  , 𝐹2⃑⃑⃑⃑റ = −𝑖റ+ 4𝑗റ  and 𝐹2⃑⃑⃑⃑റ = 𝑖റ− 4𝑗റ act at the point A (-2,5) find sum 
+of the moments of the  force about the origin point , then length of perpendicular from the 
+origin point on the line of action of the resultant ? 
+Solution 
+sum of moments of set of forces about a point = the moment of the resultant about the 
+                                                                                         same point  
+𝑅⃑റ= 𝐹1⃑⃑⃑റ  + 𝐹2⃑⃑⃑⃑റ   + 𝐹3⃑⃑⃑⃑റ  = (2,3 )            R = √4 + 9 = √13 
+     𝑀𝑜⃑⃑⃑⃑⃑റ= (-2 , 2) x (2 , 3)= -16 𝑘⃑⃑⃑റ   
+  Length of perpendicular from the origin point to the line of action of the resultant = 16
+√13 
+Example (2):  
+The forces 𝐹1⃑⃑⃑റ = (−4,2)  , 𝐹2⃑⃑⃑⃑റ = (−6,−3)  , , 𝐹3⃑⃑⃑⃑റ = (2,1)  , 𝐹4⃑⃑⃑റ = (3,−1)  prove that the line 
+of action of the resultant passes through the point A (-10 ,- 2)  
+Solution 
+ 
+ 
+ 
+Lesson (2) 
+Theorem of moments 
+The sum of algebraic measures of moments of a set  of forces about a point equals the 
+moment of the resultant about the same point. 
+--- Page 10 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 47 
+ 
+𝑅⃑റ = ( -5,-1) 
+𝑀𝐴⃑⃑⃑⃑⃑റ = 𝑟റ x 𝐹റ= ( -10 , -2 ) x (-5 , -1 ) = ( 10 -10 ) 𝑘⃑റ = 𝑂⃑റ   
+∴ the line of action of the resultant passes through the point A   
+Example (3):  
+The force 𝐹റ = −2𝑖റ− 3𝑗റ  act  at the point A (1,1 ) prove using the moments :  
+# the line of action of 𝐹റ // 𝐵𝐶⃡⃑⃑⃑⃑   
+# the line of action of 𝐹റ bisects 𝐶𝐷̅̅̅̅   
+                    Knowing that B  ( 2,4 )        ,   C  ( 4 ,7  )  , D  ( 2 ,1 )  
+Solution 
+𝑀𝐵⃑⃑⃑⃑⃑റ = 𝑟റ x 𝐹റ= ( -1 , -3 ) x (-2 , -3 ) = −3 𝑘⃑റ 
+𝑀𝐶⃑⃑⃑⃑⃑റ = 𝑟റ x 𝐹റ= ( -3 , -6 ) x (-2 , -3 ) = −3 𝑘⃑റ 
+∴ 𝑀𝐵⃑⃑⃑⃑⃑റ = 𝑀𝐶⃑⃑⃑⃑⃑റ               ∴ the line of action of  𝐹റ // 𝐵𝐶⃡⃑⃑⃑⃑    
+𝑀𝐷⃑⃑⃑⃑⃑⃑റ = 𝑟റ x 𝐹റ= ( -1 , 0 ) x (-2 , -3 ) = 3 𝑘⃑റ 
+  ∴ 𝑀𝐷⃑⃑⃑⃑⃑⃑റ = −𝑀𝐶⃑⃑⃑⃑⃑റ              ∴ the line of action of 𝐹റ bisects 𝐷𝐶̅̅̅̅ 
+Example (4): 
+ ABCD  is a rectangle in which AB = 8cm, BC = 12 cm the forces 1 6 ,14 ,𝐹 ,K  kg.wt.  act at 
+ 𝐴𝐵⃑⃑⃑⃑⃑  , 𝐶𝐵⃑⃑⃑⃑⃑  , 𝐶𝐷⃑⃑⃑⃑⃑  , 𝐴𝐷⃑⃑⃑⃑⃑  respectively if the sum of  the algebraic measure of the moments of the 
+forces about each of C and the centre of  the rectangle is equal to zero .find 𝐹,K 
+ 
+--- Page 11 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 48 
+A D 
+C 
+M 
+12cm 
+8cm 
+B 
+Solution 
+ 
+𝑀𝐶⃑⃑⃑⃑⃑റ = 0⃑റ 
+-16 X 12 + kX8 =0  
+8K = 192             ∴K= 24 gm.wt 
+𝑀𝑀⃑⃑⃑⃑⃑⃑റ = 0⃑റ 
+-16 X6  - F x 6 + 12 x4  +  k x 4 = 0 
+-16 x 6 - f x 6 + 12 x4  + 24 x4  =0  
+48 – 6F = 0        
+∴6F =  48          ∴ F = 8 gm.wt    
+Example (5):  
+ABCD  is a square of side length 6 cm , forces  of magnitudes 2 ,4,6 ,8 ,16√2  newton  act at 
+𝐴𝐵⃑⃑⃑⃑⃑  , 𝐵𝐶⃑⃑⃑⃑⃑  , 𝐶𝐷⃑⃑⃑⃑⃑  , 𝐷𝐴⃑⃑⃑⃑⃑   , 𝐴𝐶⃑⃑⃑⃑⃑  respectively  ,calculate the sum of the algebraic measure of the 
+moments of the forces bout the vertex B .? 
+Solution 
+𝐵𝐷=𝐴𝐶 =6√2          (Pythagoras theorem)  
+𝑀𝐵⃑⃑⃑⃑⃑റ = 6 X6 + 8 X6 - 16 √2 x 3√2  
+= 84 - 96 
+ 
+= -12  newton .cm 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+16 F 
+K 
+12 
+M 
+2 
+4 
+6 
+8 
+ 16√2 
+A 
+ B 
+D 
+ C 
+--- Page 12 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 49 
+ 
+ 
+ 
+ 
+1. The two forces  𝐹1⃑⃑⃑റ = 5𝑖⃑⃑⃑റ + 𝑗റ  , 𝐹2⃑⃑⃑⃑റ = −𝑖റ+ 2𝑗റ  act at the point A (2,5)  
+find the moment vector of the resultant of the two forces with respect to the 
+point B  (1,1), then find the length of perpendicular from the point B to the 
+line of action of the resultant . 
+2.  The two forces 𝐹1⃑⃑⃑റ = 5𝑖⃑⃑⃑റ − 4𝑗റ  , 𝐹2⃑⃑⃑⃑റ = 𝑖റ− 4𝑗റ  act at the origin point prove 
+that the line of action of the resultant passes through the point A(-3,4 ), 
+then find the vector of moment of the resultant with respect to the point  B 
+(2,-5 ). 
+3.  ABCD  is a rectangle in which AB = 8cm, BC = 4 cm the forces of 
+magnitudes 12 ,10 ,F ,K   kg.wt  act at 𝐴𝐵⃑⃑⃑⃑⃑  , 𝐶𝐵⃑⃑⃑⃑⃑  , 𝐶𝐷⃑⃑⃑⃑⃑  , 𝐴𝐷⃑⃑⃑⃑⃑  respectively ,if 
+the sum of algebraic measure of the moments of the forces vanishes  about 
+each of A  and C find F,K . 
+4.  ABCD  is a square its diagonals intersect at M  , forces  of magnitudes 6 , 
+F ,K , 3   newton  act at 𝐴𝐵⃑⃑⃑⃑⃑  , 𝐶𝐵⃑⃑⃑⃑⃑  , 𝐶𝐷⃑⃑⃑⃑⃑  , 𝐴𝐷⃑⃑⃑⃑⃑    respectively if the sum of  the 
+algebraic measure of the moments of the forces vanishes  about each of B  
+and M find F, K. 
+ 
+ 
+ 
+ 
+ 
+Exercise (2) 
+--- Page 13 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 50 
+ 
+ 
+ 
+ 
+ 
+ 
+IF :   𝐹റ = (𝐹𝑋,𝐹𝑌 ,𝐹𝑍) acts at the point A( L ,m , n ) 
+then : 𝑀𝐴⃑⃑⃑⃑⃑റ = 𝑟റ x 𝐹റ= |
+ 𝑖 ⃑റ          𝑗റ           𝑘⃑റ 
+ 𝐿         𝑚        𝑛 
+  𝐹𝑋         𝐹𝑌      𝐹𝑍  
+  
+| 
+Example (1) : 
+ The force 𝐹റ = 2𝑖റ− 𝑗റ+ 3𝑘⃑റ    act at the point A (-3,1,2 ) find the moment of the 
+force 𝐹റ about the point B ( 2,2,-1 ) ,then find the length of perpendicular from B 
+to the line of action of the force  ? 
+Solution 
+ 
+ 𝑀𝐵⃑⃑⃑⃑⃑റ = 𝑟റ x 𝐹റ= |
+𝑖റ            𝑗റ         𝑘⃑റ
+−5    − 1       3
+ 2      − 1         3 
+ 
+| =   21 𝑗റ + 7𝑘⃑റ
+ 
+           
+L= √02+212+72
+√22+(−1)2+32= √35     length unit  
+ 
+ 
+ 
+ 
+LESSON (3) 
+MOMENT OF A FORCE ABOUT A POINT IN 
+3-D COORDINATE SYSTEM  
+--- Page 14 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 51 
+ 
+Example (2) :  
+The force 𝐹റ = 𝐾𝑖റ+ 4𝑗റ− 𝑘⃑റ    acts at  the point A its position vector with respect 
+to the origin point is (1 ,2 ,2 )and the component of the moment  𝐹റ   about Y-
+axis is 7 moment unit ,find  the value of K ,then find the length of perpendicular 
+from ( O ) to the line of action of  𝐹റ  ? 
+Solution 
+ 
+ 𝑀𝑂⃑⃑⃑⃑⃑⃑റ = 𝑟റ x 𝐹റ= ||
+𝑖റ             𝑗റ         𝑘⃑റ
+ 
+  
+1           2        2   
+𝐾           4       − 1   
+ 
+|| = −10 𝑖റ− (−1 − 2𝐾)7𝑗റ+ (4 − 2𝐾)𝑘⃑റ
+ 
+      
+L=
+‖𝑀𝑂⃑⃑⃑⃑⃑⃑⃑റ‖
+𝐹 = √(−10)2+72+(−2)2
+√32+42+(−1)2 = 2.4     length unit  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 15 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 52 
+ 
+ 
+1. If the force 𝐹റ = 2𝑖റ+ 3𝑗റ− 𝑘⃑റ    acts at the point A (1,-1, 4 ) find : 
+             #  the moment 𝐹റ about the origin point . 
+             # the moment 𝐹റ about the point B(2,-3 ,1 ),then deduce the length of  
+              Perpendicular from B to the line of action of the force.      
+2. If the force 𝐹റ = 2𝑖റ+ 𝐿𝑗റ− 𝑘⃑റ    acts at  the point A(4,-2,0 ) and the moment 
+of 𝐹റ about the origin point equals 2𝑖റ+ 4𝑗റ+ 16𝑘⃑റ  .What is the value of L   
+3. If the force 𝐹റ = 2𝑖റ+ 𝑏𝑗റ+ 𝑘⃑റ    acts at the point A(-1,3,-2 ) and the 
+component of the moment  of 𝐹റ  about X-axis is 3 moment unit ,find the 
+value of b ,then find the length of perpendicular from the origin point to the 
+line of action of the force. 
+4. A force 𝐹റ = 15𝑖റ− 25𝑗റ+ 40𝑘⃑റ  acts at the point A(-3,-3,2 ),find the 
+component of the moment of 𝐹റ about Y -axis  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+EXERCISE (3) 
+--- Page 16 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 53 
+𝐹1 𝑥 𝐴𝐶 = 𝐹2 𝑥 𝐵𝐶 
+ 
+ 
+ 
+First resultant of two parallel forces in the same direction : 
+ 
+then: 
+    
+ 
+Second :resultant of two parallel forces in the two opposite directions: 
+Suppose that   𝐹1 > 𝐹2           
+                    
+ 
+then: 
+ 
+NOTE That : 
+Example (1):  
+Two parallel forces are in the same direction of magnitudes 20  , 30 newton act at the  
+ two points A ,  B  respectively ,find the magnitude and the direction of the resultant of  the   
+two forces and the distance between its point of action and the point B  
+knowing that AB = 100 cm    
+Solution 
+R = 𝐹1 + 𝐹2 =20 + 30 =50 newton (and in the same direction of the two forces ) 
+20 ( 100- x ) = 30 x 
+ 
+LESSON (4) 
+RESULTANT OF TWO PARALLEL FORCES  
+A 
+𝐹2  
+ 𝐹1 
+𝑅  
+C 
+B 
+R = 𝐹1 + 𝐹2 
+𝐹1 𝑥 𝐴𝐶 = 𝐹2 𝑥 𝐵𝐶 
+𝐹1 
+𝐹2 
+R 
+B 
+A 
+ C 
+R = 𝐹1 − 𝐹2 
+If the norm of the resultant is less than one of two forces, then two forces are 
+in two opposite directions. 
+R 
+--- Page 17 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 54 
+ 
+2000 -20 x = 30 x  
+50 x = 2000  
+   ∴ x = 40 cm    
+the magnitude of the resultant is 50 newtons in the direction of the two forces at 40 cm  
+  from B . 
+EXAMPLE (2) : 
+ 𝐹1 ,𝐹2 are two parallel forces in opposite directions act at the two points A, B respectively,  
+   𝐹1 > 𝐹2 , if the magnitude of the resultant of the two forces = 90 kg.wt and acts at the  
+  point C ∈ 𝐴𝐵⃡⃑⃑⃑⃑  where AB = 36 cm , AC = 16cm  ,find 𝐹1 ,𝐹2  
+Solution 
+R = 𝐹1 − 𝐹2             
+ ∴  𝐹1 − 𝐹2 = 90                  (1) 
+    𝐹1 × 16 = 𝐹2 × 52         (2) 
+     By solving the two equations   (1)  , (2)         
+∴ 𝐹1 = 130 𝑘𝑔.𝑤𝑡     ,𝐹2 = 40 𝑘𝑔.𝑤𝑡 
+EXAMPLE (3): 
+   Two parallel forces of magnitudes 12, F newton and their resultant is 3 newtons and its 
+line of action is 30 cm distant from the line of action of the first force, show that F has two 
+values and find the distance between the lines of action of t he two forces in the two cases.  
+Solution 
+The resultant is less than one of the two forces: 
+ ∴ the two forces are in opposite directions and 
+FIRST :       12 > F 
+    R = 12- F  
+     3 = 12- F                             F= 9 newton          
+9( 30 +x) = 12 x 30              X = 10 cm  
+ 
+B    
+   A 
+ 36 cm  
+ C 
+16 cm 
+ R 
+ 𝐹1 
+ 𝐹2 
+  x 
+ 30 
+cm 
+   C 
+ 
+B   
+ A 
+ F 
+ 12 
+  R 
+30 
+ X 
+ 100 - X 
+A 
+ B 
+  C 
+20  R 
+--- Page 18 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 55 
+ 
+Then the force ( F ) of magnitude 9 newton and  at 10 cm distant from the first force .  
+SECOND :       12 > F 
+    R =  F - 12  
+    3 = F - 12 
+     F = 15 newton     
+15 (30  - x )= 12 x 30  
+x = 6 cm  
+ 
+then the force(F) of magnitude 15 newton and at 6 cm distant from the first force. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  x 
+ 30 - x 
+cm 
+    C 
+ 
+A   
+ B 
+ F 
+ 12 
+ R 
+--- Page 19 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 56 
+ 
+ 
+ 
+ 
+1- Two parallel forces of magnitudes 4,6 newton act in the same direction and 
+act the two points A,B where :AB= 25 cm find the resultant of the two forces  
+2-Find the resultant of two parallel forces in opposite directions if their 
+magnitudes are 7,12 newton and act at A, B where AB =20 cm. 
+3- Two parallel forces the magnitude of their resultant is 350 newton , the 
+magnitude of one of the two forces is 500 newton and acts at a distance 51 cm 
+from the resultant find the second force and the distance between the two lines 
+of action of the two forces if the given force and the resultant act : 
+   First: in the same direction            Second: in two opposite directions                                                                                  
+4- Two parallel forces and in two opposite directions of magnitudes 7 ,12 newton 
+find the magnitude of their resultant. 
+5-Two parallel forces in the same directions of magnitudes 7 ,10 newton act at 
+the two points A, B where:  
+      AB = 51 cm if their resultant act at the point C find AC  
+ 
+ 
+Exercise (4) 
+--- Page 20 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 57 
+D 
+ 
+ 
+Example (1) : 
+In the opposite figure : 
+Find the magnitude and  
+the direction of the resultant? 
+solution 
+     R= 5 + 7 +9 = 21        force unit (upwards) 
+     Sum of moments about A = the moment of the resultant about A 
+-7 X 30 -9 X70 = -21  x  X                      
+   ∴   X = 40  cm                   
+  The magnitude of the resultant is 21 force unit upwards to the left of (A) and 
+at 40 cm 
+    distant from it. 
+Example (2) : 
+In the opposite figure: 
+Find the magnitude and the direction  
+of the resultant? 
+                                             
+Solution 
+      R= 16 + 18 – 8 -14 = 12    force unit     (upwards) 
+Sum of moments about B = moment of the resultant about B 
+LESSON (5) 
+RESULTANT OF A SET OF PARALLEL FORCES  
+5 
+7 
+9 
+A 
+C 
+B 
+30 cm   
+40 cm   
+A 
+C 
+16 
+8 
+18 
+B 
+20 cm   
+20 
+14 
+20 cm   
+--- Page 21 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 58 
+D 
+ 
+-14 x 20 - 8 x 40  + 16 x 60 = 12 x X     
+∴ X = 30 cm      
+The magnitude of the resultant is 12 force unit upwar ds to the right of (B ) and at 30 cm                                
+distant from it . 
+Example (3) :  
+A , B,C, D ,E are five points lie on a straight line where : AB = 4 cm , BC = 2 cm , CD = 3 cm, 
+ DE = 2 cm , the two forces 20  , 30 newton act vertically upwards at the two points  
+B ,D and the two forces 40 ,60 newton act vertically downwards at the two points A ,C   find  
+the magnitude and the direction of the resultant and the point of action of the resultant . 
+Solution 
+In the opposite figure: 
+Find the magnitude and the direction  
+of the resultant? 
+Solution 
+R= 40 + 60 - 20 - 30 = 50 newton   ( downwards)  
+ 
+Sum of moments of the forces about E = the moment of the resultant about E  
+- 40 x 11 – 60 x 5 + 20 x 7 + 30 x 2 = -50 x X 
+              ∴  X = 10.8 cm 
+The magnitude of the resultant is 12 newton downwards to the left of ( E )  
+and at a distance 10.8 cm from it  
+ 
+ 
+ 
+ 
+20 
+40
+00 
+30 
+A 
+C 
+B 
+4cm   
+3 cm   
+60 
+2 cm   
+E 
+2 cm 
+CCC
+--- Page 22 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 59 
+ 
+ 
+ 
+1- In the opposite figure :  
+A set of parallel forces are    
+perpendicular to 𝐴𝐵̅̅̅̅  
+find the magnitude, the direction and   
+     the point of action of the resultant? 
+ 
+2- A , B,C, D ,E are five points lie on a straight line where : AB = 4 cm , BC = 6 cm 
+, CD = 8 cm 
+and DE = 10 cm , the forces 60  , 30 , 50 , 80 , 40 gm.wt act at the points A ,B C , 
+D ,E respectively and they are perpendicular to 𝐴𝐸̅̅̅̅ , such that the first three 
+forces in the same direction  and the other two forces in the opposite direction 
+,determine the resultant of the set of forces ?  
+ 
+3-In the opposite figure: 
+Four weights of magnitudes 1 ,7 ,5,3 gm.wt  
+ are placed on a light rod. determine the 
+ point of suspension which keeps the rod horizontal?  
+  
+ 
+ 
+ 
+Exercise (5) 
+1 
+7 
+3 
+A 
+C 
+B 
+ 1 cm   
+1 cm   
+5 
+E 
+ 1 cm   
+D 
+A 
+3 
+6 
+E 
+B 
+ 2cm  
+ 
+1 cm   
+4 
+5 
+1 
+C 
+1 cm   
+--- Page 23 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 60 
+M 
+ 
+If a body is in equilibrium under the action of set of coplanar parallel forces then 
+: 
+ The sum of algebraic measures of the forces = zero 
+ The sum of algebraic measures of the moments of the forces about any 
+point in its plane 
+   equals zero  
+Expressions guide to the equilibrium:   
+About to move – about to rotate – without upsetting the equilibrium – 
+ the least weight can be hanged - the maximum weight can be hanged                                                                            
+Example (1) : 
+ 𝐴𝐵̅̅̅̅ is a uniform rod of length  60 cm and  weight 40 gm .wt rests on a support 
+at 20 cm  distant from A ,the rod is kept in equilibrium horizontally by a light 
+vertical string connects at its end B ,find the magnitude of the tension in the 
+string and the reaction of the support ? 
+Solution  
+r + T = 40   
+                                              
+the sum of moments of the forces about C  = zero 
+40 x 10 -T x 40 = zero                    
+ ∴ T = 10 gm.wt                                    
+  ∴ r= 30 gm.wt 
+LESSON (6) 
+Equilibrium a set of coplanar parallel forces  
+C 
+40 
+T 
+A 
+B 
+ 20 
+cm   
+30 
+cm   
+10 
+cm   
+r 
+--- Page 24 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 61 
+ 
+Example (2) : 
+𝐴𝐵̅̅̅̅ is a uniform rod of length 40 cm and weight 6 kg .wt rests horizontally on 
+two supports at C  and D , the distance between the two supports is 20 cm, it is 
+found that the rod is about to rotate if a weight 9 kg.wt is suspended from A. 
+find the distance between the two supports. 
+Solution 
+ 
+ 
+ 
+ 
+ 
+when a weight 9 kg.wt hanged from A, then the rod about to rotate 
+       ∴ 𝑟2 = 0  
+the sum of moments of forces about C = 0 
+    6 X  - 9 (20 - X ) = 0  
+    6X -180 + 9X = 0                   ∴  X = 12 cm    
+∴ the distance between the support C and the point A = 8 cm  
+ the distance between the support  D and the point B = 12 cm 
+Example (3) : 
+𝐴𝐵̅̅̅̅ is a uniform rod its length 60 cm and weight 3.6 kg .wt. rests horizontally on 
+two supports one of them is 5 cm distant from A and the other is 10 cm distant 
+from B, find the pressure on the two supports, then the maximum weight can 
+be hanged from the end B without upsetting the equilibrium of the rod? 
+ 
+ 
+ 
+X 
+6 
+ 9 
+A 
+c 
+M 
+D 
+X 
+ 20 -X 
+ 20 -X 
+
+--- Page 25 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 62 
+ 
+Solution 
+ 
+ 
+ 
+ 
+ 
+𝑟1 + 𝑟2 =3.6    
+The sum of moments of the forces about c =0  
+3.6 x 25 -𝑟2 x 45 =0 
+∴ 𝑟2 = 2 kg.wt  
+𝑟1 = 1.6 kg.w        
+Note that : 
+ When hanging the weight at B  
+ 𝑟1 = 0 
+The sum of moments of the forces about D = 0 
+  W x 10 – 3.6 x 20 =0  
+    ∴W = 7.2 kg.wt  
+ 
+ 
+ 
+ 
+ 
+3.6 
+A 
+B 
+ c 
+M 
+D 
+10cm 
+ 20 cm 
+ 25cm 
+W 
+--- Page 26 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 63 
+ 
+ 
+ 
+1-Two supports at A,B at a distance 20 cm from the two ends of a wooden board 
+    of length 200 cm and weight 16 kg.wt. acts at its midpoint and carries a box of  
+     weight 24kg.wt.at 60cm from the support ( A ) . 
+    Find the pressure on the two supports? 
+2-AB is a uniform wooden board of mass 10 kg. and  length 4 metre  rests in a 
+horizontal position on two supports one of them at A and the other at a point  
+1 metre distant from B , show the distance at which a child of weight 50 kg.wt 
+stands on the board to make the reactions on the two supports equal.? 
+3-A rod AB its length 90 cm and weight 50 newton and acts at its midpoint rests 
+in a horizontal position on two supports one of them at A and the other at C 
+30 cm distant from B and carries a weight 20 newton at a point 15 cm distant  
+from B, determine the values of the pressure on each support, also find the 
+magnitude of the weight should be hanged from the end B to make the rod 
+ about to rotate. 
+4-A uniform rod of length 2 metres and mass 75 kg.wt. rests in a horizontal  
+   position on two supports at its ends, a weight 15 kg.wt.is suspended from  
+   a point on the rod at 50 cm distant from one of its ends, find the reaction on  
+   each support  
+ 
+ 
+ 
+ 
+ 
+Exercise (6) 
+--- Page 27 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 64 
+ 
+ 
+ 
+ 
+Definition: 
+Couple: a system of two forces of equal magnitudes  
+and in opposite directions and acting in different lines of action. 
+Theorem: 
+ The moment of a couple is a constant vector does not dependent on the point 
+about which we take the moments of the two forces 
+𝑀⃑⃑റ = 𝐵𝐴⃑⃑⃑⃑⃑റ × 𝐹റ = 𝐴𝐵⃑⃑⃑⃑⃑റ × −𝐹റ 
+ Norm of the moment of the couple = 
+ magnitude of one of the two forces x the perpendicular distance between the line 
+of action of two forces 
+ 
+ 
+ 
+ The sign of the algebraic moment of the couple is negative  
+      if the rotation is clockwise. 
+  The sign of the algebraic moment of the couple is positive 
+        if the rotation is anticlockwise. 
+Definition: 
+ If the two couples are in equilibrium, then the sum of their moments = zero 
+           i.e.  M1 + M2 = 0 
+ If the two couples are equivalent, then M1 = M2 
+Example 1: 
+Two forces 𝐹റ1 = 2𝑖റ− 𝑏𝑗റ,𝐹റ2 = 𝑎𝑖റ− 5𝑗റ are forming a couple. Find a and b 
+F 
+F 
+𝑭⃑⃑റ 
+−𝑭⃑⃑റ 
+𝑨 
+𝑩 
+M = F x r 
+ 
++ 
+7sson eL 
+Couple 
+--- Page 28 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 65 
+ 
+Solution 
+∵ The two forces form a couple          ∴ 𝑭⃑⃑റ𝟏 = −𝑭⃑⃑റ𝟐 
+∴ a = -2   b = 5 
+Example 2: 
+If the magnitude of the moment of a couple is 350 newton.m and the 
+magnitude of one of the two forces is 70 newton, then: find the length 
+of   
+the arm of the moment. 
+Solution 
+M = F x r                    ∴ 350 = 70𝑟                     ∴ 𝑟 = 5 𝑚𝑒𝑡𝑟𝑒  
+Example 3: 
+Two forces  𝑭⃑⃑റ𝟏 = 𝟓𝒊റ+ 𝑎𝒚𝒋⃑⃑⃑⃑റ + 𝟑𝒌⃑⃑റ ,     𝑭⃑⃑റ𝟐 = 𝑏𝒊റ− 𝟗𝒋റ+ 𝒄𝒌⃑⃑റ  are forming 
+   a couple. Find a + b + c 
+Solution 
+ 𝑏 = -5 ,   𝑎 = 9 ,    𝑐 = - 3    ∴ 𝑎 + 𝑏 + 𝑐 = 1 
+Example 4: 
+If 𝑭⃑⃑റ𝟏,𝑭⃑⃑റ𝟐 are two forces form a couple where 𝑭⃑⃑റ𝟏 = −𝟑𝒊റ+ 𝟐𝒋റ acts at 
+the point A (1, 1), 𝑭⃑⃑റ𝟐 acts at the point B (-1, -2) find the moment of 
+the couple and the length of perpendicular drawing from A on the 
+line of action of 𝑭⃑⃑റ𝟐 
+Solution 
+𝑴⃑⃑⃑റ = 𝑨𝑩⃑⃑⃑⃑⃑⃑റ × 𝑭⃑⃑റ𝟐 =(-2,-3) x (3 ,-2) = ( 4+ 9) 𝒌⃑⃑റ = 13 𝒌⃑⃑റ 
+M = F x r   ∴ 13 = √13 𝑟  ∴ √13  length unit   
+--- Page 29 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 66 
+ 
+Exercise (7) 
+1. Two forces 𝐹റ1 = 3𝑖റ− 𝑏𝑗റ,𝐹റ2 = 𝑎𝑖റ− 5𝑗റ are forming a couple. Find (a , b) 
+2. A couple consists of two forces each of magnitude 12 newton and the length 
+      of perpendicular between them is 8 cm is equivalent to a couple of two forces 
+     the perpendicular distance between them 6 cm. Find the magnitude of each its  
+    two forces 
+3. If  𝐹റ1 = 4𝑖റ− 𝑎𝑗റ,   𝐹റ2 = 2𝑏𝑖റ− 5𝑗റ are forming a couple.  Find    2a + b 
+4. If 𝑀1⃑⃑⃑⃑⃑റ,𝑀2⃑⃑⃑⃑⃑റ are two equilibrium couples  and 𝑀1⃑⃑⃑⃑⃑റ = 20 𝑘⃑⃑⃑റ , then: find 𝑀1⃑⃑⃑⃑⃑റ − 𝑀2⃑⃑⃑⃑⃑റ  
+5. If 𝐹റ1,𝐹റ2 are two forces act at the two points A(1, 3), B (0, 5) respectively  
+            and form a couple its moment vector is  20 𝑘⃑റ, find 𝐹റ1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 30 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 67 
+ 
+ 
+ 
+ 
+First case:  
+If a set of forces form many couples, 
+ then the set is equivalent a resultant couple. 
+Its moment = the sum of algebraic measure of the moment of these couples 
+Example (1) 
+ABCD is a square of side length 30 cm, forces of magnitude 6, 4, 6, 4 
+newton act at 𝐴𝐵⃑⃑⃑⃑⃑റ,𝐶𝐵⃑⃑⃑⃑⃑റ,𝐶𝐷,⃑⃑⃑⃑⃑⃑റ 𝐴𝐷⃑⃑⃑⃑⃑റ respectively and two forces each of 
+magnitude 2√2 newton act at the two points A , B in the direction of 
+𝐵𝐷⃑⃑⃑⃑⃑⃑റ,𝐷𝐵⃑⃑⃑⃑⃑⃑റ respectively . Find the algebraic measure of the moment of 
+the couple which equivalent to the system. 
+ The two forces (4, 4) form a couple  
+       ∴M1=4 x 30 = 129 newton.cm  
+ The two forces (6, 6) form a couple  
+       ∴M2= - 6 x 30 = -180 newton.cm  
+ The two forces (2√2, 2√2) form a couple  
+       ∴M2= - 2√2x 30√2 = -120 newton.cm  
+∴ the system is equivalent to a couple the algebraic measure of  its 
+moment = 120 – 180 – 120 = -180 newton.cm 
+Remember that: 
+ The two diagonals of the square are perpendicular, equal in length and 
+     bisect each other  
+ The length of the diagonal = √2 L      where L is the side length 
+ 
+ 
+𝟐√𝟐 
+𝟐√𝟐 
+𝟒 
+𝟒 
+𝟔 
+𝟔 
+A 
+ B 
+C 
+D 
+Lesson (8) 
+Resultant couple ( First case ) 
+ 
+--- Page 31 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 68 
+ 
+ 
+Example (2) 
+ABCD is a parallelogram in which AB = 6cm, BC= 8cm, m(∡A)= 60o. forces 
+of magnitude 6, 9, 6, 9 gm. wt act  at 𝐴𝐵⃑⃑⃑⃑⃑റ,𝐶𝐵⃑⃑⃑⃑⃑റ,𝐶𝐷,⃑⃑⃑⃑⃑⃑റ 𝐴𝐷⃑⃑⃑⃑⃑റ respectively prove 
+that the system equivalent to a couple and find its moment. 
+Solution 
+ Two diagonals are not equal , not perpendicular and bisect each other. 
+ Each two opposite sides are parallel and equal in length.  
+BE= 6 sin 60O = 3 √3 cm 
+BO = 8 sin 60O=3 √3 cm 
+ The two forces (6, 6) form a couple  
+       ∴M1= - 6 x 4 √3 = -24 √3 hg.wt.cm  
+ The two forces (9, 9) form a couple  
+       ∴M2= 9 x 3 √3 = 27 √3 hg.wt.cm  
+ 
+ ∴ the system is equivalent to a couple,  
+         the algebraic measure of  its moment = 3 √3 gm.wt.cm 
+Example (4):   
+ABCD  is a rectangle in which AB =30 cm,BC = 40 cm . forces of magnitude 
+15, 30, 15, 30 newton act at 𝐵𝐴⃑⃑⃑⃑⃑റ,𝐵𝐶⃑⃑⃑⃑⃑റ,𝐷𝐶,⃑⃑⃑⃑⃑⃑റ 𝐷𝐴⃑⃑⃑⃑⃑റ respectively, prove that the 
+system equivalent to a couple and find its moment and then find two forces act 
+perpendicular to  𝐴𝐶̅̅̅̅ at the two points A and C which make the system is in  
+equilibrium. 
+Solution  
+ The two forces (15, 15) form a couple  
+       ∴M1= 15 x 40 = 600 newton.cm  
+ The two forces (30, 30) form a couple  
+      
+ 
+6cm 
+9 
+6 
+9 
+o60 
+6 
+o60 
+A 
+B 
+C 
+D 
+ E 
+O 
+8cm 
+𝟑𝟎 
+A 
+D 
+C 
+ B 
+𝟑𝟎 
+𝟏𝟓 
+𝟏𝟓 
+--- Page 32 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 69 
+ 
+ 
+  ∴M2= - 30 x 30 = -900 newton.cm  
+The system is equivalent to a couple, 
+ the algebraic measure of its moment = -300 newton.cm 
+ To make the system in equilibrium                 F x AC – 300 = zero 
+ ∴ F = 6 newton                           the two forces are 6, 6 newton 
+Remember that: 
+ The two diagonals of the rectangle are equal in length, are not 
+     perpendicular and bisect each other  
+ Each two opposite sides are parallel and equal in length.  
+ All its angels are equal in measure, each of measure  90o 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 33 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 70 
+ 
+Exercise (8) 
+1. In the opposite figure : 
+ABCDI is a square  
+Find the algebraic measure of the moment of  the  
+couple of the system of forces shown in the figure. 
+2. ABCD  is a rectangle in which AB =12 cm, AD = 5 cm  two forces  each of 
+magnitude 39 newton act at the two points A,C and their line of action in 
+direction of   𝐵𝐷⃑⃑⃑⃑⃑⃑റ,𝐷𝐵⃑⃑⃑⃑⃑⃑റ .Find the norm of the moment of the couple 
+3. ABCD  is a rectangle in which AB =30 cm, BC = 40 cm . forces of 
+magnitude 15, 30, 15, 30 newton act at 𝐵𝐴⃑⃑⃑⃑⃑റ,𝐵𝐶⃑⃑⃑⃑⃑റ,𝐷𝐶,⃑⃑⃑⃑⃑⃑റ 𝐷𝐴⃑⃑⃑⃑⃑റ respectively find the 
+algebraic measure of the moment of the given forces. If two forces act at the two   
+points A and C perpendicular to  𝐴𝐶̅̅̅̅ which make the system in equilibrium  
+  find the two forces. 
+4. ABCD is a parallelogram in which CD = 6cm, AD= 8cm, m(∠C) = 60o.   
+forces of magnitude 8, 10, 8, 10 gm. wt act  at 𝐴𝐵⃑⃑⃑⃑⃑റ,𝐶𝐵⃑⃑⃑⃑⃑റ,𝐶𝐷,⃑⃑⃑⃑⃑⃑റ 𝐴𝐷⃑⃑⃑⃑⃑റ respectively 
+  prove that the system equivalent to a couple and find its moment. 
+ 
+ 
+ 
+𝟏𝟐 
+𝟏𝟐 
+𝟖 
+𝟖 
+A 
+ B 
+C 
+D 
+𝟏𝟐𝒄𝒎 
+𝟏𝟔𝒄𝒎 
+--- Page 34 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 71 
+ 
+ 
+ 
+Second case: 
+A system of coplanar forces is said to be equivalent to a couple if the following 
+two conditions are satisfied together: 
+1. The sum of the algebraic components of the forces in any direction = zero. 
+2. The sum of the moment of the forces about any point ≠ 0  
+Third case: 
+If the sum of the algebraic measure of the moment of a system of coplanar forces 
+with respect to three non collinear point in its plane is constant and is not equal 
+to zero, this system equivalent to a couple the algebraic measure of its moment 
+equals this constant. 
+Example (1): 
+The forces    𝐹റ1 = 2𝑖റ+ 3𝑗റ,       𝐹റ2 = 𝑖റ+ 2𝑗റ ,       𝐹⃑⃑⃑റ3 = −6𝑖റ+ 𝑗റ,        𝐹റ4 = 3𝑖റ− 6𝑗റ  
+act at the points A (2 , 4), B (3 , 2), C (1 , 2), D (1 , 1).  
+Prove that the system equivalent to a couple and find its moment 
+Solution 
+𝑅⃑റ = (2,3) + (1,2) + (−6,1) + (3,−6) = 0⃑റ 
+𝑀𝑂⃑⃑⃑⃑⃑⃑റ = (2,4) × (2,3) + (3,2) × (1,2) + (1,2) × (−6,1) + (1,1) × (3,−6) 
+      =  -2 𝑘⃑റ  +  4 𝑘⃑റ  + 13 𝑘  -  9𝑘⃑റ = 6 𝑘⃑റ  
+Lesson (9) 
+Resultant couple (second and third) 
+case) 
+ 
+--- Page 35 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 72 
+ 
+∴ The system is equivalent to a couple  
+    the algebraic measure of its moment = 6 moment unit 
+Example(2): 
+The two forces 𝐹റ1 = 3𝑖റ− 4𝑗റ,𝐹റ2 = −3𝑖റ− 4𝑗റ  act at A(1, 2), B (-3 ,4) 
+respectively. Prove that they form a couple and find the norm of its moment. 
+Solution 
+𝑅⃑റ = (3,−4) + (−3,4) = 0⃑റ     
+  𝑀𝐵⃑⃑⃑⃑⃑റ = 𝐵𝐴⃑⃑⃑⃑⃑⃑റ × 𝐹⃑⃑റ = (4,−2) × (3,−4) = −10 𝑘⃑⃑റ 
+∴The system is equivalent to a couple the norm of its moment = 10 moment unit 
+Example (3): 
+ABCD is a square of side length 30 cm , forces of magnitude 8, 10, 8, 10 
+newton act at 𝐴𝐵⃑⃑⃑⃑⃑റ,𝐶𝐵⃑⃑⃑⃑⃑റ,𝐶𝐷,⃑⃑⃑⃑⃑⃑റ 𝐴𝐷⃑⃑⃑⃑⃑റ respectively  . Find the algebraic 
+measure of the moment of the couple which equivalent to the system. 
+Solution 
+𝑀𝐴⃑⃑⃑⃑⃑റ = −6 × 30 + 4 × 30 = −60 𝑛𝑒𝑤𝑡𝑜𝑛.𝑐𝑚    
+𝑀𝐵⃑⃑⃑⃑⃑റ = −6 × 30 + 4 × 30 = −60 𝑛𝑒𝑤𝑡𝑜𝑛.𝑐𝑚    
+𝑀𝐶⃑⃑⃑⃑⃑റ = −6 × 30 + 4 × 30 = −60 𝑛𝑒𝑤𝑡𝑜𝑛.𝑐𝑚    
+The system equivalent to a couple,  
+ the algebraic measure of its moment = -60 newton.cm   
+Notice that: 
+This example can be solved by using the first case. 
+ 
+𝟒 
+𝟒 
+𝟔 
+𝟔 
+A 
+ B 
+C 
+D 
+𝟑𝟎𝒄𝒎 
+--- Page 36 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 73 
+ 
+ 
+ 
+1. In the opposite figure: 
+By using the third case  
+find the algebraic measure of the moment 
+ of the couple equivalent to the given system. 
+2. In the opposite figure: 
+ABCDEF is a regular hexagon whose 
+ side length is10 cm. 
+By using the third case  
+find the algebraic measure of the moment 
+ of the couple that equivalent to the given system. 
+Notice that: 
+The perpendicular distance between any two parallel sides in the regular 
+hexagon of side length L is √3 𝐿 
+3. The forces 𝐹റ1 = 2𝑖റ− 4𝑗റ,    𝐹റ2 = 𝑖റ− 3𝑗റ ,  𝐹⃑⃑⃑⃑റ3 = −3𝑖റ+ 7𝑗റ  act at the points 
+A(-1 , 1), B (-2 , 3), C (0 , 1) respectively . 
+ Prove that the system is equivalent a couple and find the norm of its moment  
+ 
+𝟏𝟐 
+𝟏𝟐 
+𝟖 
+𝟖 
+A 
+ B 
+C 
+D 
+𝟏𝟐𝒄𝒎 
+𝟏𝟔𝒄𝒎 
+𝟏𝟎 
+𝟏𝟐 
+𝟏𝟐 
+𝟏𝟒 
+𝟏𝟒 
+𝟏𝟎 
+A 
+ B 
+C 
+D 
+E
+F 
+Exercise (9) 
+--- Page 37 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 74 
+Lesson (10) 
+The fourth case: 
+If three coplanar forces act on a rigid body and are completely 
+represented by the sides of a triangle taken the same way round, then 
+this system is equivalent to a couple. 
+ The magnitude of its moment =  2 × the area of the triangle × the magnitude of 
+                                                           the force represented the unit length    
+  This rule is generalized for more than three forces. 
+Example (1):  
+ABC is an equilateral  triangle of side length 10 cm, equal forces of 
+magnitude 2 newton act at 𝐴𝐵 ⃑⃑⃑⃑⃑⃑റ,𝐵𝐶 ⃑⃑⃑⃑⃑⃑റ,𝐶𝐴 ⃑⃑⃑⃑⃑⃑റ,𝐴𝐵 ⃑⃑⃑⃑⃑⃑റ respectively. Find the 
+magnitude of the moment of the equivalent couple to the system.  
+Solution 
+The forces in one cyclic order       
+𝑓𝑜𝑟𝑐𝑒 
+𝑠𝑖𝑑𝑒 𝑙𝑒𝑔𝑛𝑡ℎ =
+2
+10 =
+1
+5  
+The magnitude of its moment =  2 × 
+1
+2 × 10 × 10sin60° ×1
+5 = 10√3newton.cm 
+Example (2): 
+ABC is a right angled triangle at A, AB = 4 cm, AC = 3 cm the shown 
+forces measured by newton are represented completely by the sides of 
+the triangle. Find F1 + F2  
+ 
+ 
+1F 
+8 
+2F 
+A 
+B 
+C 
+4cm 
+
+--- Page 38 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 75 
+ 
+Solution 
+ BC = 5cm     (Pythagoras theorem) 
+The forces in one cyclic order and represented completely by the sides of the 
+triangle. 
+           ∴ 8
+4 = 𝐹1
+3 = 𝐹2
+5         ∴ 𝐹1 = 6 𝑛𝑒𝑤𝑡𝑜𝑛,𝐹2 = 10 𝑛𝑒𝑤𝑡𝑜𝑛     
+  ∴ 𝐹1 + 𝐹2 = 16𝑛𝑒𝑤𝑡𝑜𝑛    
+Example (3): 
+ABCD is a rectangle in which AB = 9, BC = 24 cm, O is the midpoint of 𝐴𝐷̅̅̅̅, the 
+forces of magnitude 18, 48, 30, 24 gm.wt act at  𝐴𝐵⃑⃑⃑⃑⃑റ,𝐵𝐶⃑⃑⃑⃑⃑റ,𝐶𝑂,⃑⃑⃑⃑⃑⃑റ 𝑂𝐴⃑⃑⃑⃑⃑റ 
+respectively. Prove that the system equivalent a couple and find the 
+magnitude of its moment. 
+Solution 
+CO = 15 cm     (Pythagoras theorem) 
+The forces in one cyclic order and represented completely by the sides of the 
+triangle. 
+∴ 18
+9 = 48
+24 = 24
+12 = 2     ∴ the system is equivalent to a couple 
+The magnitude of its moment = 2 × the area of  the triangle × the magnitude of 
+                                                 the force represented the unit length    
+The magnitude of its moment = 
+ 2 × 1 
+2 (24+12) × 9× 2 = 324 𝑔𝑚.𝑤𝑡 .𝑐𝑚 
+ 
+ 
+ 
+𝟐𝟒 
+𝟒𝟖 
+𝟏𝟖 
+𝟑𝟎 
+A 
+B 
+C 
+D 
+𝟏𝟐𝒄𝒎 
+𝟐𝟒𝒄𝒎 
+O 
+𝟗𝒄𝒎 
+--- Page 39 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 76 
+ 
+ 
+Exercise (10) 
+1. ABC is a triangle in which AB = AC = 13 cm, BC = 24 cm, the forces of 
+magnitude 39, 72, 39 newton act at the 𝐴𝐵⃑⃑⃑⃑⃑ ,𝐵𝐶⃑⃑⃑⃑⃑ ,𝐶𝐴⃑⃑⃑⃑⃑  respectively. Prove that 
+the system equivalent a couple and find the magnitude of its moment. 
+2. ABCD is a rectangle in which AB = 9cm, BC= 24cm,X is the midpoint of 
+𝐵𝐶̅̅̅̅ forces of magnitudes 27, 36, 45 newton act at  𝐴𝐵⃑⃑⃑⃑⃑ ,𝐵𝑋⃑⃑⃑⃑⃑ ,𝑋𝐴⃑⃑⃑⃑⃑  respectively.  
+Prove that the system equivalent to a couple and find the magnitude of its 
+moment. 
+3. ABC is a triangle in which AB = 7 cm, BC = 8 cm, m (∠ABC) = 120O 
+forces of magnitude 17.5, 20, 32.5 newton act at 𝐴𝐵⃑⃑⃑⃑⃑ ,𝐵𝐶⃑⃑⃑⃑⃑ ,𝐶𝐴⃑⃑⃑⃑⃑  respectively if 
+the system equivalent to a couple find the magnitude of its moment. 
+4. Three forces of magnitude 10.5, 12, 19.5 newton represented completely by 
+the directed line segment 𝐴𝐵⃑⃑⃑⃑⃑ ,𝐵𝐶⃑⃑⃑⃑⃑ ,𝐶𝐴⃑⃑⃑⃑⃑  respectively on the triangle ABC 
+where AC= 13 cm, then  
+5. ABCD is a trapezium in which 𝐴𝐷̅̅̅̅ // 𝐵𝐶̅̅̅̅ , m(∠ A)  = 90o , AD = 10 cm ,  
+AB = 12 cm , BC = 15 cm forces of magnitude F1 , F2, 26, F3 newton act on  
+𝐴𝐵⃑⃑⃑⃑⃑ ,𝐵𝐶⃑⃑⃑⃑⃑ ,𝐶𝐷⃑⃑⃑⃑⃑ ,𝐷𝐴⃑⃑⃑⃑⃑  respectively. If the system equivalent to a couple find the 
+value of    F1 + F2 + F3 
+ 
+ 
+ 
+ 
+ 
+--- Page 40 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 77 
+ 
+ 
+      First question 
+1. ABC is a triangle in which AB = 7 cm, BC = 8 cm, m(∡ABC) = 120O forces 
+of magnitude 17.5 , 20, 32.5 newton act at 𝐴𝐵⃑⃑⃑⃑⃑ ,𝐵𝐶⃑⃑⃑⃑⃑ ,𝐶𝐴⃑⃑⃑⃑⃑  respectively if the 
+system. equivalent to a couple find the magnitude of its moment. 
+2. The force 𝐹 ⃑⃑⃑റ = 6𝑖റ+ 8𝑗റ act at a point  A(-1,2) find the moment of 𝐹 ⃑⃑⃑റ about 
+the point B (2, 5)  
+Second question: 
+1. Two forces 𝐹റ1 = 5𝑖റ− 4𝑗റ,   𝐹റ2 = 𝑖റ− 4𝑗റ act at the origin point, prove that the 
+line of action of their resultant passes through the point A (-3.4). Find the 
+moment vector of the resultant about the point B ( 2, -5). 
+2. In the opposite figure: 
+ABCDEF is a regular hexagon whose 
+ side length 10 cm. 
+find the algebraic measure of the moment 
+ of the couple that equivalent to the given system. 
+Third question: 
+1. If the force 𝐹 ⃑⃑⃑റ = 2𝑖 ⃑റ − 𝑙𝑗 ⃑⃑റ − 𝑘 ⃑⃑⃑റ acts at the point A (4 , -2 , 0), the moment 
+ of 𝐹 ⃑⃑⃑റabout the origin point equals  2𝑖 ⃑റ + 4𝑗 ⃑⃑റ + 16 𝑘 ⃑⃑⃑റ , then find the value of 𝑙 
+ 
+ 
+ 
+𝟏𝟎 
+𝟏𝟐 
+𝟏𝟐 
+𝟏𝟒 
+𝟏𝟒 
+𝟏𝟎 
+A 
+ B 
+C 
+D 
+E
+F 
+Test 
+ 
+--- Page 41 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 78 
+ 
+ 
+2. ABCD is a parallelogram in which CD = 6cm, AD= 8cm, m(∠C)= 60o. 
+forces of magnitude 8, 10, 8, 10 gm. wt act  at 𝐴𝐵⃑⃑⃑⃑⃑റ,𝐶𝐵⃑⃑⃑⃑⃑റ,𝐶𝐷,⃑⃑⃑⃑⃑⃑റ 𝐴𝐷⃑⃑⃑⃑⃑റ respectively 
+prove that the system equivalent to a couple and find its moment. 
+Fourth question: 
+1. Two parallel forces of magnitude 4, 6 newton act at the points A and B in 
+the same direction, AB= 25 cm find the resultant of the two forces. 
+2.   A couple consists of two forces each of magnitude 12newton and the 
+perpendicular distance between them equals 8 cm, is equivalent to another 
+couple consists of two forces and the perpendicular distance between them 
+6 cm find the magnitude of the two forces. 
+ 
+Fifth question: 
+1. In the opposite figure : 
+Four weights of magnitudes 1, 7, 5, 3 kg.wt are placed on a light rod. 
+Determine the point of suspension that makes the rod in horizontal 
+position. 
+2. 𝐴𝐵 is a regular rod of length 40 cm and weight 6 kg.wt rests on two 
+supports at C and D in horizontal position , the distance between the two 
+supports is 20 cm .If a weight of magnitude 9 kg.wt is suspended at the 
+point A, it makes the rod about to rotate. Find the position of the two 
+supports  
+3 
+ 5 
+ 7 
+ 1 
+A 
+1cm 
+1cm 
+1cm 
+C 
+H 
+B 
+--- Page 42 ---
+ Administration and Operation Unit of Applied Technology Schools. 
+ 
+   Algebra + Statics                          Third Form Secondary– 1st Term                                      
+ 79 
+ 
+ 
+Evaluation 
+ 
+ 
+ 
+ 
