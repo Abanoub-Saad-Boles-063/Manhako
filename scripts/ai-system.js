@@ -20,7 +20,8 @@ const AI_CONFIG = {
         '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', // New Key 10
         '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', // New Key 11
         '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', // New Key 12
-        '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', // New Key 13
+        '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',
+        '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',// New Key 13
         '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'  // New Key 14
     ],
     currentKeyIndex: 0,
