@@ -991,10 +991,10 @@
 window.loadMap = function (index) {
     currentMapIndex = index;
 
-    // تنظيف آمن للـ container وإزالة الخريطة القديمة لتجنب الخطأ
+    // تنظيف آمن للـ container لتجنب خطأ "container reused"
     const mapContainer = document.getElementById('map');
     if (mapContainer) {
-        mapContainer._leaflet_id = null;  // هذا السطر يحل الخطأ الجديد
+        mapContainer._leaflet_id = null;
     }
     if (map) {
         map.remove();
@@ -1003,9 +1003,12 @@ window.loadMap = function (index) {
 
     const mapData = imageMaps[index];
 
-    let imageUrl = mapData.url;
-    imageUrl = imageUrl.split('/').map(part => encodeURIComponent(part)).join('/');
-    imageUrl = 'Term 1/Social Study/' + imageUrl;
+    // البادئة الثابتة + مجلد "خرايط" بدون ترميز (لأنه اسم مجلد فعلي)
+    let imageUrl = 'Term 1/Social Study/خرايط/';
+
+    // اسم الملف فقط نرمزه (لأنه يحتوي مسافات وأقواس)
+    const fileName = mapData.url.split('/').pop(); // يأخذ الجزء الأخير (اسم الملف)
+    imageUrl += encodeURIComponent(fileName);
 
     const mapDiv = document.getElementById('map');
     if (!mapDiv) {
