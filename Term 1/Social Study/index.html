@@ -994,7 +994,10 @@
             if (map) map.remove();
 
             const mapData = imageMaps[index];
-            const encodedUrl = encodeURIComponent(mapData.url); // ترميز أكثر أمانًا للمسافات والأحرف الخاصة (يحل مشكلة الموبايل)
+            // ترميز آمن للمسارات التي تحتوي على عربية، مسافات، وأقواس (يعمل على الموبايل)
+const parts = mapData.url.split('/');
+const encodedParts = parts.map(part => encodeURIComponent(part));
+const encodedUrl = encodedParts.join('/'); // ترميز أكثر أمانًا للمسافات والأحرف الخاصة (يحل مشكلة الموبايل)
 
             // Show loading indicator logic could be added here if needed
 
