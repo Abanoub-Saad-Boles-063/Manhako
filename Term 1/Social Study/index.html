@@ -991,7 +991,7 @@
 window.loadMap = function (index) {
     currentMapIndex = index;
 
-    // تنظيف آمن للـ container لتجنب خطأ "container reused"
+    // تنظيف آمن للـ container
     const mapContainer = document.getElementById('map');
     if (mapContainer) {
         mapContainer._leaflet_id = null;
@@ -1003,11 +1003,11 @@ window.loadMap = function (index) {
 
     const mapData = imageMaps[index];
 
-    // البادئة الثابتة + مجلد "خرايط" بدون ترميز (لأنه اسم مجلد فعلي)
-    let imageUrl = 'Term 1/Social Study/خرايط/';
+    // المسار المطلق الكامل (ابدأ بـ / ليبدأ من جذر الموقع)
+    let imageUrl = '/Term 1/Social Study/خرايط/';
 
-    // اسم الملف فقط نرمزه (لأنه يحتوي مسافات وأقواس)
-    const fileName = mapData.url.split('/').pop(); // يأخذ الجزء الأخير (اسم الملف)
+    // ترميز اسم الملف فقط
+    const fileName = mapData.url.split('/').pop();
     imageUrl += encodeURIComponent(fileName);
 
     const mapDiv = document.getElementById('map');
