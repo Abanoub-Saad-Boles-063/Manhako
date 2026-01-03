@@ -990,15 +990,21 @@
         };
 window.loadMap = function (index) {
     currentMapIndex = index;
-    if (map) map.remove();
+
+    // تنظيف آمن للـ container وإزالة الخريطة القديمة لتجنب الخطأ
+    const mapContainer = document.getElementById('map');
+    if (mapContainer) {
+        mapContainer._leaflet_id = null;  // هذا السطر يحل الخطأ الجديد
+    }
+    if (map) {
+        map.remove();
+        map = null;
+    }
+
     const mapData = imageMaps[index];
 
-    let imageUrl = mapData.url;  // مثل "خرايط/....jpeg"
-
-    // ترميز آمن للأحرف الخاصة
+    let imageUrl = mapData.url;
     imageUrl = imageUrl.split('/').map(part => encodeURIComponent(part)).join('/');
-
-    // إضافة المسار الفرعي الصحيح (هذا هو المفتاح!)
     imageUrl = 'Term 1/Social Study/' + imageUrl;
 
     const mapDiv = document.getElementById('map');
@@ -1029,7 +1035,7 @@ window.loadMap = function (index) {
         Swal.fire({
             icon: 'error',
             title: 'خطأ في تحميل الخريطة',
-            text: 'تأكد من المسار: ' + imageUrl  // غيّر هنا ليظهر المسار المرمز (أوضح للتشخيص)
+            text: 'تأكد من المسار: ' + imageUrl
         });
     };
     img.src = imageUrl;
