@@ -988,68 +988,67 @@
                 timer: 3000, showConfirmButton: false
             });
         };
+window.loadMap = function (index) {
+    currentMapIndex = index;
+    if (map) map.remove();
+    const mapData = imageMaps[index];
 
-        window.loadMap = function (index) {
-            currentMapIndex = index;
-            if (map) map.remove();
+    // الحل الجديد: بناء URL آمن يعمل على الموبايل والكمبيوتر
+    let imageUrl = mapData.url;  // القيمة الأصلية مثل "خرايط/....jpeg"
 
-            const mapData = imageMaps[index];
-            // ترميز آمن للمسارات التي تحتوي على عربية، مسافات، وأقواس (يعمل على الموبايل)
-const parts = mapData.url.split('/');
-const encodedParts = parts.map(part => encodeURIComponent(part));
-const encodedUrl = encodedParts.join('/'); // ترميز أكثر أمانًا للمسافات والأحرف الخاصة (يحل مشكلة الموبايل)
+    // ترميز المسار الكامل مع الحفاظ على / غير مرمز
+    imageUrl = imageUrl.split('/').map(part => encodeURIComponent(part)).join('/');
 
-            // Show loading indicator logic could be added here if needed
+    // إضافة البادئة الفعلية للمسار الفرعي
+    imageUrl = 'Term 1/Social Study/' + imageUrl;
 
-            // Init Leaflet with CRS.Simple
-            map = L.map('map', {
-                crs: L.CRS.Simple,
-                minZoom: -2,
-                maxZoom: 2,
-                zoomControl: true,
-                attributionControl: false
+    const mapDiv = document.getElementById('map');
+    if (!mapDiv) {
+        console.error("Map element not found");
+        return;
+    }
+
+    map = L.map('map', {
+        crs: L.CRS.Simple,
+        minZoom: -2,
+        maxZoom: 2,
+        zoomControl: true,
+        attributionControl: false
+    });
+
+    const img = new Image();
+    img.onload = function () {
+        const w = this.width;
+        const h = this.height;
+        const bounds = [[0, 0], [h, w]];
+        L.imageOverlay(imageUrl, bounds).addTo(map);
+        map.fitBounds(bounds);
+        renderMapMarkers(mapData, h);
+    };
+    img.onerror = function () {
+        console.error("Failed to load map image:", imageUrl);
+        Swal.fire({
+            icon: 'error',
+            title: 'خطأ في تحميل الخريطة',
+            text: 'تأكد من المسار: ' + mapData.url
+        });
+    };
+    img.src = imageUrl;  // استخدام الـ URL المرمز هنا
+
+    // Dev Mode Click (الجزء المتبقي من الكود الأصلي)
+    map.on('click', function (e) {
+        if (devMode) {
+            const coords = `[${Math.round(e.latlng.lat)}, ${Math.round(e.latlng.lng)}]`;
+            navigator.clipboard.writeText(coords);
+            Swal.fire({
+                toast: true, position: 'top', icon: 'success',
+                title: `تم نسخ: ${coords}`,
+                text: 'جاهز للصق',
+                timer: 1000
             });
-
-            // Load Image
-            const img = new Image();
-            img.onload = function () {
-                const w = this.width;
-                const h = this.height;
-                const bounds = [[0, 0], [h, w]];
-
-                L.imageOverlay(encodedUrl, bounds).addTo(map);
-                map.fitBounds(bounds);
-
-                // Markers would go here
-                renderMapMarkers(mapData, h);
-            };
-
-            img.onerror = function () {
-                console.error("Failed to load map image:", encodedUrl);
-                Swal.fire({
-                    icon: 'error',
-                    title: 'خطأ في تحميل الخريطة',
-                    text: 'تأكد من وجود ملف الصورة: ' + mapData.url
-                });
-            };
-
-            img.src = encodedUrl;
-
-            // Dev Mode Click
-            map.on('click', function (e) {
-                if (devMode) {
-                    const coords = `[${Math.round(e.latlng.lat)}, ${Math.round(e.latlng.lng)}]`;
-                    navigator.clipboard.writeText(coords);
-                    Swal.fire({
-                        toast: true, position: 'top', icon: 'success',
-                        title: `تم نسخ: ${coords}`,
-                        text: 'جاهز للصق',
-                        timer: 1000
-                    });
-                }
-            });
-        };
-
+        }
+    });
+};
         window.renderMapMarkers = function (mapData, mapHeight) {
             // Render points if any
         };
