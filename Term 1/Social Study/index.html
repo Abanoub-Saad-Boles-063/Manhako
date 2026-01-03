@@ -993,14 +993,12 @@ window.loadMap = function (index) {
     if (map) map.remove();
     const mapData = imageMaps[index];
 
-    // الحل الجديد: بناء URL آمن يعمل على الموبايل والكمبيوتر
-    let imageUrl = mapData.url;  // القيمة الأصلية مثل "خرايط/....jpeg"
+    let imageUrl = mapData.url;  // مثل "خرايط/....jpeg"
 
-    // ترميز المسار الكامل مع الحفاظ على / غير مرمز
+    // ترميز آمن فقط (بدون إضافة بادئة إضافية)
     imageUrl = imageUrl.split('/').map(part => encodeURIComponent(part)).join('/');
 
-    // إضافة البادئة الفعلية للمسار الفرعي
-    imageUrl = 'Term 1/Social Study/' + imageUrl;
+    // إذا كنت متأكدًا من وجود مجلد فرعي، أعد إضافة البادئة لاحقًا بعد الاختبار
 
     const mapDiv = document.getElementById('map');
     if (!mapDiv) {
@@ -1030,12 +1028,11 @@ window.loadMap = function (index) {
         Swal.fire({
             icon: 'error',
             title: 'خطأ في تحميل الخريطة',
-            text: 'تأكد من المسار: ' + mapData.url
+            text: 'تأكد من المسار: ' + imageUrl
         });
     };
-    img.src = imageUrl;  // استخدام الـ URL المرمز هنا
+    img.src = imageUrl;
 
-    // Dev Mode Click (الجزء المتبقي من الكود الأصلي)
     map.on('click', function (e) {
         if (devMode) {
             const coords = `[${Math.round(e.latlng.lat)}, ${Math.round(e.latlng.lng)}]`;
