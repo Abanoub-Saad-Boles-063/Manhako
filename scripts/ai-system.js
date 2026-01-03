@@ -4,14 +4,14 @@
 const AI_CONFIG = {
     // Primary API Keys (3 active keys for rotation)
     apiKeys: [
-        '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', // Manhagko Primary
-        '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', // Key 2
-        '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'  // Key 3
+        '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', // Manhagko Primary
+        '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', // Key 2
+        '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'  // Key 3
     ],
     
     // Backup API Keys (used only if all primary keys fail)
     backupKeys: [
-        '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'
+        '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'
     ],
     
     // API Endpoint
