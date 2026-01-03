@@ -5,7 +5,7 @@
 const AI_CONFIG = {
     // Primary API Keys
     apiKeys: [
-        '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', // Manhagko Primary
+        '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', // Manhagko Primary
         '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', // Key 2
         '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'  // Key 3
     ],
