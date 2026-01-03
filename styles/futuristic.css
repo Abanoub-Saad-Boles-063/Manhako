@@ -409,3 +409,27 @@ body {
     font-weight: 700;
     color: var(--text);
 }
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .card-3d {
+        padding: 1rem;
+        border-radius: 12px;
+    }
+    
+    .btn-glow {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .icon-premium {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .holo-text {
+        font-size: 1.3rem !important;
+    }
+}
+
