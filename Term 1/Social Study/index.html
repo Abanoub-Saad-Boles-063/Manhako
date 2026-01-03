@@ -988,74 +988,65 @@
                 timer: 3000, showConfirmButton: false
             });
         };
-window.loadMap = function (index) {
-    currentMapIndex = index;
 
-    // تنظيف آمن للـ container
-    const mapContainer = document.getElementById('map');
-    if (mapContainer) {
-        mapContainer._leaflet_id = null;
-    }
-    if (map) {
-        map.remove();
-        map = null;
-    }
+        window.loadMap = function (index) {
+            currentMapIndex = index;
+            if (map) map.remove();
 
-    const mapData = imageMaps[index];
+            const mapData = imageMaps[index];
+            const encodedUrl = encodeURI(mapData.url); // Handle spaces/Arabic in URL
 
-    // المسار المطلق الكامل (ابدأ بـ / ليبدأ من جذر الموقع)
-    let imageUrl = '/Term 1/Social Study/خرايط/';
+            // Show loading indicator logic could be added here if needed
 
-    // ترميز اسم الملف فقط
-    const fileName = mapData.url.split('/').pop();
-    imageUrl += encodeURIComponent(fileName);
-
-    const mapDiv = document.getElementById('map');
-    if (!mapDiv) {
-        console.error("Map element not found");
-        return;
-    }
-
-    map = L.map('map', {
-        crs: L.CRS.Simple,
-        minZoom: -2,
-        maxZoom: 2,
-        zoomControl: true,
-        attributionControl: false
-    });
-
-    const img = new Image();
-    img.onload = function () {
-        const w = this.width;
-        const h = this.height;
-        const bounds = [[0, 0], [h, w]];
-        L.imageOverlay(imageUrl, bounds).addTo(map);
-        map.fitBounds(bounds);
-        renderMapMarkers(mapData, h);
-    };
-    img.onerror = function () {
-        console.error("Failed to load map image:", imageUrl);
-        Swal.fire({
-            icon: 'error',
-            title: 'خطأ في تحميل الخريطة',
-            text: 'تأكد من المسار: ' + imageUrl
-        });
-    };
-    img.src = imageUrl;
-
-    map.on('click', function (e) {
-        if (devMode) {
-            const coords = `[${Math.round(e.latlng.lat)}, ${Math.round(e.latlng.lng)}]`;
-            navigator.clipboard.writeText(coords);
-            Swal.fire({
-                toast: true, position: 'top', icon: 'success',
-                title: `تم نسخ: ${coords}`,
-                text: 'جاهز للصق',
-                timer: 1000
+            // Init Leaflet with CRS.Simple
+            map = L.map('map', {
+                crs: L.CRS.Simple,
+                minZoom: -2,
+                maxZoom: 2,
+                zoomControl: true,
+                attributionControl: false
             });
-        }
-    });
-};
+
+            // Load Image
+            const img = new Image();
+            img.onload = function () {
+                const w = this.width;
+                const h = this.height;
+                const bounds = [[0, 0], [h, w]];
+
+                L.imageOverlay(encodedUrl, bounds).addTo(map);
+                map.fitBounds(bounds);
+
+                // Markers would go here
+                renderMapMarkers(mapData, h);
+            };
+
+            img.onerror = function () {
+                console.error("Failed to load map image:", encodedUrl);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'خطأ في تحميل الخريطة',
+                    text: 'تأكد من وجود ملف الصورة: ' + mapData.url
+                });
+            };
+
+            img.src = encodedUrl;
+
+            // Dev Mode Click
+            map.on('click', function (e) {
+                if (devMode) {
+                    const coords = `[${Math.round(e.latlng.lat)}, ${Math.round(e.latlng.lng)}]`;
+                    navigator.clipboard.writeText(coords);
+                    Swal.fire({
+                        toast: true, position: 'top', icon: 'success',
+                        title: `تم نسخ: ${coords}`,
+                        text: 'جاهز للصق',
+                        timer: 1000
+                    });
+                }
+            });
+        };
+
         window.renderMapMarkers = function (mapData, mapHeight) {
             // Render points if any
         };
