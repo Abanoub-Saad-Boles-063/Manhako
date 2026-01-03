@@ -480,10 +480,20 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
             color: var(--primary);
-            font-size: 1.2rem;
+            padding: 20px 30px;
+            border-radius: 12px;
             text-align: center;
             z-index: 1000;
+            font-size: 1.1rem;
+            border: 2px solid var(--primary);
+            min-width: 200px;
+            display: none;
+        }
+
+        .map-loading i {
+            margin-left: 10px;
         }
 
         .map-error {
@@ -491,15 +501,15 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: var(--secondary);
-            font-size: 1rem;
-            text-align: center;
-            padding: 20px;
             background: rgba(255, 0, 0, 0.1);
-            border-radius: 10px;
+            border: 2px solid var(--secondary);
+            color: var(--secondary);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
             z-index: 1000;
-            width: 90%;
-            max-width: 500px;
+            max-width: 90%;
+            width: 400px;
         }
 
         .leaflet-error {
@@ -587,6 +597,18 @@
                 max-height: 200px;
                 overflow-y: auto;
                 -webkit-overflow-scrolling: touch;
+            }
+            
+            .map-loading {
+                padding: 15px 20px;
+                font-size: 1rem;
+                min-width: 150px;
+            }
+            
+            .map-error {
+                padding: 15px;
+                width: 90%;
+                font-size: 0.9rem;
             }
         }
 
@@ -930,7 +952,7 @@
             { q: "ما هو الفحم؟", a: "هو مادة صلبة تحتوي على كربون، تُستخدم في توليد الكهرباء والحرارة.", cat: "فحم" },
             { q: "كيف يتم استخدام الفحم في مصر؟", a: "يُستخدم في محطات توليد الكهرباء وبعض الصناعات.", cat: "فحم" },
             { q: "أين توجد مناجم الفحم في مصر؟", a: "في مناطق مثل المغارة في سيناء.", cat: "فحم" },
-            { q: "ما هي مصادر توليد الكهرباء في مصر؟", a: "الفحم\nالغاز الطبيعي\nالطاقة الكهرومائية\nالطاقة النووية", cat: "كهرباء" },
+            { q: "ما هي مصادر توليد الكهرباء في مصر？", a: "الفحم\nالغاز الطبيعي\nالطاقة الكهرومائية\nالطاقة النووية", cat: "كهرباء" },
 
             // الدرس التاسع: النقل
             { q: "ما هي أنواع النقل في مصر？", a: "النقل البري\nالنقل السككي\nالنقل المائي\nالنقل الجوي", cat: "نقل" },
@@ -958,6 +980,24 @@
         let isQuizActive = false;
         let reviewList = [];
         let reviewIndex = 0;
+
+        // Image Map Data
+        const imageMaps = [
+            { id: 'map1', title: 'خريطة المعادن', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.17.47 PM.jpeg', points: [] },
+            { id: 'map2', title: 'خريطة البترول', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.17.48 PM.jpeg', points: [] },
+            { id: 'map3', title: 'خريطة الفحم', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.18.11 PM.jpeg', points: [] },
+            { id: 'map4', title: 'خريطة المنجنيز', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.18.15 PM.jpeg', points: [] },
+            { id: 'map5', title: 'خريطة الفوسفات', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.18.15 PM (1).jpeg', points: [] },
+            { id: 'map6', title: 'خريطة الحديد', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.18.16 PM.jpeg', points: [] },
+            { id: 'map7', title: 'خريطة الذهب', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.18.45 PM.jpeg', points: [] },
+            { id: 'map8', title: 'خريطة الجبس', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.18.46 PM.jpeg', points: [] }
+        ];
+
+        let currentMapIndex = 0;
+        let map = null;
+        let mapMode = 'learn';
+        let mapScore = 0;
+        let devMode = false;
 
         function getWelcomeHTML() {
             return `
@@ -1014,12 +1054,18 @@
             <div class="card-3d reveal map-buttons-container" style="margin-bottom: 15px; padding: 1rem;">
                 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
                     ${mapButtonsHTML}
+                    <button class="btn-glow map-btn" onclick="toggleDevMode()" style="background: var(--warning); color: #000;">
+                        <i class="fas fa-code"></i> وضع المطور
+                    </button>
                 </div>
             </div>
 
             <!-- Map Container - NO sidebar inside -->
-            <div class="map-3d-container reveal" style="height: 500px; border-radius: 15px; overflow: hidden; border: 2px solid var(--primary);">
+            <div class="map-3d-container reveal" style="height: 500px; border-radius: 15px; overflow: hidden; border: 2px solid var(--primary); position: relative;">
                 <div id="map" style="width: 100%; height: 100%; direction: ltr;"></div>
+                <div id="map-loading-message" class="map-loading">
+                    <i class="fas fa-spinner fa-spin"></i> جاري تحميل الخريطة...
+                </div>
             </div>
             
             <div class="card-3d reveal" style="margin-top: 20px;">
@@ -1030,29 +1076,12 @@
             </div>`;
         }
 
-        // Image Map Data
-        const imageMaps = [
-            { id: 'map1', title: 'خريطة المعادن', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.17.47 PM.jpeg', points: [] },
-            { id: 'map2', title: 'خريطة البترول', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.17.48 PM.jpeg', points: [] },
-            { id: 'map3', title: 'خريطة الفحم', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.18.11 PM.jpeg', points: [] },
-            { id: 'map4', title: 'خريطة المنجنيز', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.18.15 PM.jpeg', points: [] },
-            { id: 'map5', title: 'خريطة الفوسفات', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.18.15 PM (1).jpeg', points: [] },
-            { id: 'map6', title: 'خريطة الحديد', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.18.16 PM.jpeg', points: [] },
-            { id: 'map7', title: 'خريطة الذهب', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.18.45 PM.jpeg', points: [] },
-            { id: 'map8', title: 'خريطة الجبس', url: 'خرايط/WhatsApp Image 2025-05-12 at 9.18.46 PM.jpeg', points: [] }
-        ];
-
-        let currentMapIndex = 0;
-        let map = null;
-        let mapMode = 'learn';
-        let mapScore = 0;
-
         window.initMap = function () {
             // تأكد أن الحاوية موجودة
             const mapDiv = document.getElementById('map');
             if (!mapDiv) {
                 console.error("Map element not found");
-                setTimeout(initMap, 100); // حاول مرة أخرى بعد 100ms
+                setTimeout(initMap, 100);
                 return;
             }
 
@@ -1067,145 +1096,36 @@
             loadMap(0);
         };
 
-        let devMode = false;
         window.toggleDevMode = function () {
             devMode = !devMode;
             Swal.fire({
-                toast: true, position: 'top-end', icon: 'info',
+                toast: true, 
+                position: 'top-end', 
+                icon: 'info',
                 title: devMode ? 'وضع المطور مفعل' : 'وضع المطور غير مفعل',
-                timer: 3000, showConfirmButton: false
+                timer: 3000, 
+                showConfirmButton: false
             });
         };
 
-        // ====== دالة loadMap المحسنة للعمل على الموبايل ======
-        window.loadMap = function (index) {
-            currentMapIndex = index;
-            
-            // تنظيف الخريطة السابقة بشكل آمن
-            if (map) {
-                try {
-                    if (map._container && typeof map.remove === 'function') {
-                        map.remove();
-                    }
-                } catch (err) {
-                    console.warn("Error removing map (non-critical):", err);
-                } finally {
-                    map = null;
-                }
-            }
-
-            const mapData = imageMaps[index];
-            
-            // تأكد أن الحاوية موجودة
+        // دالة لعرض رسالة الخطأ
+        function showMapError(message, details = '') {
             const mapDiv = document.getElementById('map');
-            if (!mapDiv) {
-                console.error("Map container not found");
-                return;
-            }
-
-            // عرض مؤشر تحميل
-            mapDiv.innerHTML = '<div class="map-loading"><i class="fas fa-spinner fa-spin"></i> جاري تحميل الخريطة...</div>';
-
-            // تأكد أن الحاوية مرئية ولها أبعاد
-            mapDiv.style.display = 'block';
-            if (mapDiv.offsetWidth === 0 || mapDiv.offsetHeight === 0) {
-                console.log("Map container has no dimensions, forcing resize...");
-                mapDiv.style.height = '300px';
-                mapDiv.style.width = '100%';
-            }
-
-            const img = new Image();
-            
-            img.onload = function () {
-                try {
-                    const w = this.width;
-                    const h = this.height;
-                    const bounds = [[0, 0], [h, w]];
-
-                    // إنشاء الخريطة مع options مناسبة للماوبايل
-                    map = L.map('map', {
-                        crs: L.CRS.Simple,
-                        minZoom: -2,
-                        maxZoom: 4,
-                        zoomControl: true,
-                        attributionControl: false,
-                        tap: true,
-                        touchZoom: true,
-                        dragging: true,
-                        zoomSnap: 0.1,
-                        wheelPxPerZoomLevel: 60
-                    });
-
-                    L.imageOverlay(this.src, bounds).addTo(map);
-                    map.fitBounds(bounds);
-                    
-                    // إضافة zoom control للماوبايل
-                    L.control.zoom({
-                        position: 'topright'
-                    }).addTo(map);
-                    
-                    // تحديث حجم الخريطة بعد التحميل
-                    setTimeout(() => {
-                        if (map && typeof map.invalidateSize === 'function') {
-                            map.invalidateSize();
-                        }
-                    }, 300);
-                    
-                    // إضافة حدث النقر لوضع المطور
-                    map.on('click', function (e) {
-                        if (devMode) {
-                            const coords = `[${Math.round(e.latlng.lat)}, ${Math.round(e.latlng.lng)}]`;
-                            if (navigator.clipboard && navigator.clipboard.writeText) {
-                                navigator.clipboard.writeText(coords).then(() => {
-                                    Swal.fire({
-                                        toast: true, position: 'top', icon: 'success',
-                                        title: `تم نسخ: ${coords}`,
-                                        text: 'جاهز للصق',
-                                        timer: 1000
-                                    });
-                                });
-                            }
-                        }
-                    });
-                } catch (err) {
-                    console.error("Error creating map:", err);
-                    mapDiv.innerHTML = `
-                        <div class="map-error" style="padding: 20px; text-align: center;">
-                            <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: var(--secondary); margin-bottom: 1rem;"></i>
-                            <h3 style="color: var(--secondary);">خطأ في إنشاء الخريطة</h3>
-                            <p>${err.message}</p>
-                        </div>
-                    `;
-                }
-            };
-
-            img.onerror = function () {
-                console.error("Failed to load map image:", mapData.url);
-                
-                // عرض رسالة خطأ
+            if (mapDiv) {
                 mapDiv.innerHTML = `
-                    <div class="map-error" style="padding: 20px; text-align: center;">
-                        <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: var(--secondary); margin-bottom: 1rem;"></i>
-                        <h3 style="color: var(--secondary);">تعذر تحميل الخريطة</h3>
-                        <p>اسم الملف: ${mapData.title}</p>
-                        <p>المسار: ${mapData.url}</p>
-                        <div style="margin-top: 1rem;">
-                            <button onclick="tryAlternativePaths(${index})" class="flashcard-btn" style="margin: 5px;">
-                                <i class="fas fa-sync-alt"></i> محاولة تحميل من مسارات بديلة
-                            </button>
-                            <button onclick="loadNextMap(${index})" class="flashcard-btn correct" style="margin: 5px;">
-                                <i class="fas fa-arrow-right"></i> التالي
-                            </button>
-                        </div>
+                    <div class="map-error">
+                        <i class="fas fa-exclamation-triangle" style="font-size: 2rem; margin-bottom: 10px;"></i>
+                        <h4 style="color: var(--secondary);">${message}</h4>
+                        ${details ? `<p style="color: var(--text-muted); font-size: 0.9rem;">${details}</p>` : ''}
+                        <button onclick="loadMap(0)" class="flashcard-btn" style="margin-top: 10px;">
+                            <i class="fas fa-redo"></i> إعادة المحاولة
+                        </button>
                     </div>
                 `;
-            };
+            }
+        }
 
-            // حاول تحميل الصورة من المسار الحالي
-            img.src = mapData.url;
-        };
-
-        // ====== دالة لمحاولة مسارات بديلة ======
+        // دالة لمحاولة مسارات بديلة
         window.tryAlternativePaths = function(index) {
             const mapData = imageMaps[index];
             const possiblePaths = [
@@ -1213,13 +1133,16 @@
                 `../${mapData.url}`,
                 `../../${mapData.url}`,
                 `Term 1/Social Study/${mapData.url}`,
-                `./Term 1/Social Study/${mapData.url}`
+                `./Term 1/Social Study/${mapData.url}`,
+                `خرايط/${mapData.url.split('/').pop()}`,
+                `../خرايط/${mapData.url.split('/').pop()}`
             ];
             
             Swal.fire({
                 title: 'جاري محاولة مسارات بديلة',
                 html: 'الرجاء الانتظار...',
                 timerProgressBar: true,
+                allowOutsideClick: false,
                 didOpen: () => {
                     Swal.showLoading();
                 }
@@ -1263,6 +1186,158 @@
             }
             
             tryNext();
+        };
+
+        // ====== دالة loadMap المحسنة ======
+        window.loadMap = function (index) {
+            currentMapIndex = index;
+            
+            // تنظيف الخريطة السابقة بشكل آمن
+            if (map) {
+                try {
+                    if (map._container && typeof map.remove === 'function') {
+                        map.remove();
+                    }
+                } catch (err) {
+                    console.warn("Error removing map:", err);
+                } finally {
+                    map = null;
+                }
+            }
+
+            const mapData = imageMaps[index];
+            
+            // تأكد أن الحاوية موجودة
+            const mapDiv = document.getElementById('map');
+            const loadingDiv = document.getElementById('map-loading-message');
+            
+            if (!mapDiv) {
+                console.error("Map container not found");
+                return;
+            }
+
+            // تنظيف محتويات الخريطة
+            mapDiv.innerHTML = '';
+            
+            // عرض مؤشر تحميل
+            if (loadingDiv) {
+                loadingDiv.style.display = 'block';
+            }
+
+            // تأكد أن الحاوية مرئية ولها أبعاد
+            mapDiv.style.display = 'block';
+            if (mapDiv.offsetWidth === 0 || mapDiv.offsetHeight === 0) {
+                mapDiv.style.height = '400px';
+                mapDiv.style.width = '100%';
+            }
+
+            const img = new Image();
+            let loadTimeout;
+            
+            img.onload = function () {
+                // إخفاء مؤشر التحميل
+                if (loadingDiv) {
+                    loadingDiv.style.display = 'none';
+                }
+                
+                // إلغاء المهلة
+                if (loadTimeout) {
+                    clearTimeout(loadTimeout);
+                }
+                
+                try {
+                    const w = this.naturalWidth || this.width;
+                    const h = this.naturalHeight || this.height;
+                    
+                    if (!w || !h) {
+                        showMapError('أبعاد الصورة غير صالحة');
+                        return;
+                    }
+
+                    const bounds = [[0, 0], [h, w]];
+
+                    // إنشاء الخريطة مع options مناسبة
+                    map = L.map('map', {
+                        crs: L.CRS.Simple,
+                        minZoom: -2,
+                        maxZoom: 4,
+                        zoomControl: true,
+                        attributionControl: false,
+                        tap: true,
+                        touchZoom: true,
+                        dragging: true,
+                        zoomSnap: 0.1,
+                        wheelPxPerZoomLevel: 60
+                    });
+
+                    L.imageOverlay(this.src, bounds).addTo(map);
+                    map.fitBounds(bounds);
+                    
+                    // إضافة zoom control
+                    L.control.zoom({
+                        position: 'topright'
+                    }).addTo(map);
+                    
+                    // تحديث حجم الخريطة بعد التحميل
+                    setTimeout(() => {
+                        if (map && typeof map.invalidateSize === 'function') {
+                            map.invalidateSize();
+                        }
+                    }, 100);
+                    
+                    // إضافة حدث النقر لوضع المطور
+                    map.on('click', function (e) {
+                        if (devMode) {
+                            const coords = `[${Math.round(e.latlng.lat)}, ${Math.round(e.latlng.lng)}]`;
+                            if (navigator.clipboard && navigator.clipboard.writeText) {
+                                navigator.clipboard.writeText(coords).then(() => {
+                                    Swal.fire({
+                                        toast: true, 
+                                        position: 'top', 
+                                        icon: 'success',
+                                        title: `تم نسخ: ${coords}`,
+                                        text: 'جاهز للصق',
+                                        timer: 1000
+                                    });
+                                });
+                            }
+                        }
+                    });
+                } catch (err) {
+                    console.error("Error creating map:", err);
+                    showMapError(`خطأ في إنشاء الخريطة: ${err.message}`);
+                }
+            };
+
+            img.onerror = function () {
+                // إخفاء مؤشر التحميل
+                if (loadingDiv) {
+                    loadingDiv.style.display = 'none';
+                }
+                
+                // إلغاء المهلة
+                if (loadTimeout) {
+                    clearTimeout(loadTimeout);
+                }
+                
+                console.error("Failed to load map image:", mapData.url);
+                
+                // عرض رسالة خطأ
+                showMapError(
+                    `تعذر تحميل الخريطة: ${mapData.title}`,
+                    `المسار: ${mapData.url}`
+                );
+            };
+
+            // بدء تحميل الصورة
+            img.src = mapData.url;
+            
+            // مهلة زمنية للتحميل (10 ثواني)
+            loadTimeout = setTimeout(() => {
+                if (loadingDiv && loadingDiv.style.display !== 'none') {
+                    showMapError('تجاوزت مهلة تحميل الخريطة', 'يرجى التحقق من اتصال الإنترنت أو مسار الصورة');
+                }
+            }, 10000);
         };
 
         // ====== دالة للانتقال للخريطة التالية ======
@@ -1505,9 +1580,16 @@
                     // تأخير تحميل الخريطة لضمان تحميل الـ DOM أولاً
                     setTimeout(() => {
                         try {
+                            // التحقق من وجود مكتبة Leaflet
+                            if (typeof L === 'undefined') {
+                                console.error("Leaflet library not loaded!");
+                                showMapError('مكتبة الخرائط لم تحمل بشكل صحيح', 'يرجى إعادة تحميل الصفحة');
+                                return;
+                            }
                             initMap();
                         } catch (err) {
                             console.error("Error loading map:", err);
+                            showMapError(`خطأ في تحميل الخريطة: ${err.message}`);
                         }
                     }, 300);
                     break;
@@ -1616,14 +1698,24 @@
             if (isCorrect) {
                 quizScore++;
                 Swal.fire({
-                    position: 'top-end', icon: 'success', title: 'إجابة صحيحة!',
-                    showConfirmButton: false, timer: 1000, background: '#0a0a1a', color: '#fff'
+                    position: 'top-end', 
+                    icon: 'success', 
+                    title: 'إجابة صحيحة!',
+                    showConfirmButton: false, 
+                    timer: 1000, 
+                    background: '#0a0a1a', 
+                    color: '#fff'
                 });
             } else {
                 quizWrong++;
                 Swal.fire({
-                    position: 'top-end', icon: 'error', title: 'إجابة خاطئة!',
-                    showConfirmButton: false, timer: 1000, background: '#0a0a1a', color: '#fff'
+                    position: 'top-end', 
+                    icon: 'error', 
+                    title: 'إجابة خاطئة!',
+                    showConfirmButton: false, 
+                    timer: 1000, 
+                    background: '#0a0a1a', 
+                    color: '#fff'
                 });
             }
 
@@ -1670,7 +1762,13 @@
             });
 
             if (reviewList.length === 0) {
-                Swal.fire({ icon: 'info', title: 'لا يوجد أسئلة', text: 'لا توجد أسئلة في هذا القسم.', background: '#0a0a1a', color: '#fff' });
+                Swal.fire({ 
+                    icon: 'info', 
+                    title: 'لا يوجد أسئلة', 
+                    text: 'لا توجد أسئلة في هذا القسم.', 
+                    background: '#0a0a1a', 
+                    color: '#fff' 
+                });
                 return;
             }
 
@@ -1722,6 +1820,14 @@
             createParticles();
             initReveal();
         });
+    </script>
+    
+    <script>
+        // التحقق من تحميل Leaflet
+        if (typeof L === 'undefined') {
+            console.error("Leaflet not loaded!");
+            // يمكن إضافة رسالة تحذير هنا
+        }
     </script>
 </body>
 
