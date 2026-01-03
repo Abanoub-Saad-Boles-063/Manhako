@@ -5,14 +5,14 @@
 const AI_CONFIG = {
     // Primary API Keys
     apiKeys: [
-        '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', // Manhagko Primary
-        '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', // Key 2
-        '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'  // Key 3
+        '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', // Manhagko Primary
+        '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', // Key 2
+        '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'  // Key 3
     ],
     
     // Backup API Keys
     backupKeys: [
-        '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'
+        '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'
     ],
     
     endpoint: 'https://openrouter.ai/api/v1/chat/completions',
