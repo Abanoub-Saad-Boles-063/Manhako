@@ -474,6 +474,50 @@
             color: var(--primary);
         }
 
+        /* Loading and Error Messages */
+        .map-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--primary);
+            font-size: 1.2rem;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .map-error {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--secondary);
+            font-size: 1rem;
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 0, 0, 0.1);
+            border-radius: 10px;
+            z-index: 1000;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .leaflet-error {
+            display: none !important;
+        }
+
+        .map-status {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            z-index: 1000;
+        }
+
         /* Mobile */
         @media (max-width: 768px) {
             header {
@@ -795,68 +839,68 @@
             { q: "لماذا يعتبر النقل السككي مهمًا في مصر؟", a: "لأنه يُستخدم لنقل البضائع الثقيلة، ويتميز بتكلفته المنخفضة.", cat: "نقل" },
 
             // الدرس العاشر: التجارة الخارجية
-            { q: "ما هي الصادرات الرئيسية في مصر؟", a: "النفط\nالغاز الطبيعي\nمنتجات زراعية", cat: "تجارة" },
-            { q: "ما هي واردات مصر؟", a: "الآلات\nالمعدات الصناعية\nالسيارات", cat: "تجارة" },
+            { q: "ما هي الصادرات الرئيسية في مصر？", a: "النفط\nالغاز الطبيعي\nمنتجات زراعية", cat: "تجارة" },
+            { q: "ما هي واردات مصر？", a: "الآلات\nالمعدات الصناعية\nالسيارات", cat: "تجارة" },
 
             // --- إضافات المجموعة الرابعة ---
             // الدرس الأول: التوزيع الجغرافي
             { q: "ما هي مناطق المعادن الرئيسية في مصر؟", a: "المنطقة الأولى: سيناء وخليج السويس.\nالمنطقة الثانية: وسط مصر حول النيل.\nالمنطقة الثالثة: الصحراء الغربية.", cat: "توزيع المعادن" },
-            { q: "أين توجد أكبر مناطق الحديد في مصر؟", a: "أسوان، الواحة البحرية، ساحل البحر الأحمر.", cat: "توزيع المعادن" },
-            { q: "ما هو معدن الفوسفات؟", a: "معدن يستخدم في الصناعات المختلفة مثل الأسمدة ويُستخرج من مناطق سفاجا، الحمراوين، أبو طرطور.", cat: "توزيع المعادن" },
+            { q: "أين توجد أكبر مناطق الحديد في مصر？", a: "أسوان، الواحة البحرية، ساحل البحر الأحمر.", cat: "توزيع المعادن" },
+            { q: "ما هو معدن الفوسفات？", a: "معدن يستخدم في الصناعات المختلفة مثل الأسمدة ويُستخرج من مناطق سفاجا، الحمراوين، أبو طرطور.", cat: "توزيع المعادن" },
             { q: "ما هي المعادن الموجودة في منطقة سيناء؟", a: "منجنيز\nفحم\nحديد", cat: "توزيع المعادن" },
 
             // الدرس الثاني: الحديد الخام
             { q: "ما هو خام الحديد في أسوان؟", a: "يُستخرج من أسوان ويتميز بجودة منخفضة وصعب التكرير.", cat: "حديد" },
-            { q: "ما هو دور مصنع الحديد في حلوان؟", a: "تم إنشاء المصنع لتوفير احتياج البلاد من الحديد ولكنه توقف بعد مشاكل في خام أسوان.", cat: "حديد" },
-            { q: "لماذا تتجه الدولة لاستخراج الحديد من الواحة البحرية؟", a: "بسبب احتياطي الخام الضخم وسهولة النقل.", cat: "حديد" },
+            { q: "ما هو دور مصنع الحديد في حلوان？", a: "تم إنشاء المصنع لتوفير احتياج البلاد من الحديد ولكنه توقف بعد مشاكل في خام أسوان.", cat: "حديد" },
+            { q: "لماذا تتجه الدولة لاستخراج الحديد من الواحة البحرية？", a: "بسبب احتياطي الخام الضخم وسهولة النقل.", cat: "حديد" },
             { q: "ما هو الفرق بين خام الحديد في أسوان وفي الواحة البحرية؟", a: "خام أسوان يحتوي على شوائب كثيرة، بينما خام الواحة البحرية ذو جودة أفضل.", cat: "حديد" },
 
             // الدرس الثالث: الفوسفات والمنجنيز
-            { q: "ما هي أهم استخدامات الفوسفات؟", a: "يستخدم بشكل رئيسي في صناعة الأسمدة.", cat: "فوسفات" },
+            { q: "ما هي أهم استخدامات الفوسفات？", a: "يستخدم بشكل رئيسي في صناعة الأسمدة.", cat: "فوسفات" },
             { q: "أين توجد مناجم المنجنيز في مصر؟", a: "في أم بجمة في سيناء.", cat: "منجنيز" },
-            { q: "ما أهمية منطقة أبو طرطور في الفوسفات؟", a: "تعتبر أكبر مصدر للفوسفات في مصر، ويبلغ احتياطيها أكثر من 700 مليون طن.", cat: "فوسفات" },
-            { q: "كيف يتم استخراج الفوسفات؟", a: "عن طريق التعدين السطحي.", cat: "فوسفات" },
+            { q: "ما أهمية منطقة أبو طرطور في الفوسفات？", a: "تعتبر أكبر مصدر للفوسفات في مصر، ويبلغ احتياطيها أكثر من 700 مليون طن.", cat: "فوسفات" },
+            { q: "كيف يتم استخراج الفوسفات？", a: "عن طريق التعدين السطحي.", cat: "فوسفات" },
 
             // الدرس الرابع: الجبس وملح الطعام
             { q: "ما هو الجبس؟", a: "معدن يتكون من كبريتات الكالسيوم ويستخدم في البناء والزراعة.", cat: "جبس" },
-            { q: "أين توجد مناجم الجبس في مصر؟", a: "في مناطق مثل خليج السويس، البحر الأحمر، الإسكندرية.", cat: "جبس" },
-            { q: "ما هو ملح الطعام؟", a: "مادة يتم استخراجها من البحار وتستخدم في الطعام والصناعة.", cat: "ملح" },
-            { q: "كيف يتم استخراج ملح الطعام؟", a: "عن طريق التبخير الطبيعي للمياه المالحة.", cat: "ملح" },
+            { q: "أين توجد مناجم الجبس في مصر？", a: "في مناطق مثل خليج السويس، البحر الأحمر، الإسكندرية.", cat: "جبس" },
+            { q: "ما هو ملح الطعام？", a: "مادة يتم استخراجها من البحار وتستخدم في الطعام والصناعة.", cat: "ملح" },
+            { q: "كيف يتم استخراج ملح الطعام？", a: "عن طريق التبخير الطبيعي للمياه المالحة.", cat: "ملح" },
 
             // الدرس الخامس: مصادر الطاقة
             { q: "ما هي مصادر الطاقة المتجددة؟", a: "الطاقة الشمسية\nالرياح\nالمد والجزر\nالطاقة الحيوية", cat: "طاقة" },
-            { q: "ما هي مصادر الطاقة غير المتجددة؟", a: "الفحم\nالغاز الطبيعي\nالنفط", cat: "طاقة" },
+            { q: "ما هي مصادر الطاقة غير المتجددة？", a: "الفحم\nالغاز الطبيعي\nالنفط", cat: "طاقة" },
             { q: "أين توجد محطات توليد الطاقة الشمسية في مصر؟", a: "في أسوان، حيث يتم استغلال الطاقة الشمسية بشكل كبير.", cat: "طاقة" },
-            { q: "ما هي مزايا الطاقة المتجددة؟", a: "لا تنفد، لا تلوث البيئة، توفر مصادر طاقة مستدامة.", cat: "طاقة" },
+            { q: "ما هي مزايا الطاقة المتجددة？", a: "لا تنفد، لا تلوث البيئة، توفر مصادر طاقة مستدامة.", cat: "طاقة" },
 
             // الدرس السادس: البترول
-            { q: "ما هو تعريف البترول؟", a: "خليط معقد من الهيدروكربونات يُستخرج من باطن الأرض.", cat: "بترول" },
-            { q: "أين توجد حقول البترول الرئيسية في مصر؟", a: "خليج السويس\nالبحر المتوسط\nالصحراء الغربية", cat: "بترول" },
-            { q: "كيف يتم تكرير البترول؟", a: "عبر عمليات في معامل التكرير لفصل المكونات المختلفة مثل البنزين، السولار، والمازوت.", cat: "بترول" },
-            { q: "ما هي أهمية البترول للاقتصاد المصري؟", a: "يعتبر من أهم مصادر الدخل القومي من خلال الصادرات واستخداماته المحلية في الصناعة.", cat: "بترول" },
+            { q: "ما هو تعريف البترول？", a: "خليط معقد من الهيدروكربونات يُستخرج من باطن الأرض.", cat: "بترول" },
+            { q: "أين توجد حقول البترول الرئيسية في مصر？", a: "خليج السويس\nالبحر المتوسط\nالصحراء الغربية", cat: "بترول" },
+            { q: "كيف يتم تكرير البترول？", a: "عبر عمليات في معامل التكرير لفصل المكونات المختلفة مثل البنزين، السولار، والمازوت.", cat: "بترول" },
+            { q: "ما هي أهمية البترول للاقتصاد المصري？", a: "يعتبر من أهم مصادر الدخل القومي من خلال الصادرات واستخداماته المحلية في الصناعة.", cat: "بترول" },
 
             // الدرس السابع: الغاز الطبيعي
             { q: "ما هو الغاز الطبيعي؟", a: "غاز هيدروكربوني يُستخرج من باطن الأرض ويستخدم في توليد الكهرباء وتدفئة المنازل.", cat: "غاز طبيعي" },
             { q: "ما هي أهم حقول الغاز الطبيعي في مصر؟", a: "حقل ظهر\nحقل أبو ماضي\nحقل أبو قير", cat: "غاز طبيعي" },
-            { q: "كيف يتم استخراج الغاز الطبيعي؟", a: "يتم من خلال حفر آبار في المناطق الغازية، ثم يتم نقله عبر خطوط أنابيب.", cat: "غاز طبيعي" },
-            { q: "ما هي استخدامات الغاز الطبيعي؟", a: "يستخدم في توليد الكهرباء، الوقود للمنازل، والصناعات.", cat: "غاز طبيعي" },
+            { q: "كيف يتم استخراج الغاز الطبيعي？", a: "يتم من خلال حفر آبار في المناطق الغازية، ثم يتم نقله عبر خطوط أنابيب.", cat: "غاز طبيعي" },
+            { q: "ما هي استخدامات الغاز الطبيعي？", a: "يستخدم في توليد الكهرباء، الوقود للمنازل، والصناعات.", cat: "غاز طبيعي" },
 
             // الدرس الثامن: الفحم
             { q: "ما هو الفحم؟", a: "هو مادة صلبة تحتوي على كربون، تُستخدم في توليد الكهرباء والحرارة.", cat: "فحم" },
             { q: "كيف يتم استخدام الفحم في مصر؟", a: "يُستخدم في محطات توليد الكهرباء وبعض الصناعات.", cat: "فحم" },
-            { q: "أين توجد مناجم الفحم في مصر؟", a: "في مناطق مثل المغارة في سيناء.", cat: "فحم" },
-            { q: "ما هي مصادر توليد الكهرباء في مصر؟", a: "الفحم\nالغاز الطبيعي\nالطاقة الكهرومائية\nالطاقة النووية", cat: "كهرباء" },
+            { q: "أين توجد مناجم الفحم في مصر？", a: "في مناطق مثل المغارة في سيناء.", cat: "فحم" },
+            { q: "ما هي مصادر توليد الكهرباء في مصر？", a: "الفحم\nالغاز الطبيعي\nالطاقة الكهرومائية\nالطاقة النووية", cat: "كهرباء" },
 
             // الدرس التاسع: النقل
-            { q: "ما هي أنواع النقل في مصر؟", a: "النقل البري\nالنقل السككي\nالنقل المائي\nالنقل الجوي", cat: "نقل" },
-            { q: "ما هي أهمية السكك الحديدية؟", a: "تعتبر من وسائل النقل الرئيسية لنقل البضائع الثقيلة بتكلفة منخفضة.", cat: "نقل" },
-            { q: "ما هي أهمية قناة السويس؟", a: "تعتبر من أهم ممرات الملاحة البحرية في العالم، حيث تربط البحر الأبيض المتوسط بالبحر الأحمر.", cat: "نقل" },
-            { q: "ما هو النقل الجوي في مصر؟", a: "يشمل حركة الطائرات من وإلى مختلف المطارات المصرية مثل مطار القاهرة الدولي.", cat: "نقل" },
+            { q: "ما هي أنواع النقل في مصر？", a: "النقل البري\nالنقل السككي\nالنقل المائي\nالنقل الجوي", cat: "نقل" },
+            { q: "ما هي أهمية السكك الحديدية？", a: "تعتبر من وسائل النقل الرئيسية لنقل البضائع الثقيلة بتكلفة منخفضة.", cat: "نقل" },
+            { q: "ما هي أهمية قناة السويس？", a: "تعتبر من أهم ممرات الملاحة البحرية في العالم، حيث تربط البحر الأبيض المتوسط بالبحر الأحمر.", cat: "نقل" },
+            { q: "ما هو النقل الجوي في مصر？", a: "يشمل حركة الطائرات من وإلى مختلف المطارات المصرية مثل مطار القاهرة الدولي.", cat: "نقل" },
 
             // الدرس العاشر: التجارة الخارجية
-            { q: "ما هو تعريف الميزان التجاري؟", a: "هو الفرق بين الصادرات والواردات من السلع والخدمات.", cat: "تجارة" },
-            { q: "ما هي الصادرات الرئيسية لمصر؟", a: "النفط\nالغاز الطبيعي\nالمنتجات الزراعية", cat: "تجارة" },
-            { q: "ما هي واردات مصر؟", a: "الآلات\nالسيارات\nالمواد الخام", cat: "تجارة" },
+            { q: "ما هو تعريف الميزان التجاري？", a: "هو الفرق بين الصادرات والواردات من السلع والخدمات.", cat: "تجارة" },
+            { q: "ما هي الصادرات الرئيسية لمصر？", a: "النفط\nالغاز الطبيعي\nالمنتجات الزراعية", cat: "تجارة" },
+            { q: "ما هي واردات مصر？", a: "الآلات\nالسيارات\nالمواد الخام", cat: "تجارة" },
             { q: "ما هو الفائض التجاري؟", a: "عندما تتجاوز الصادرات الواردات.", cat: "تجارة" }
         ];
 
@@ -940,10 +984,7 @@
             <div class="card-3d reveal" style="margin-top: 20px;">
                 <div class="card-title"><i class="fas fa-info-circle"></i> ذاكر الخرايط كويس </div>
                 <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
-                    
-                    
                     <span style="color: #00ff88;"><i class="fas fa-bolt"></i> ربنا معاك ياصحبي</span>
-                    
                 </div>
             </div>`;
         }
@@ -984,67 +1025,155 @@
             devMode = !devMode;
             Swal.fire({
                 toast: true, position: 'top-end', icon: 'info',
-                title: devMode ? 'لو راجل احفظ الخرايط' : ' ذاكر ذاكر ',
+                title: devMode ? 'وضع المطور مفعل' : 'وضع المطور غير مفعل',
                 timer: 3000, showConfirmButton: false
             });
         };
 
+        // ====== دالة loadMap المحسنة ======
         window.loadMap = function (index) {
             currentMapIndex = index;
             if (map) map.remove();
 
             const mapData = imageMaps[index];
-            const encodedUrl = encodeURI(mapData.url); // Handle spaces/Arabic in URL
+            const encodedUrl = encodeURI(mapData.url);
 
-            // Show loading indicator logic could be added here if needed
+            // عرض مؤشر تحميل
+            const mapDiv = document.getElementById('map');
+            mapDiv.innerHTML = '<div class="map-loading"><i class="fas fa-spinner fa-spin"></i> جاري تحميل الخريطة...</div>';
 
-            // Init Leaflet with CRS.Simple
-            map = L.map('map', {
-                crs: L.CRS.Simple,
-                minZoom: -2,
-                maxZoom: 2,
-                zoomControl: true,
-                attributionControl: false
-            });
-
-            // Load Image
             const img = new Image();
+            
             img.onload = function () {
                 const w = this.width;
                 const h = this.height;
                 const bounds = [[0, 0], [h, w]];
 
+                map = L.map('map', {
+                    crs: L.CRS.Simple,
+                    minZoom: -2,
+                    maxZoom: 2,
+                    zoomControl: true,
+                    attributionControl: false
+                });
+
                 L.imageOverlay(encodedUrl, bounds).addTo(map);
                 map.fitBounds(bounds);
-
-                // Markers would go here
                 renderMapMarkers(mapData, h);
+                
+                // إضافة حدث النقر لوضع المطور
+                map.on('click', function (e) {
+                    if (devMode) {
+                        const coords = `[${Math.round(e.latlng.lat)}, ${Math.round(e.latlng.lng)}]`;
+                        navigator.clipboard.writeText(coords);
+                        Swal.fire({
+                            toast: true, position: 'top', icon: 'success',
+                            title: `تم نسخ: ${coords}`,
+                            text: 'جاهز للصق',
+                            timer: 1000
+                        });
+                    }
+                });
             };
 
             img.onerror = function () {
                 console.error("Failed to load map image:", encodedUrl);
-                Swal.fire({
-                    icon: 'error',
-                    title: 'خطأ في تحميل الخريطة',
-                    text: 'تأكد من وجود ملف الصورة: ' + mapData.url
+                
+                // عرض رسالة خطأ داخل الخريطة نفسها
+                mapDiv.innerHTML = `
+                    <div class="map-error" style="padding: 20px; text-align: center;">
+                        <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+                        <h3 style="color: var(--secondary);">تعذر تحميل الخريطة</h3>
+                        <p>اسم الملف: ${mapData.title}</p>
+                        <p>المسار: ${mapData.url}</p>
+                        <div style="margin-top: 1rem;">
+                            <button onclick="tryAlternativePaths(${index})" class="flashcard-btn" style="margin: 5px;">
+                                <i class="fas fa-sync-alt"></i> محاولة تحميل من مسارات بديلة
+                            </button>
+                            <button onclick="loadNextMap(${index})" class="flashcard-btn correct" style="margin: 5px;">
+                                <i class="fas fa-arrow-right"></i> التالي
+                            </button>
+                        </div>
+                    </div>
+                `;
+                
+                // إنشاء خريطة وهمية لمنع أخطاء Leaflet
+                map = L.map('map', {
+                    crs: L.CRS.Simple,
+                    minZoom: -2,
+                    maxZoom: 2
                 });
             };
 
             img.src = encodedUrl;
+        };
 
-            // Dev Mode Click
-            map.on('click', function (e) {
-                if (devMode) {
-                    const coords = `[${Math.round(e.latlng.lat)}, ${Math.round(e.latlng.lng)}]`;
-                    navigator.clipboard.writeText(coords);
-                    Swal.fire({
-                        toast: true, position: 'top', icon: 'success',
-                        title: `تم نسخ: ${coords}`,
-                        text: 'جاهز للصق',
-                        timer: 1000
-                    });
+        // ====== دالة لمحاولة مسارات بديلة ======
+        window.tryAlternativePaths = function(index) {
+            const mapData = imageMaps[index];
+            const possiblePaths = [
+                mapData.url,
+                `../${mapData.url}`,
+                `../../${mapData.url}`,
+                `Term 1/Social Study/${mapData.url}`,
+                `./Term 1/Social Study/${mapData.url}`
+            ];
+            
+            Swal.fire({
+                title: 'جاري محاولة مسارات بديلة',
+                html: 'الرجاء الانتظار...',
+                timerProgressBar: true,
+                didOpen: () => {
+                    Swal.showLoading();
                 }
             });
+            
+            let success = false;
+            let currentTry = 0;
+            
+            function tryNext() {
+                if (currentTry >= possiblePaths.length) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'فشل تحميل الخريطة',
+                        text: 'تعذر العثور على ملف الخريطة في أي مسار بديل',
+                        confirmButtonText: 'حسناً'
+                    });
+                    return;
+                }
+                
+                const path = possiblePaths[currentTry];
+                const img = new Image();
+                
+                img.onload = function() {
+                    success = true;
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'تم العثور على ملف الخريطة',
+                        html: `تم العثور على الملف في المسار:<br><code>${path}</code>`,
+                        confirmButtonText: 'موافق'
+                    });
+                    
+                    // تحديث المسار في المصفوفة
+                    imageMaps[index].url = path;
+                    loadMap(index);
+                };
+                
+                img.onerror = function() {
+                    currentTry++;
+                    setTimeout(tryNext, 100);
+                };
+                
+                img.src = path;
+            }
+            
+            tryNext();
+        };
+
+        // ====== دالة للانتقال للخريطة التالية ======
+        window.loadNextMap = function(currentIndex) {
+            const nextIndex = (currentIndex + 1) % imageMaps.length;
+            loadMap(nextIndex);
         };
 
         window.renderMapMarkers = function (mapData, mapHeight) {
@@ -1058,18 +1187,6 @@
             // For now, just re-initialize the current map to apply mode changes.
             loadMap(currentMapIndex);
         };
-
-        // The following functions related to the old map system are no longer needed
-        // and should be removed or adapted if training mode is to be implemented for image maps.
-        // For now, they are kept as placeholders or removed if they directly depend on mapLocations.
-
-        // Removed: mapLocations array (as per instruction, replaced by imageMaps)
-        // Removed: renderMap function (as per instruction, replaced by loadMap and renderMapMarkers)
-        // Removed: checkMapAnswer function (as per instruction, it was tied to the old mapLocations)
-
-        // Legacy map functions removed. 
-        // Training mode for Image Maps will be re-implemented.
-        // Legacy map functions removed.
 
         function getFlashcardsHTML() {
             return `
