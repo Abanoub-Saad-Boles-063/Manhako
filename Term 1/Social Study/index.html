@@ -995,10 +995,11 @@ window.loadMap = function (index) {
 
     let imageUrl = mapData.url;  // مثل "خرايط/....jpeg"
 
-    // ترميز آمن فقط (بدون إضافة بادئة إضافية)
+    // ترميز آمن للأحرف الخاصة
     imageUrl = imageUrl.split('/').map(part => encodeURIComponent(part)).join('/');
 
-    // إذا كنت متأكدًا من وجود مجلد فرعي، أعد إضافة البادئة لاحقًا بعد الاختبار
+    // إضافة المسار الفرعي الصحيح (هذا هو المفتاح!)
+    imageUrl = 'Term 1/Social Study/' + imageUrl;
 
     const mapDiv = document.getElementById('map');
     if (!mapDiv) {
@@ -1028,7 +1029,7 @@ window.loadMap = function (index) {
         Swal.fire({
             icon: 'error',
             title: 'خطأ في تحميل الخريطة',
-            text: 'تأكد من المسار: ' + imageUrl
+            text: 'تأكد من المسار: ' + imageUrl  // غيّر هنا ليظهر المسار المرمز (أوضح للتشخيص)
         });
     };
     img.src = imageUrl;
