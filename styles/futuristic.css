@@ -410,32 +410,24 @@ body {
     color: var(--text);
 }
 
-/* EXTRA SMALL DEVICES FIX */
-@media (max-width: 480px) {
-
-    .card-3d {
-        padding: 1rem !important;
-        border-radius: 12px !important;
+@media (max-width: 768px) {
+    header {
+        justify-content: space-around;  /* يوزع العناصر بالتساوي مع مسافات متساوية، يمنع الالتصاق بالحواف */
+        padding: 0.8rem 0.5rem;         /* قلل الـpadding الجانبي قليلاً لمزيد من المساحة */
+        flex-wrap: wrap;                /* يسمح بانتقال الأزرار إلى سطر جديد إذا ضاقت الشاشة جداً */
+        gap: 0.5rem;                    /* مسافة إضافية بين العناصر إذا انتقلت */
     }
 
-    .btn-glow {
-        padding: 0.6rem 1.4rem !important;
-        font-size: 0.9rem !important;
+    .nav-links {
+        gap: 0.5rem;                    /* قلل المسافة بين الأزرار لتوفير مساحة */
     }
 
-    .icon-premium {
-        width: 38px !important;
-        height: 38px !important;
-        font-size: 1.1rem !important;
+    .nav-btn {
+        padding: 0.5rem 0.7rem;         /* حجم أصغر قليلاً للأزرار */
+        font-size: 0.75rem;
     }
 
-    .holo-text {
-        font-size: 1.4rem !important;
-    }
-
-    .hero-logo {
-        width: 150px !important;
-        height: 150px !important;
+    .logo {
+        font-size: 1.4rem;              /* زد حجم اللوجو قليلاً للتوازن */
     }
 }
-
